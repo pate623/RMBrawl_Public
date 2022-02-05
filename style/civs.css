@@ -1,0 +1,392 @@
+/* text */
+p.otsikko, p.explanation2 {
+	color:#000000;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;	
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.otsikko {
+	font-size:36px;
+	font-weight:600;
+	line-height:1.2;
+	margin: 0px 130px 15px 30px;
+}
+p.explanation2 {
+	font-size:16px;
+	line-height: 21px;
+	margin: 0px 30px 10px 90px;
+}
+span.strong{
+	font-weight:bold;
+	}
+
+/* Hidden text button explanations */
+#noComparison, #upatchComparison, #rorComparison, #deComparison{
+	position:relative;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:italic;
+	font-size:12px;
+	height: 20px;
+	width: 110px;
+	float:left;
+	/*margin-left: calc(12.8% - 55px);
+	margin-right: calc(12% - 55px); */
+	}
+	#noComparison{
+		}
+	#upatchComparison{
+		}
+	#rorComparison{
+		}
+	#deComparison{
+		}
+
+/* boxes */
+.piece2{
+	border-style:double;
+	border-width:thick;
+	border-color:#5c441a;
+	background-color:#fc7;
+	padding: 20px 30px 10px 5px;
+	margin-bottom: 0;
+	background:url(../Pictures/ui/style-00/info-box.gif);
+	background-repeat:repeat;
+	border-top-style:none;
+	}
+.breaker{
+	border-style:solid;
+	border-width:thin;
+	border-color:#333;
+	border-bottom:hidden;
+	margin: 20px 0px 0px 0px;
+	padding: 0px 0px 10px 20px;
+	background-color:#3e291c;
+	border-radius: 12px 12px 0px 0px;
+	}
+#pdfDownlaod {
+	position: relative;
+	left: 700px;
+	top: 8px;
+	width: 140px;
+	height: 0px;
+	margin: 0;
+	clear:none;
+	}
+.piece{
+	border-style:double;
+	border-width:thick;
+	border-color:#5c441a;
+	background-color:#fff;
+	padding: 0px 0px 0px 0px;
+	margin-bottom: 30px;
+	}
+.piece:last-of-type {
+	margin-bottom: 0px;
+	}
+#settings{
+	position: relative;
+	margin: 0px 0px 75px 0px;
+	}	
+.techTreeImage{
+	height: auto;
+	max-width: 830px;
+	min-width: 454px;
+}
+.tech-image{
+	cursor:pointer;
+}
+
+/* Pop up */
+#civPopUpImages{
+	visibility:hidden;
+	height: 100%;
+	width: 100%;
+	position:fixed;
+	z-index: 4;
+	background-color: rgba(0, 0, 0, 1);
+}
+#techTreeImageBig{
+	height: 100%; /*calc(100% - 30px);*/
+	width: 100%;  /* calc(100% - 30px);*/
+	left: 0px;
+	top: 0px;
+	position:fixed;
+	z-index: 5;
+	background-image:url(../Pictures/tech-treesBig/brawl/assyrian.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+#popUpExitButton{
+	position:fixed;
+	z-index: 6;
+	width: 6vw;
+	height: 6vw;
+		min-width:30px;
+		min-height:30px;
+	right: 0;
+	top: 0;
+	cursor:pointer;
+}
+	#popUpExitButtonImage{
+		position:fixed;
+		z-index: 6;
+		width: 4vw;
+		height: 4vw;
+			min-width:25px;
+			min-height:25px;
+		right: 0.5%;
+		top: 1%;
+		background-image:url(../Pictures/buttons/cross.png);
+		background-repeat:no-repeat;
+		background-size:contain;
+		background-position: right 0px top 0px;
+	}
+#popUpPreviousButton{
+	position:fixed;
+	z-index: 6;
+	width: 8vw;
+	height: 6vw;
+	left: 0;
+	top: 46%;
+	cursor:pointer;
+	opacity: 1;
+}
+	#popUpPreviousButtonImage{
+		position:fixed;
+		z-index: 6;
+		width: 4vw;
+		height: 4vw;
+		left: 0.5%;
+		top: 46.25%;
+		background-image:url(../Pictures/buttons/arrowleftLight.png);
+		background-repeat:no-repeat;
+		background-size:contain;
+		background-position:left;
+	}
+#popUpNextButton{
+	position:fixed;
+	z-index: 6;
+	width: 8vw;
+	height: 6vw;
+	right: 0;
+	top: 46%;
+	cursor:pointer;
+}
+	#popUpNextButtonImage{
+		position:fixed;
+		z-index: 6;
+		width: 4vw;
+		height: 4vw;
+		right: 0.5%;
+		top: 46.25%;
+		background-image:url(../Pictures/buttons/arrowRightLight.png);
+		background-repeat:no-repeat;
+		background-size:contain;
+		background-position:right;
+	}
+/*Comparison toggles */
+#techTreeAdditionalInfo{
+	position:fixed;
+	z-index: 6;
+	bottom: 0;
+	right: 0;
+	width:  6vw;
+	height: 6vw;
+	cursor:pointer;
+	}
+	#techTreeAdditionalInfoImage{
+		background-image:url(../Pictures/buttons/circleArrowUp.png);
+		background-repeat:no-repeat;
+		background-size:contain;
+		position:fixed;
+		z-index: 6;
+		bottom: 1%;
+		right: 1%;
+		width: 4vw;
+		height: 4vw;
+		}
+#popUpChangeComarison{
+	position:fixed;
+	z-index: 5;
+	width: 100%;
+	height: 16%;
+	bottom: 0;
+	}
+#leftSideCurve{
+	position:fixed;
+	z-index: 4;
+	width: 25%;
+	height: 15%;
+	bottom: 0;
+	left: 0;
+	background-position: left 0px bottom 0px;
+	background-image:url(../Pictures/buttons/SideBarLeft.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+}	
+#rightSideCurve{
+	position:fixed;
+	z-index: 4;
+	width: 25%;
+	height: 15%;
+	bottom: 0;
+	right: 0;
+	background-position: right 0px bottom 0px;
+	background-image:url(../Pictures/buttons/SideBarRight.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+#popUpNoComparison{
+	position:fixed;
+	z-index: 6;
+	width: 12vw;
+	height: 3vw;
+	bottom: 2%;
+	left: 17%;
+	background-size:contain;
+	background-repeat:repeat;
+	background-image: url(../Pictures/ui/style-03/info-box-dark.gif);
+	border-radius: 2%;
+	border-width: 16px;
+	border-style: solid;
+	border-image: url(../Pictures/ui/style-03/bottom-ui.gif)30 round;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:italic;
+	text-align:center;
+	padding-top: 0.3%;
+	font-size: 20px;
+	cursor:pointer;
+	}
+#popUpComaperedToUP{
+	position:fixed;
+	z-index: 6;
+	width: 12vw;
+	height: 3vw;
+	bottom: 2%;
+	left: 35%;
+	background-size:contain;
+	background-repeat:repeat;
+	background-image: url(../Pictures/ui/style-03/info-box.gif);
+	border-radius: 2%;
+	border-width: 16px;
+	border-style: solid;
+	border-image: url(../Pictures/ui/style-03/bottom-ui.gif)30 round;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:italic;
+	text-align:center;
+	padding-top: 0.3%;
+	font-size: 20px;
+	cursor:pointer;
+	}
+#popUpComaperedToROR{
+	position:fixed;
+	z-index: 6;
+	width: 12vw;
+	height: 3vw;
+	bottom: 2%;
+	left: 53%;
+	background-size:contain;
+	background-repeat:repeat;
+	background-image: url(../Pictures/ui/style-03/info-box.gif);
+	border-radius: 2%;
+	border-width: 16px;
+	border-style: solid;
+	border-image: url(../Pictures/ui/style-03/bottom-ui.gif)30 round;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:italic;
+	text-align:center;
+	padding-top: 0.3%;
+	font-size: 20px;
+	cursor:pointer;
+	}
+#popUpComaperedToDE{
+	position:fixed;
+	z-index: 6;
+	width: 12vw;
+	height: 3vw;
+	bottom: 2%;
+	left: 71%;
+	background-size:contain;
+	background-repeat:repeat;
+	background-image: url(../Pictures/ui/style-03/info-box.gif);
+	border-radius: 2%;
+	border-width: 16px;
+	border-style: solid;
+	border-image: url(../Pictures/ui/style-03/bottom-ui.gif)30 round;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:italic;
+	text-align:center;
+	padding-top: 0.3%;
+	font-size: 20px;
+	cursor:pointer;
+	}
+
+
+/* buttons (not pop up)*/
+	#importantNap, #importantNap2, #importantNap3, #importantNap4, #importantNapBlack, #importantNap2Black, #importantNap3Black, #importantNap4Black{ /* no comparison */
+		height: 45px;
+		width: 55px;
+		position: relative;
+		float:left;
+		/*margin-left: calc(13% - 28px);
+		 margin-right: calc(12% - 28px); */ 
+		background-size: 25px;
+		background-repeat:no-repeat;
+		background-position:center;
+		}
+
+	#importantNap{ /* no comparison */
+		display: none;
+		background-image:url(../Pictures/buttons/not-selected.gif);
+		}
+	#importantNap2{ /* upatch comparison */
+		background-image:url(../Pictures/buttons/not-selected.gif);
+		}
+	#importantNap3{ /* ROR comparison */
+		background-image:url(../Pictures/buttons/not-selected.gif);
+		}
+	#importantNap4{ /* DE comparison */
+		background-image:url(../Pictures/buttons/not-selected.gif);
+		}
+/* after being clicked */
+	#importantNapBlack{ /* no comparison */
+		background-image:url(../Pictures/buttons/pressed.png);
+		}
+	#importantNap2Black{ /* upatch comparison */
+		display: none;
+		background-image:url(../Pictures/buttons/pressed.png);
+		}
+	#importantNap3Black{ /* ROR comparison */
+		display: none;
+		background-image:url(../Pictures/buttons/pressed.png);
+		}
+	#importantNap4Black{ /* ROR comparison */
+		display: none;
+		background-image:url(../Pictures/buttons/pressed.png);
+		}
+				
+/* draging and cliking effects */
+.non-dragable, #pdfDownlaod{
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	}
+.clickable{
+		cursor:pointer;
+		}
+/* Mobile scaling */

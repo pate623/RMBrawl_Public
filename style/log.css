@@ -1,0 +1,520 @@
+/* first box. Calls patch info and has all settings */
+	/* box where all info and settings are shown */
+		.piece2{	
+			border-style:double; 
+			border-width:thick;
+			border-color:#5c441a;
+			background-color:#fc7;
+			padding: 20px 30px 5px 5px;
+			margin-bottom: 0px;
+			padding-bottom: 10px;
+			margin-top: 0px;
+			background:url(../Pictures/ui/style-00/info-box.gif);
+			background-repeat:repeat;
+			border-top-style:none;
+			position: relative;
+			}
+		#settings{
+			position: relative;
+			margin-bottom: 90px;
+			margin-left: 20px;
+			max-width: 870px;
+			width: 90%;
+			}
+		.piece{
+			border-style:double;
+			border-width:thick;
+			border-color:#5c441a;
+			background-color:#fc7;
+			padding: 0px 10px 8px 5px;
+			margin-bottom: 0px;
+			margin-top: 0px;
+			background:url(../Pictures/ui/style-00/info-box.gif);
+			background-repeat:repeat;
+			}
+		.breaker{
+			border-style:solid;
+			border-width:thin;
+			border-color:#333;
+			border-bottom:hidden;
+			margin: 20px 0px 0px 0px;
+			padding: 0px 0px 10px 20px;
+			background-color:#3e291c;
+			border-radius: 12px 12px 0px 0px;
+			background:url(../Pictures/ui/style-00/bottom-ui.gif);
+			background-repeat:repeat;
+			background-size: contain;
+			}
+
+
+.pieceImage{
+	border-style:double;
+	border-width:5px;
+	border-color:#5c441a;
+	background-color:#fc7;
+	padding: 0px;
+	margin: 15px 0px 0px 0px;
+	background:url(../Pictures/ui/style-00/info-box.gif);
+	background-repeat:repeat;
+	}
+
+/* All text inside info boxes */
+	p { /* common text effect across all the texts inside box */
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;	 /*"Minion Pro", 'Times New Roman', Times, serif  */
+		color:#000000;
+		font-style:normal;
+		font-variant:normal;
+		font-weight:normal;
+		page-break-after:auto;
+		page-break-before:auto;
+		text-decoration:none;
+		text-transform:none;
+		orphans:1;
+		widows:1;
+		text-indent:0;
+		text-align:left;
+		}
+	p.starter {
+		font-size:24px;
+		font-weight:600;
+		line-height: 22px;
+		margin: 12px 10px 0px 30px;
+		}
+	p.otsikko {
+		font-size:36px;
+		font-weight:600;
+		line-height:1.2em;
+		margin: 0px 30px 24px 30px;
+		padding-right: 20px;
+		}
+	p.explanation2 {
+		font-size:16px;
+		line-height: normal;
+		margin: 0px 100px 5px 90px;
+		}
+	/* first row text */
+		p.header {
+			font-size:20px;
+			line-height:1.2em;
+			margin: 16px 30px 0px 10px;
+			}
+		p.text {
+			color:#444;
+			font-size:16px;
+			line-height:16px;
+			margin: 0px 30px 0px 85px;
+			}
+	/*second row tex */	
+		p.header2 {
+			color:#000000;
+			font-size:15px;
+			font-weight:600;
+			line-height:0.85em;
+			margin: 7px 30px 0px 105px;
+			}
+		p.text2 {
+			color:#444;
+			font-size:14px;
+			line-height:15px;
+			margin: 5px 30px 0px 125px;
+			}
+	/* comments*/	
+		p.comment {
+			font-size:14px;
+			line-height: 16px;
+			margin: 0px 0px 0px 100px;
+			padding-top: 3px;
+			}
+		p.comment2 {
+			font-size:14px;
+			line-height: 16px;
+			margin: 0px 0px 0px 160px;
+			padding-top: 0px;
+			}
+#notesPDF{
+	position: absolute;
+	left: 755px;
+	top: 32px;
+	height: 35px;
+	width: 35px;
+	margin: 0;
+		user-drag: none; 
+		user-select: none;
+		-moz-user-select: none;
+		-webkit-user-drag: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+#colorBlindRG{
+	position: absolute;
+	left: 775px;
+	top: 32px;
+	height: 35px;
+	width: 35px;
+	margin: 0;
+		cursor:pointer;
+		user-select: none;
+	}
+	/*text colors and other extra character effects*/
+		span.buff {
+			color:#494;
+			}
+		span.nerf {
+			color:#d24; /* d2232a - d22 - d24 */
+			}
+		span.white {
+			color:#FFF;
+			text-shadow: 1px 1px #000;
+			}
+		span.dark {
+			color:#000;
+			}
+		span.blue {
+			color:#03C;
+			}
+		span.removed {
+			text-decoration-line: line-through;
+			}
+		span.fade {
+			color:#666;
+			}
+		span.grey {
+			color:#999;
+			}
+
+			/* Hidden text toggling buttons */
+				/* Common rules */
+				#importantNap, #importantNap2, #importantNap3, #importantNapBlack, #importantNap2Black, #importantNap3Black{
+						width: 55px;
+						height: 45px;
+						position: absolute;
+						top: 25px;
+						background-size: 25px;
+						background-repeat:no-repeat;
+						background-position:center;
+						}
+				/*spceific rules */
+					#importantNap{
+						left: 460px;
+						background-image:url(../Pictures/buttons/not-selected.gif);
+						}
+					#importantNap2{
+						left: 290px;
+						background-image:url(../Pictures/buttons/not-selected.gif);
+						}
+					#importantNap3{
+						display: none;
+						left: 120px;
+						background-image:url(../Pictures/buttons/not-selected.gif);
+						}
+				/* when hoovered over clickable buttons 
+					#importantNap:hover{
+						background-image:url(../Pictures/buttons/selected.gif);
+						}
+					#importantNap2:hover{
+						background-image:url(../Pictures/buttons/selected.gif);
+						}
+					#importantNap3:hover{
+						background-image:url(../Pictures/buttons/selected.gif);
+						} */
+				/* after being clicked */
+					#importantNapBlack{
+						display: none;
+						left: 460px;
+						background-image:url(../Pictures/buttons/pressed.png);
+						}
+					#importantNap2Black{
+						display: none;
+						left: 290px;
+						background-image:url(../Pictures/buttons/pressed.png);
+						}
+					#importantNap3Black{
+						left: 120px;
+						top: 25px;
+						background-image:url(../Pictures/buttons/pressed.png);
+						}
+				/* Comment toggling */
+					#commentdisabled{
+						display: none;
+						position: absolute;
+						left: 718px;
+						top: 45px;
+						}
+					#commentenabled{
+						position: absolute;
+						left: 718px;
+						top: 45px;
+						}	
+				/* Hidden text button explanations */
+					/* Common rules */
+						#important, #relevant, #all, #comment{
+							position:absolute;
+							width: 100px;
+							height: 20px;
+							text-align:center;
+							font-family:Arial, Helvetica, sans-serif;
+							font-style:italic;
+							font-size:12px;
+							}
+					/*specific rules */
+						#important{
+							left: 436px;
+							top: 65px;
+							}
+						#relevant{
+							left: 268px;
+							top: 65px;
+							}
+						#all{
+							left: 97px;
+							top: 65px;
+							}
+						#comment{
+							left: 695px;
+							top:5px;
+							height:40px;
+							font-style:italic;
+							font-size:14px;
+							}
+					/* Hidden text in patch notes*/
+						important-1{
+							}
+						important-2{
+							}
+						important-3{
+							}
+						important-4{
+							}	
+		/* Toggling inside secondary headers comments */
+			#commentdisabled-worker{
+				display:none;
+				}
+			#commentdisabled-towers{
+				display:none;
+				}
+			#commentdisabled-market{
+				display:none;
+				}
+			#commentdisabled-tool{
+				display:none;
+				}
+			#commentdisabled-bronze{
+				display:none;
+				}
+			#commentdisabled-iron{
+				display:none;
+				}
+			#commentdisabled-others{
+				display:none;
+				}
+			#commentdisabled-civs{
+				display:none;
+				}
+			#commentdisabled-bugs{
+				display:none;
+				}
+			#commentdisabled-siege{
+				display:none;
+				}	
+			#commentdisabled-meta{
+				display:none;
+				}	
+			#commentdisabled-newUnits{
+				display:none;
+				}	
+	/* Toggling inside secondary headers information */
+		/* Workers */
+			#moreinfo-worker-middle{
+				display:none;
+				}
+			#lessinfo-worker-middle{
+				display:none;
+				}
+			#moreinfo-worker-least{
+				display:none;
+				}
+			#worker-least{
+				display:none;
+				}
+		/* market */
+			#moreinfo-market-middle{
+				display:none;
+				}
+			#lessinfo-market-middle{
+				display:none;
+				}
+			#moreinfo-market-least{
+				display:none;
+				}
+			#market-least{
+				display:none;
+				}
+		/* Towers */	
+			#moreinfo-towers-middle{
+				display:none;
+				}
+			#lessinfo-towers-middle{
+				display:none;
+				}
+			#moreinfo-towers-least{
+				display:none;
+				}
+			#towers-least{
+				display:none;
+				}
+		/* tool */	
+			#moreinfo-tool-middle{
+				display:none;
+				}
+			#lessinfo-tool-middle{
+				display:none;
+				}
+			#moreinfo-tool-least{
+				display:none;
+				}
+			#tool-least{
+				display:none;
+				}
+		/* bronze */	
+			#moreinfo-bronze-middle{
+				display:none;
+				}
+			#lessinfo-bronze-middle{
+				display:none;
+				}
+			#moreinfo-bronze-least{
+				display:none;
+				}
+			#bronze-least{
+				display:none;
+				}
+		/* iron */	
+			#moreinfo-iron-middle{
+				display:none;
+				}
+			#lessinfo-iron-middle{
+				display:none;
+				}
+			#moreinfo-iron-least{
+				display:none;
+				}
+			#iron-least{
+				display:none;
+				}
+		/* others */	
+			#moreinfo-others-middle{
+				display:none;
+				}
+			#lessinfo-others-middle{
+				display:none;
+				}
+			#moreinfo-others-least{
+				display:none;
+				}
+			#others-least{
+				display:none;
+				}
+		/* civ */	
+			#moreinfo-civ-middle{
+				display:none;
+				}
+			#lessinfo-civ-middle{
+				display:none;
+				}
+			#moreinfo-civ-least{
+				display:none;
+				}
+			#civ-least{
+				display:none;
+				}
+		/* siege */	
+			#moreinfo-siege-middle{
+				display:none;
+				}
+			#lessinfo-siege-middle{
+				display:none;
+				}
+			#moreinfo-siege-least{
+				display:none;
+				}
+			#siege-least{
+				display:none;
+				}
+		/* meta */	
+			#moreinfo-meta-middle{
+				display:none;
+				}
+			#lessinfo-meta-middle{
+				display:none;
+				}
+			#moreinfo-meta-least{
+				display:none;
+				}
+			#meta-least{
+				display:none;
+				}
+		/* newUnits */	
+			#moreinfo-newUnits-middle{
+				display:none;
+				}
+			#lessinfo-newUnits-middle{
+				display:none;
+				}
+			#moreinfo-newUnits-least{
+				display:none;
+				}
+			#newUnits-least{
+				display:none;
+				}
+/* effects */
+	.clickable{
+		cursor:pointer;
+		}
+	/* non dragable effects */
+		img{
+			/*user-select: none; */
+			}
+		.non-dragable{ 
+			user-select: none;
+			}
+
+/* two image comparison slider */
+.img-comp-container {
+  position: relative;
+  height: 600px; /*should be the same height as the images*/
+  margin-left: 162px; /* use relative to make sure mobile is supported */
+  margin-top: 10px;
+  min-width: 447px;
+  min-height: 534px;
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+  min-width: 447px;
+  min-height: 534px;
+}
+
+.img-comp-slider {
+	position: absolute;
+	z-index: 9;
+	cursor: ew-resize;
+	/*set the appearance of the slider*/
+	width: 55px;
+	height: 600px;
+	background:url(../Pictures/patchNotes/colorComparison/middle-button.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:70%;
+	opacity: 0.8;
+	/*background-color: #000;
+	border-radius: 50%;*/
+}
+

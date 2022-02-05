@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=500, initial-scale=0.55">
+<link rel="stylesheet" href="style/style.css"/>
+<link rel="stylesheet" href="style/header.css"/>
+<link rel="stylesheet" href="style/footer.css"/>
+<link rel="stylesheet" href="style/patchNotes.css"/>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="script/headerScripts.js"></script>
+<script type="text/javascript" src="script/notes.js"></script>
+<script src="script/mobileHeaderScroll.js"></script>
+<script src="script/AllAffectingMobileScaling.js"></script>
+<title>Patch 1.7 Notes</title>
+<link rel="shortcut icon" href="Pictures/favicon/r+m.png" />
+</head>
+<body>
+<main>
+<header>
+	<div id="desktopHeaderInfo">
+		<script src="script/headerText.js"></script>
+	</div>
+	<div id="mobileHeaderInfo">
+		<script src="script/headerMobileText.js"></script>
+	</div>
+</header>
+<article>
+<div id="container">
+	<div id= "content">
+		<!-- Release notes -->
+            <div class="piece2">
+        		<div id="date">19 June 2019</div>
+				<div id="notesPDF"><a href="downloads/patchNotes/patchNotes1,7.pdf" target="_blank"><img src="Pictures/buttons/PDF-view.png" width="108" height="35" alt="View PDF" title="View patch notes as PDF" /></a></div>
+                <p class="otsikko">RM Brawl 1.7 Patch Notes</p>
+					<p class="explanation2">Multiple reverts and changes to match AOE:DE</p>
+					<br><p class="explanation2">Change-logs have been updated to match patch 1.7</p>
+					<p class="explanation2"><a href="1,0a.html">Check this</a> to see what all has changed since AOE Rise of Rome 1.0a</p>
+					<p class="explanation2"><a href="upatch.html">Check this</a> to see what all has changed since UPatch 1.1 R4</p>
+			</div>
+		<!-- Unit and technology changes -->    
+        	<div class="breaker">
+            	<p class="otsikko3"><span class="white">Villagers and economy</span></p>
+            </div>
+			<div class="piece">
+				<p class="explanation2">Linen cloth had an expensive build patch but wasn't offering enough value pre 15 min Tool age.</p>
+			</div>
+			<div class="piece">
+            	<p class="name2"> <img src="Pictures/icons/linenCloth.gif" width="35" height="35" alt="Linen Cloth" Hspace="16px" align="left"/>Linen Cloth</p>
+					<p class="info2"><span class="buff">Armor base melee</span> +<span class="removed">1</span> -&gt;<span class="dark"> +2</span></p>
+								
+				<br><p class="name2"> <img src="Pictures/icons/akinaka.gif" width="35" height="35" alt="Aegean Dagger" Hspace="16px" align="left"/>Akinaka -> Aegean Dagger</p>
+					<p class="info2"><span class="buff">Bonus damage </span> +<span class="removed">2</span> -&gt;<span class="dark"> +1</span></p>
+					<p class="info2"><span class="nerf">Bonus hit points</span> +<span class="removed">20</span> -&gt;<span class="dark"> +15</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/jihad.gif" width="35" height="35" alt="Jihad" Hspace="16px" align="left"/>Jihad</p>
+					<p class="info2"><span class="nerf">Villager bonus hit points</span> +<span class="removed">35</span> -&gt;<span class="dark"> +15</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/pottery.gif" width="35" height="35" alt="Pottery" Hspace="16px" align="left"/>Pottery</p>
+					<p class="info2"><span class="buff">Food cost</span> <span class="removed">150</span> -&gt;<span class="dark"> 130</span></p>
+					<p class="info2"><span class="buff">Foragers work rate</span> +<span class="removed">20%</span> -&gt;<span class="dark"> +30%</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/hunter.gif" width="35" height="35" alt="Hunter" Hspace="16px" align="left"/>Hunter</p>
+					<p class="info2"><span class="nerf">Work rate</span> <span class="removed">0.486</span> -&gt;<span class="dark"> 0.4725</span></p>
+			</div>
+
+			<div class="breaker">
+            	<p class="otsikko3"><span class="white">Towers</span></p>
+            </div>
+			<div class="piece">
+				<p class="explanation2">Using towers without any army was too passive and simple way to counter rushes.</p>
+			</div>
+			<div class="piece">
+				<p class="name2"> <img src="Pictures/icons/WatchTowerUpgrade.gif" width="35" height="35" alt="Watch tower" Hspace="16px" align="left"/>Watch tower (research)</p>
+					<p class="info2"><span class="nerf">Research time</span> <span class="removed">10s</span> -&gt;<span class="dark"> 80s</span></p>
+			
+				<br><p class="name2"> <img src="Pictures/icons/sentryTowerUpgrade.gif" width="35" height="35" alt="Sentry tower" Hspace="16px" align="left"/>Sentry tower (research)</p>
+					<p class="info2"><span class="nerf">Research time</span> <span class="removed">30s</span> -&gt;<span class="+dark"> 100s</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/GuardTowerUpgrade.gif" width="35" height="35" alt="Guard tower" Hspace="16px" align="left"/>Guard tower (research)</p>
+					<p class="info2"><span class="nerf">Research time</span> <span class="removed">75s</span> -&gt;<span class="dark"> 120s</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/ballistaTower.gif" width="35" height="35" alt="Ballista tower" Hspace="16px" align="left"/>Ballista tower </p>
+					<p class="info2"><span class="nerf">Attack base pierce</span> <span class="removed">20</span> -&gt;<span class="dark"> 11</span></p>
+					<p class="info2"><span class="buff">Reload time</span> <span class="removed">3.0</span> -&gt;<span class="dark"> 2.0</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/ballistaTowerUpgrade.gif" width="35" height="35" alt="Ballista tower" Hspace="16px" align="left"/>Ballista tower (research)</p>
+					<p class="info2"><span class="buff">Stone cost</span> <span class="removed">750</span> -&gt;<span class="dark"> 600</span></p>
+					<p class="info2"><span class="buff">Food cost</span> <span class="removed">1800</span> -&gt;<span class="dark"> 750</span></p>
+				
+			</div>
+
+			<div class="breaker">
+            	<p class="otsikko3"><span class="white">Bronze Age units</span></p>
+            </div>
+			<div class="piece">
+				<p class="explanation2">Now Cavalry doesn't need to rely so heavily on the firs few minutest of Bronze Age to deal it's damage.</p>
+			</div>
+			<div class="piece">
+				<p class="name2"> <img src="Pictures/icons/improvedBowman.gif" width="35" height="35" alt="Improved Bowman" Hspace="16px" align="left"/>Improved Bow (research)</p>
+					<p class="info2"><span class="nerf">Research time</span> <span class="removed">45s</span> -&gt;<span class="dark"> 60s</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/chariotArcher.gif" width="35" height="35" alt="Chariot Archer" Hspace="16px" align="left"/>Chariot Archer</p>
+					<p class="info2"><span class="nerf">Training time</span> <span class="removed">46s</span> -&gt;<span class="dark"> 55s</span></p>
+					<p class="info2"><span class="buff">Hit points</span> <span class="removed">63</span> -&gt;<span class="dark"> 70</span><span class="blue"> (revert)</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/cavalry.gif" width="35" height="35" alt="Cavalry" Hspace="16px" align="left"/>Cavalry<span class="blue"> (revert)</span></p>
+					<p class="info2"><span class="buff">Hit points</span> <span class="removed">140</span> -&gt;<span class="dark"> 150</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/priest.gif" width="35" height="35" alt="Priest" Hspace="16px" align="left"/>Priest<span class="blue"> (revert)</span></p>
+					<p class="info2"><span class="buff">Training time</span> <span class="removed">90s</span> -&gt;<span class="dark"> 50s</span></p>
+					<p class="info2"><span class="nerf">Gold cost</span> <span class="removed">90</span> -&gt;<span class="dark"> 125</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/temple.gif" width="35" height="35" alt="Temple" Hspace="16px" align="left"/>Temple<span class="blue"> (revert)</span></p>
+					<p class="info2"><span class="nerf">Wood cost</span> <span class="removed">150</span> -&gt;<span class="dark"> 200</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/logistics.gif" width="35" height="35" alt="logistics" Hspace="16px" align="left"/>logistics<span class="blue"> (partial revert)</span></p>
+					<p class="info2"><span class="buff">Food cost</span> <span class="removed">220</span> -&gt;<span class="dark"> 180</span></p>
+					<p class="info2"><span class="buff">Gold cost</span> <span class="removed">140</span> -&gt;<span class="dark"> 100</span></p>
+			</div>
+			
+			<div class="breaker">
+            	<p class="otsikko3"><span class="white">Iron Age units</span></p>
+            </div>
+			<div class="piece">
+				<p class="explanation2">Heavy Cavalry wasn't strong enough.<br>Now Armored Elephant is heavier tied to a late game</p>
+			</div>
+			<div class="piece">
+				<p class="name2"> <img src="Pictures/icons/martyrdom.gif" width="35" height="35" alt="Martyrdom" Hspace="16px" align="left"/>Martyrdom</p>
+					<p class="info2"><span class="buff">Gold cost</span> <span class="removed">600</span> -&gt;<span class="dark"> 400</span></p>
+					<p class="info2"><span class="buff">Research time</span> <span class="removed">150s</span> -&gt;<span class="dark"> 100s</span></p>
+				
+				
+				<br><p class="name2"> <img src="Pictures/icons/heavyCavalry.gif" width="35" height="35" alt="Heavy Cavalry" Hspace="16px" align="left"/>Heavy Cavalry</p>
+					<p class="info2"><span class="buff">Hit points</span> <span class="removed">150</span> -&gt;<span class="dark"> 165</span></p>
+					<p class="info2"><span class="buff">Attack base melee</span> <span class="removed">10</span> -&gt;<span class="dark"> 11</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/heavyCavalry.gif" width="35" height="35" alt="Heavy Cavalry" Hspace="16px" align="left"/>Heavy Cavalry (research)</p>
+					<p class="info2"><span class="buff">Research time</span> <span class="removed">90s</span> -&gt;<span class="dark"> 75s</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/elephantArcher.gif" width="35" height="35" alt="Elephant Archer" Hspace="16px" align="left"/>Elephant Archer</p>
+					<p class="info2"><span class="nerf">Reload time</span> <span class="removed">1.3</span> -&gt;<span class="dark"> 1.5</span></p>
+					<p class="info2"><span class="buff">Attack base pierce</span> <span class="removed">5</span> -&gt;<span class="dark"> 6</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/armoredElephant.gif" width="35" height="35" alt="Armored Elephant research" Hspace="16px" align="left"/>Armored Elephant (research)</p>
+					<p class="info2"><span class="buff">Research time</span> <span class="removed">200s</span> -&gt;<span class="dark"> 150s</span><span class="blue"> (revert)</span></p>
+					<p class="info2"><span class="blue">Requirement</span> <span class="removed">Iron Shield</span> -&gt;<span class="dark"> Coinage</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/ironShield.gif" width="35" height="35" alt="Iron Shield" Hspace="16px" align="left"/>Iron Shield<span class="blue"> (revert)</span></p>
+					<p class="info2"><span class="nerf">Research time</span> <span class="removed">60s</span> -&gt;<span class="dark"> 75s</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/towerShield.gif" width="35" height="35" alt="Tower Shield" Hspace="16px" align="left"/>Tower Shield<span class="blue"> (revert)</span></p>
+					<p class="info2"><span class="nerf">Research time</span> <span class="removed">75s</span> -&gt;<span class="dark"> 100s</span></p>
+					<p class="info2"><span class="nerf">Food cost</span> <span class="removed">220</span> -&gt;<span class="dark"> 250</span></p>
+					<p class="info2"><span class="nerf">Gold cost</span> <span class="removed">340</span> -&gt;<span class="dark"> 400</span></p>
+				
+			</div>
+			<div class="breaker">
+            	<p class="otsikko3"><span class="white">Water and siege units</span></p>
+            </div>
+			<div class="piece">
+				<p class="explanation2">Alchemy now grants meaningful bonuses to siege units, towers and ships making it a good technology to balance out civilizations.</p>
+			</div>
+			<div class="piece">
+				<p class="name2"> <img src="Pictures/icons/scoutShip.gif" width="35" height="35" alt="Scout ship, War Galley and Trireme" Hspace="16px" align="left"/>Scout ship, War Galley & Trireme</p>
+					<p class="info2"><span class="nerf">Armor slinger</span> <span class="removed">none</span> -&gt; <span class="dark">-2</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/trireme.gif" width="35" height="35" alt="Trireme" Hspace="16px" align="left"/>Trireme</p>
+					<p class="info2"><span class="nerf">Attack base pierce</span> <span class="removed">12</span> -&gt;<span class="dark"> 11</span></p>
+					<p class="info2"><span class="nerf">Reload time</span> <span class="removed">1.98</span> -&gt;<span class="dark"> 2.0</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/stoneThrower.gif" width="35" height="35" alt="Stone Thrower, Catapult and Heavy Catapult" Hspace="16px" align="left"/>Stone Thrower, Catapult & Heavy Catapult</p>
+					<p class="info2"><span class="buff">Relaod time</span> <span class="removed">5.75</span> -&gt;<span class="dark"> 5.0</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/catapultTrireme.gif" width="35" height="35" alt="Catapult Trireme and Juggernaught" Hspace="16px" align="left"/>Catapult Trireme & Juggernaught</p>
+					<p class="info2"><span class="buff">Relaod time</span> <span class="removed">5.6</span> -&gt;<span class="dark"> 5.0</span></p>
+					<p class="info2"><span class="nerf">Attack buildings</span> <span class="removed">35</span> -&gt;<span class="dark"> -45</span></p>
+					<p class="info2"><span class="buff">Attack base melee</span> <span class="removed">none</span> -&gt;<span class="dark"> 40</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/helepolis.gif" width="35" height="35" alt="Helepolis" Hspace="16px" align="left"/>Helepolis</p>
+					<p class="info2"><span class="nerf">Relaod time</span> <span class="removed">1.98</span> -&gt;<span class="dark"> 2.0</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/alchemy.gif" width="35" height="35" alt="Alchemy" Hspace="16px" align="left"/>Alchemy</p>
+					<p class="info2"><span class="buff">Trireme & Ballista Tower</span><span class="dark"> bonus base pierce damage</span> +<span class="removed">1</span> -&gt;<span class="dark"> +2</span></p>
+					<p class="info2"><span class="buff">All catapults</span><span class="dark"> bonus base melee damage</span> +<span class="removed">1</span> -&gt;<span class="dark"> +2</span></p>
+					<p class="info2"><span class="buff">All siege ships</span><span class="dark"> bonus base melee damage</span> <span class="removed">none</span> -&gt;<span class="dark"> +2</span></p>
+					<p class="info2"><span class="nerf">All siege ships</span><span class="dark"> bonus building damage</span> +<span class="removed">1</span> -&gt;<span class="dark"> none</span></p>
+							
+			</div>
+			
+			<div class="breaker">
+            	<p class="otsikko3"><span class="white">Attack bonuses</span></p>
+            </div>
+			<div class="piece">
+				<p class="explanation2">All chariot units were too strong counters to Priest.</p>
+			</div>
+			<div class="piece">
+				<p class="name2"> <img src="Pictures/icons/priest.gif" width="35" height="35" alt="Priest" Hspace="16px" align="left"/>Priest</p>
+					<p class="info2"><span class="buff">Armor Priest</span> -<span class="removed">9</span> -&gt;<span class="dark"> -5</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/chariotArcher.gif" width="35" height="35" alt="Chariot Archer" Hspace="16px" align="left"/>Chariot Archer</p>
+					<p class="info2"><span class="nerf">Attack Priest</span> -<span class="removed">5</span> -&gt;<span class="dark"> -3 (4 -> 2)</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/chariot.gif" width="35" height="35" alt="Chariot" Hspace="16px" align="left"/>Chariot</p>
+					<p class="info2"><span class="nerf">Attack Priest</span> -<span class="removed">2</span> -&gt;<span class="dark"> -1 (7 -> 4)</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/scytheChariot.gif" width="35" height="35" alt="Scythe Chariot" Hspace="16px" align="left"/>Scythe Chariot</p>
+					<p class="info2"><span class="nerf">Attack Priest</span> <span class="removed">0</span> -&gt;<span class="dark"> 0 (9 -> 5)</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/allSwordsmen.gif" width="35" height="35" alt="Clubman, Axeman, Short Swordsman, Broad Swordsman, Long Swordsman and Legion" Hspace="16px" align="left"/>Clubman, Axeman, Short Swordsman, Broad Swordsman, Long Swordsman & Legion</p>
+					<p class="info2"><span class="nerf">Armor infantry</span> -<span class="removed">9</span> -&gt;<span class="dark"> -12</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/cavalry.gif" width="35" height="35" alt="Cavalry and Heavy Cavalryt" Hspace="16px" align="left"/>Cavalry & Heavy Cavalry</p>
+					<p class="info2"><span class="buff">Attack infantry</span> -<span class="removed">3</span> -&gt;<span class="dark"> -4 (6 -> 8)</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/cataphract.gif" width="35" height="35" alt="Cataphract" Hspace="16px" align="left"/>Cataphract</p>
+					<p class="info2"><span class="buff">Attack infantry</span> <span class="removed">0</span> -&gt;<span class="dark"> 0 (9 -> 12)</span></p>
+			</div>
+			
+			<div class="breaker">
+            	<p class="otsikko3"><span class="white">Other changes</span></p>
+            </div>
+			<div class="piece">
+				<p class="explanation2">Slingers were too weak.<br> Now Hill Country is better map for beginners.</p>
+			</div>
+			<div class="piece">
+            	<p class="name2"> <img src="Pictures/icons/slinger.gif" width="35" height="35" alt="Slinger" Hspace="16px" align="left"/>Slinger</p>
+            		<p class="info2"><span class="buff">Stone cost</span> <span class="removed">20</span> -&gt;<span class="dark"> 15</span></p>
+					<p class="info2"><span class="nerf">Food cost</span> <span class="removed">40</span> -&gt;<span class="dark"> 45</span></p>
+					<p class="info2"><span class="buff">Reload time</span> <span class="removed">1.75</span> -&gt;<span class="dark"> 1.7</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/hillCountry.gif" width="35" height="35" alt="Hill Country" Hspace="16px" align="left"/>Hill Country</p>
+					<p class="info2"><span class="buff">Player berry bushes</span> <span class="removed">6-8</span> -&gt;<span class="dark"> 8</span></p>
+					<p class="info2"><span class="buff">Map berry bushes</span> <span class="removed">5-7</span> -&gt;<span class="dark"> 6-8</span></p>
+					<p class="info2"><span class="buff">Player Gazelle pack</span> <span class="removed">6</span> -&gt;<span class="dark"> 8</span></p>
+					<p class="info2"><span class="buff">New elephant spawn</span> <span class="dark">Distance from TC 12-18</span></p>
+				
+				<br><p class="name2"> <img src="Pictures/icons/fish.gif" width="35" height="35" alt="Fish Whale" Hspace="16px" align="left"/>Fish whale</p>
+					<p class="info2"><span class="blue">Effective Food amount</span> <span class="removed">300</span> -&gt;<span class="dark"> 300</span></p>
+					<p class="info2"><span class="nerf">Work rate</span> <span class="removed">0.48</span> -&gt;<span class="dark"> 0.4 </span><span class="blue"> (revert)</span></p>
+			</div>
+			
+		<!-- Civilizations -->    
+         		<div class="breaker"><p class="otsikko3"><span class="white">Civilizations</span></p>
+                </div>
+					<div class="piece"><p class="explanation">Reverting all unnecessary or little affecting changes.</p>
+                    </div>
+						<div class="piece">
+							<p class="name2">All civilizations</p>
+								<p class="info2"><span class="nerf">Stone on start </span ><span class="removed">150</span> -&gt;<span class="dark"> 120</p>
+							
+							<br><p class="name2">Assyrian</p>
+								<p class="info2"><span class="nerf">Technologies disabled</span><span class="dark"> Improved bow, Alchemy</span></p>
+								<p class="info2"><span class="buff">Technology enabled</span><span class="dark"> Afterlife</span></p>
+							
+							<br><p class="name2">Babylonian</p>
+								<p class="info2"><span class="nerf">Bonus </span><span class="dark"> Towers have </span> +<span class="removed">75% HP</span> -&gt;<span class="dark"> +40% HP</p>
+						
+							<br><p class="name2">Choson</p>
+								<p class="info2"><span class="nerf">Technology disabled</span><span class="dark"> Alchemy</span></p>
+								<p class="info2"><span class="buff">Technology enabled</span><span class="dark"> Catapult Trireme</span></p>
+							
+							<br><p class="name2">Egyptian</p>
+								<p class="info2"><span class="buff">Technology enabled</span><span class="dark"> Catapult</span></p>
+						
+							<br><p class="name2">Greek</p>
+								<p class="info2"><span class="nerf">Bonus removed</span><span class="dark"> Alchemy available at Bronze Age</span></p>
+								<p class="info2"><span class="nerf">Technology disabled</span><span class="dark"> improved Bow</span></p>
+								<p class="info2"><span class="buff">Technology enabled</span><span class="dark"> Catapult Trireme</span></p>
+						
+							<br><p class="name2">Hittite</p>
+								<p class="info2"><span class="buff">Bonus removed</span> <span class="dark">All chariots have -25% HP</p>
+								<p class="info2"><span class="blue">Bonus</span> <span class="dark">All chariots dismount on death: dismounts into a new unit (Infantry class, hero Jason skin).<br>
+This unit has 5/7 AD, 0/2 armor and 40/60 HP (Bronze/Iron age respectively).</p>
+								<p class="info2"><span class="buff">Technologies enabled </span><span class="dark">Architecture, Iron Shield, Tower Shield</span></p>
+							
+							<br><p class="name2">Macedonian</p>
+								<p class="info2"><span class="nerf">Technology disabled</span><span class="dark"> Armored Elephant</span></p>
+								<p class="info2"><span class="buff">Technology enabled</span><span class="dark"> Catapult</span></p>
+						
+							<br><p class="name2">Minoan</p>
+								<p class="info2"><span class="nerf">Technologies disabled</span><span class="dark"> Astrology, Mystics, Alchemy</span></p>
+								<p class="info2"><span class="buff">Technologies enabled</span><span class="dark"> Iron Shield, Tower Shield, Trireme, Siegecraft, Heavy Catapult</span></p>
+								<p class="info2"><span class="nerf">Bonus </span><span class="dark"> Ships cost </span> -<span class="removed">20%</span> -&gt;<span class="dark"> -15%</p>
+						
+							<br><p class="name2">Palmyra</p>
+								<p class="info2"><span class="nerf">Technologies disabled </span><span class="dark"> Ballistics, Alchemy</span></p>
+								<p class="info2"><span class="buff">Technologies enabled </span><span class="dark">Iron Shield, Guard Tower, Jihad</span></p>
+						
+							<br><p class="name2">Persian</p>
+								<p class="info2"><span class="nerf">Bonus </span><span class="dark"> Hunted animals grant </span> +<span class="removed">75% more food</span> -&gt;<span class="dark"> +40% more food</p>
+								<p class="info2"><span class="nerf">Technology disabled </span><span class="dark">Alchemy</span></p>
+						
+							<br><p class="name2">Phoenician</p>
+								<p class="info2"><span class="nerf">Bonus removed</span><span class="dark"> Catapult Trireme and Juggernaught fire 40% faster</span></p>
+								<p class="info2"><span class="buff">New Bonus</span><span class="dark"> All Temple technologies give bonus HP to Priests (Max 82 HP)</span></p>
+								<p class="info2"><span class="nerf">Technologies disabled </span><span class="dark">Catapult Trireme, Juggernaught, Ballistics</span></p>
+								<p class="info2"><span class="buff">Technologies enabled </span><span class="dark">Guard Tower</span></p>
+						
+							<br><p class="name2">Roman</p>
+								<p class="info2"><span class="nerf">Bonus </span><span class="dark"> Towers cost </span> -<span class="removed">40%</span> -&gt; <span class="dark">-30%</p>
+								<p class="info2"><span class="nerf">New bonus </span><span class="dark"> Town Centers cost reduction -15% takes effect after Tool Age</span></p>
+								<p class="info2"><span class="nerf">Technologies disabled </span><span class="dark">Alchemy, Irrigation</span></p>
+								<p class="info2"><span class="buff">Technology enabled </span><span class="dark">Jihad</span></p>
+						
+							<br><p class="name2">Shang</p>
+								<p class="info2"><span class="buff">Technologies enabled </span><span class="dark">Guard Tower, Aristocracy</span></p>
+						
+							<br><p class="name2">Sumerian</p>
+								<p class="info2"><span class="nerf">Bonus </span><span class="dark"> Farms have </span> +<span class="removed">125 food</span> -&gt; <span class="dark">+75 food</p>
+								<p class="info2"><span class="nerf">Technologies disabled </span><span class="dark">Bronze Shield, Coinage, Fanaticism, Legion, Alchemy</span></p>
+								<p class="info2"><span class="buff">Technologies enabled </span><span class="dark">Aristocracy, Centurion</span></p>
+						
+							<br><p class="name2">Yamato</p>
+								<p class="info2"><span class="buff">Technology enabled </span><span class="dark">Architecture</span></p>
+						
+						
+	  					</div>
+		<!-- bug fixes -->    
+         		<div class="breaker"><p class="otsikko3"><span class="white"> Bug fixes </span></p>
+                </div>
+						<div class="piece">
+							<p class="name2"> <img src="Pictures/icons/farm.gif" width="35" height="35" alt="writing" Hspace="16px" align="left"/>Shang</p>
+								<p class="info2"><span class="dark">Shang had unintended +75 food bonus for farms.</span></p> 						
+	  					</div>
+	</div> <!-- Content --> 
+</div><!-- Container --> 
+</article>
+<footer>
+	<script src="script/footerText.js"></script><!-- footer scripted -->
+</footer>
+</main>
+</body>
+</html>

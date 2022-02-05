@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=500, initial-scale=0.55">
+<link rel="stylesheet" href="style/style.css"/>
+<link rel="stylesheet" href="style/header.css"/>
+<link rel="stylesheet" href="style/footer.css"/>
+<link rel="stylesheet" href="style/home.css"/>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="script/headerScripts.js"></script>
+<script src="script/mobileHeaderScroll.js"></script>
+<script src="script/AllAffectingMobileScaling.js"></script>
+<title>404 page not found</title>
+<link rel="shortcut icon" href="Pictures/favicon/r+m.png" />
+</head>
+<body>
+<main>
+<header>
+	<div id="desktopHeaderInfo">
+		<script src="script/headerText.js"></script>
+	</div>
+	<div id="mobileHeaderInfo">
+		<script src="script/headerMobileText.js"></script>
+	</div>
+</header>
+<article>
+<div id="container">
+	<div id= "content">
+		<div class="piece">
+			<p class="otsikko">
+        	Error 404 <br/>
+        	Page not found
+        	</p>
+				<p class="explanation2">
+        		<center><img src="Pictures/others/page-not-found.png" width="500" height="251" alt="page not found"id="notFoundImg" /></center>
+				</p>
+		</div>
+	</div> <!-- end of content -->
+</div> <!-- end of container --> 
+</article>
+<footer>
+	<script src="script/footerText.js"></script><!-- footer scripted -->
+</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,25 @@
+#importantNap{ /* no comparison */
+	display: block;
+	}
+#importantNap2{ /* upatch comparison */
+	display: block;
+	}
+#importantNap3{ /* ROR comparison */
+	display: none;
+	}
+/* after being clicked */
+#importantNapBlack{ /* no comparison */
+	display: none;
+	}
+#importantNap2Black{ /* upatch comparison */
+	display: none;
+	}
+#importantNap3Black{ /* ROR comparison */
+	display: block;
+	}
+#popUpNoComparison{
+	background-image: url(../Pictures/ui/style-03/info-box.gif);
+}
+#popUpComaperedToROR{
+	background-image: url(../Pictures/ui/style-03/info-box-dark.gif);
+}

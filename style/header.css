@@ -1,0 +1,306 @@
+/* General Link effects  */
+		.navbar a {
+			float: left;
+			font-family:Arial, Helvetica, sans-serif;	
+			font-size: 16px;
+			font-weight:100;
+			font-stretch:expanded;
+			text-align: center;
+			padding: 14px 16px 14px 16px;
+			text-decoration: none;
+			}
+		li a {
+    		display: block;
+			text-align: center;
+			padding: 16px 12px 10px 0px;
+			}
+		a:link {
+			color: #000;
+			}
+		a:visited {
+			color: #000; /*text after visited*/
+			text-decoration: none;
+			}
+		a:hover, a:active, a:focus { 
+			text-decoration: none;
+			}
+#desktopHeaderInfo{
+	z-index: 7;
+}
+
+	#topSticky{
+		height: 60px;
+		min-width: 860px;
+		margin: auto;
+		border-bottom-style:solid;
+		border-bottom-color:#5c441a;
+		border-bottom-width: 1px;
+		z-index: 3;
+		}
+	.top-list-left{
+		margin: auto;
+		width: calc((100% - 998px) / 2);
+		height: 50px;
+		float: left;
+		}
+	.top-list{
+		float: left;
+		margin: none;
+		width: 830px;
+		height: 50px;
+		background-repeat:repeat;
+		background-size: contain;
+		z-index: 2;
+		background-color:transparent;
+		padding-bottom: 9px;
+		}
+		
+	/* background */
+	.backgroundlist{
+		width:100%;
+		min-width: 874px;
+		height: 59px;
+		position:absolute;
+		top: 0px;
+		left: 0px;
+		border-bottom-style:solid;
+		border-bottom-color:#5c441a;
+		border-bottom-width: 2px;
+		z-index: -1;
+		background:url(../Pictures/ui/style-00/map-ui.gif);
+		background-repeat:repeat;
+		}
+		/* left side of top bar. Inside the Brawl text/image */
+			.brawl{
+				float:left;
+				width: 160px;
+				height:50px;
+				margin: 0;
+				padding: 3px 20px 5px 16px;
+				display:block;
+				background-repeat:repeat;
+				background-size: contain;
+				background-position:right;
+				background-color:transparent;
+				text-align:right;
+					user-drag: none; 
+					user-select: none;
+					-moz-user-select: none;
+					-webkit-user-drag: none;
+					-webkit-user-select: none;
+					-ms-user-select: none;
+				}
+		/* right side nav bar over the links*/
+			.navbar {
+				float:left;
+				font-family: Arial;
+				width: 620px;
+				height: 50px;
+				margin: 0;
+				padding: 3px 0px 5px 0px;
+				overflow: hidden;
+				background-repeat:repeat;
+				background-size: contain;
+				background-color:transparent;
+					user-drag: none; 
+					user-select: none;
+					-moz-user-select: none;
+					-webkit-user-drag: none;
+					-webkit-user-select: none;
+					-ms-user-select: none;
+				}
+
+/* non dropdown containing top links */
+	.top-link{
+		margin: 0px 0px 3px 5px;
+		background-color: #d5c1a9;
+		background-color:transparent;border-left-color:#8b5b37;
+		border-bottom-color:#8b5b37;
+		border-top-color:#e7cfaf;
+		border-right-color:#e7cfaf;
+		border-width: 2px;
+		border-style:solid;
+		min-width: 55px;
+		}
+		/* when hoovered */	
+		.top-link:hover {
+			border-left-color:#e7cfaf;
+			border-bottom-color:#e7cfaf;
+			border-top-color:#8b5b37;
+			border-right-color:#8b5b37;
+			background-color: rgba(0, 0, 0, 0.1);
+			}
+/* Links inside the dropdown */
+	.dropdown-content a {
+		padding: 12px 16px;
+		margin: 4px 3px;
+		text-decoration: none;
+		text-align: center;
+		color: black;
+		float: none;
+		display: block;
+		border-collapse: collapse;
+		border-left-color:#8b5b37;
+		border-bottom-color:#8b5b37;
+		border-top-color:#e7cfaf;
+		border-right-color:#e7cfaf;
+		border-width: 2px;
+		border-style:solid;
+		}
+	/* changes links look on hoover */
+		.dropdown-content a:hover {
+			border-left-color:#e7cfaf;
+			border-bottom-color:#e7cfaf;
+			border-top-color:#8b5b37;
+			border-right-color:#8b5b37;
+			background-color: rgba(0, 0, 0, 0.1);
+			}
+	
+/* text width */	
+		.drop-link{
+			position:relative;
+			width: 140px;
+			margin: 5px 5px 5px 5px;
+			padding: 5px 5px 5px 15px;
+			z-index: 3;
+			}
+/* top bar (patch notes) including top bar name*/
+	.dropdown {
+		float: left;
+		overflow: hidden;
+		font-size: 16px;
+		}
+/* hidden dropdown */	 
+	/* Dropdown content (hidden by default) not including top bar name */
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-image:url(../Pictures/ui/style-00/map-ui.gif);
+			z-index: 3;
+			width: 190px;
+			margin: 48px 0px 5px 0px;
+			padding: 4px 0px 4px 10px;
+			border-style:solid;
+			border-left-color:#b85;
+			border-bottom-color:#853;
+			border-top-color:#853;
+			border-right-color:#853;
+			border-width: 2px;
+			}
+		/* Show the dropdown menu on hover */
+			.dropdown:hover .dropdown-content {
+				display: block;
+				}
+
+/* Mobile  */
+	#mobileHeaderInfo{
+		background:url(../Pictures/ui/style-00/map-ui.gif);
+		height: 80px;
+		background-repeat:repeat;
+		border-bottom-style:solid;
+		border-bottom-color:#5c441a;
+		border-bottom-width: 2px;
+		z-index: 8;
+		display: none;
+		min-width: 475px;
+		width: 100%;
+		position: static;
+		}
+	#topStickyMobile{
+		user-drag: none; 
+		user-select: none;
+		-moz-user-select: none;
+		-webkit-user-drag: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		min-width:460px;
+		max-width: 900px;
+		height: 76px;
+		}
+	#brawlMobile{
+		cursor:pointer;
+		width: 100%;
+		padding-top: 5px;
+		}
+	#navbarMobile a{
+			text-decoration: none;
+			}	
+	#navbarMobile{
+		position:absolute;
+		display: none;
+		background:url(../Pictures/ui/style-00/map-ui.gif);
+		background-repeat:repeat;
+		width: 65%;
+		min-width: 350px;
+		max-width: 550px;
+		z-index: 1;
+		border-right:solid 2px #5c441a;
+		margin-top: 3px;
+		}
+		.topLink-Mobile{
+			width: 100%;
+			height: 100%;
+			display: block;
+			text-decoration: none;
+		}
+		.HeaderLinks-Mobile{
+			margin: 5px 4px;
+			height: 65px;
+			line-height: 2.2em;
+			text-decoration: none;
+			font-size:30px;
+			color: black;
+			text-align: center;
+			float: none;
+				background-color: #d5c1a9;
+				background-color:transparent;
+				border-left-color:#8b5b37;
+				border-bottom-color:#8b5b37;
+				border-top-color:#e7cfaf;
+				border-right-color:#e7cfaf;
+				border-width: 2px;
+				border-style:solid;
+					cursor:pointer;
+			}
+			.HeaderLinks-Mobile:hover {
+				border-left-color:#e7cfaf;
+				border-bottom-color:#e7cfaf;
+				border-top-color:#8b5b37;
+				border-right-color:#8b5b37;
+				background-color: rgba(0, 0, 0, 0.1);
+				}
+	#olderNotes-Mobile{
+		margin-top: 15px;
+		}
+	#dropdownContent-Mobile{
+		margin-left: 15%;
+		}	
+		.dropLink-Mobile{
+			width: 80%;
+			height: 100%;
+			display: block;
+			text-decoration: none;
+			}
+	#hamburgerMobile{
+		height: 68px;
+		padding-top: 6px;
+		margin: 0px 3px 0px 7px;
+		float:left;
+		}
+	#hamburgerText{
+		float:left;
+		margin-top: 2px;
+		line-height: auto;
+		font-size:48px;
+		color:#cba166;
+		}
+	#logoTopMobile{
+		margin-left: 35%;
+		min-width: 240px; 
+		}
+	.allNotesMobile{
+		margin-top: 15px;
+		}
+		#logoTopMobile{
+			width: 240px;
+			}

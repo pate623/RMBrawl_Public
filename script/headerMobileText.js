@@ -1,0 +1,18 @@
+document.write( '<div id=\"topStickyMobile\">\n' );
+document.write( '			<div id=\"brawlMobile\">\n' );
+document.write( '				<div id=\"hamburgerMobile\"><img src=\"Pictures/vectors/hamburger.png\" width=\"50\" height=\"50\" alt=\"hamburger\"></div><div id=\"hamburgerText\">Menu</div>\n' );
+document.write( '			</div>\n' );
+document.write( '			<div id=\"logoTopMobile\"><a href=\"index.html\"><img src=\"Pictures/others/name.png\" width=\"227px\" height=\"68px\" alt=\"RM Brawl\" /></a></div>\n' );
+document.write( '			\n' );
+document.write( '			<div id=\"navbarMobile\">\n' );
+document.write( '				<div class=\"HeaderLinks-Mobile\"><a href=\"index.html\" class=\"topLink-Mobile\">Home</a></div>	\n' );
+document.write( '				<div class=\"HeaderLinks-Mobile\"><a href=\"civs.html\" class=\"topLink-Mobile\">Tech trees</a></div>\n' );
+document.write( '				<div class=\"HeaderLinks-Mobile\"><a href=\"info.html\" class=\"topLink-Mobile\">Unit information</a></div>\n' );
+//document.write( '				<div class=\"HeaderLinks-Mobile\"><a href=\"draft.html\" class=\"topLink-Mobile\">Draft pick</a></div>\n' );
+document.write( '				<div class=\"HeaderLinks-Mobile allNotesMobile\"> <a href=\"aoe-de.html\" class=\"topLink-Mobile\">Change log DE</a></div>\n' );
+document.write( '				<div class=\"HeaderLinks-Mobile\"> <a href=\"upatch.html\" class=\"topLink-Mobile\">Change log UPatch</a></div>\n' );
+document.write( '				<div class=\"HeaderLinks-Mobile\"><a href=\"1,0a.html\" class=\"topLink-Mobile\">Change log 1.0a</a></div>\n' );
+document.write( '				<div class=\"HeaderLinks-Mobile allNotesMobile\"><a href=\"1,27-patch.html\" class=\"topLink-Mobile\">Patch 1.27 notes</a></div>\n' );
+document.write( '				<div class=\"HeaderLinks-Mobile\"><a href=\"olderPatchNotes.html\" class=\"topLink-Mobile\">Older patch notes</a></div>\n' );
+document.write( '				<div class=\"HeaderLinks-Mobile\"><a href=\"more.html\" class=\"topLink-Mobile\">More</a></div>\n' );
+document.write( '		</div>' );

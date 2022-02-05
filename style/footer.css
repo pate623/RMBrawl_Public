@@ -1,0 +1,94 @@
+/* keeping footer in check */	
+main {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	}
+article {
+	flex-grow: 1;
+	}
+header, main, footer {
+	flex-shrink: 0;
+	}
+
+#footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	min-width: 500px;
+	padding-bottom: 5px;
+	background-image:url(../Pictures/ui/style-00/map-ui.gif);
+	background-repeat:repeat;
+	}
+	#footer-adjust{
+		position: relative;
+		margin: auto;
+		min-width: 500px;
+		max-width: 900px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		text-align:center;
+		padding-top: 7px;
+		}
+
+/*content*/
+#modFooter{
+	max-width: 750px;
+	min-width: 500px;
+	width: 100%;
+	margin:auto;
+	}
+	#modCreditsHeader{
+		padding-top: 4px;
+		height: 40px;
+		font-size: 22px;
+		letter-spacing: 1px;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		font-style: italic;
+	}
+	#modCreditedPrograms{
+		max-width: 750px;
+		min-width: 500px;
+		margin: auto;
+		height: 170px;
+		text-align:center;
+		float:none;
+		}
+		#footerCreditsText{
+			font-size: 14px;
+			font-style:italic;
+				text-align:center;
+				margin:auto;
+				width: 270px;
+			}
+			.CreditedMod{
+				float:left;
+				width: 230px;
+				height: 55px;
+				font-size: 16px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+
+			.footerHeader{
+				font-size: 16px;
+				font-weight:bold;
+				line-height: 22px;
+				max-width: 600px;
+				min-width: 500px;
+				margin:auto;
+				margin-bottom: 0px;
+				}
+			.footerExplanation{
+				font-style:italic;
+				font-size: 13px;
+				}
+
+#siteWaterMarks{
+	margin: 2px auto 0px auto;
+	padding: 8px 0px 6px 0px;
+	width: 90%;
+	max-width: 900px;
+	}
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=500, initial-scale=0.55">
+<link rel="stylesheet" href="style/style.css"/>
+<link rel="stylesheet" href="style/header.css"/>
+<link rel="stylesheet" href="style/footer.css"/>
+<link rel="stylesheet" href="style/patchNotes.css"/>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="script/headerScripts.js"></script>
+<script type="text/javascript" src="script/notes.js"></script>
+<script src="script/mobileHeaderScroll.js"></script>
+<script src="script/AllAffectingMobileScaling.js"></script>
+<title>Patch 1.20 Notes</title>
+<link rel="shortcut icon" href="Pictures/favicon/r+m.png" />
+</head>
+<body>
+<main>
+<header>
+	<div id="desktopHeaderInfo">
+		<script src="script/headerText.js"></script>
+	</div>
+	<div id="mobileHeaderInfo">
+		<script src="script/headerMobileText.js"></script>
+	</div>
+</header>
+<article>
+<div id="container">
+	<div id= "content">
+		<!-- Release notes -->
+            <div class="piece2">
+        		<div id="date">07 Nov 2020</div>
+				<div id="notesPDF"><a href="downloads/patchNotes/patchNotes1,20.pdf" target="_blank"><img src="Pictures/buttons/PDF-view.png" width="108" height="35" alt="View PDF" title="View patch notes as PDF"/></a></div>
+                <p class="otsikko">RM Brawl 1.20 Patch Notes</p>
+					<p class="explanation2">
+						Big changes to early Tool Age.<br>
+						Cheaper Granary and longer research time for Battle Axe ensures all maps can be played defensively.
+					</p>
+					<p class="explanation2">
+						<br>Change-logs have been updated to match patch 1.20<br>
+						<a href="1,0a.html">Check this</a> to see what all has changed since AOE Rise of Rome 1.0a<br>
+						<a href="upatch.html">Check this</a> to see what all has changed since UPatch 1.1 R4<br>
+						<a href="aoe-de.html">Check this</a> to see what all has changed since AOE:DE
+					</p>
+			</div>
+		<!-- Balance changes -->    
+        	<div class="breaker">
+            	<p class="otsikko3"><span class="white">Balance Changes</span></p>
+            </div>
+			<div class="piece">
+				<p class="name2"> <img src="Pictures/icons/granary.gif" width="35" height="35" alt="Granary" Hspace="16px" align="left"/>Granary</p>
+            		<p class="info2"><span class="buff">Wood cost</span> <span class="removed">120</span> -&gt;<span class="dark"> 100</span></p>
+					
+            	<br><p class="name2"> <img src="Pictures/icons/linenCloth.gif" width="35" height="35" alt="Linen Cloth" Hspace="16px" align="left"/>Linen Cloth</p>
+					<p class="info2"><span class="buff">Research time </span> <span class="removed">30s</span> -&gt; <span class="dark">20s</span></p>
+					
+				<br><p class="name2"> <img src="Pictures/icons/battleAxe.gif" width="35" height="35" alt="Battle Axe" Hspace="16px" align="left"/>Battle Axe</p>
+					<p class="info2"><span class="nerf">Research time</span> <span class="removed">40s</span> -&gt; <span class="dark">70s</span></p>
+			</div>
+		<!-- Civilzation changes -->
+			<div class="breaker">
+				<p class="otsikko3"><span class="white">Civilization Changes</span></p>
+			</div>
+			<div class="piece">
+				<p class="name2">Choson</p>
+					<p class="info2"><span class="nerf">Technology disbled</span> <span class="dark"> Catapult Trireme </span></p>
+					<p class="info2"><span class="buff">Technology enabled</span> <span class="dark"> Alchemy </span></p>
+			<br><p class="name2">Greek</p>
+					<p class="info2"><span class="nerf">Bonus removed</span> <span class="dark"> Academy units cost -20%</span></p>
+					<p class="info2"><span class="buff">Bonus</span> <span class="dark">Foot soldiers move</span>  <span class="removed">10% faster</span> -&gt; <span class="dark">10/20/30% faster at Tool/Bronze/Iron Age (respectively)</span></p>
+					<p class="info2"><span class="buff">New bonus</span> <span class="dark"> Government Center technologies are free </span></p>
+			<br><p class="name2">Macedonian</p>
+					<p class="info2"><span class="nerf">Bonus removed</span> <span class="dark"> Swordsmen have +1 pierce armor </span></p>
+					<p class="info2"><span class="buff">Bonus</span> <span class="dark">Siege units cost</span>  -&thinsp;<span class="removed">25%</span> -&gt; <span class="dark">-35%</span></p>
+			</div> 
+		<!-- QoL changes -->
+			<div class="breaker">
+				<p class="otsikko3"><span class="white">QoL Changes</span></p>
+			</div>
+			<div class="piece">
+				<p class="explanation2">Changed blue to be slightly brighter. <br>The Image below is a comparison to the AOE:DE colors.</p>
+			</div>
+			<div class="piece">
+				<div class="img-comp-container">
+					<div class="img-comp-img">
+							<img src="Pictures/patchNotes/colorComparison/oldColors.png" width="500" height="600">
+					</div>
+					<div class="img-comp-img img-comp-overlay">
+							<img src="Pictures/patchNotes/colorComparison/newColors.png" width="500" height="600">
+					</div>
+				</div>
+			</div> 
+		<!-- bug fixes -->    
+			<div class="breaker">
+				<p class="otsikko3"><span class="white"> Bug Fixes </span></p>
+			</div>
+			<div class="piece">
+				<p class="explanation">Ships can't receive bonus pierce armor if they do not have pierce armor value set.</p>
+			</div>
+			<div class="piece">
+				<p class="name2"> <img src="Pictures/icons/scoutShip.gif" width="35" height="35" alt="Ships" Hspace="16px" align="left"/>Choson (AOE:DE)</p>
+					<p class="info2"><span class="dark">Ships didn't get their bonus pierce armor.</span></p>
+				<br><p class="name2"> <img src="Pictures/icons/aristocracy.gif" width="35" height="35" alt="Aristocracy" Hspace="16px" align="left"/>Aristocracy (UP)</p>
+					<p class="info2"><span class="dark">Stated bonus was 10% should have been 25%.</span></p>
+				<br><p class="name2"> <img src="Pictures/icons/legion.gif" width="35" height="35" alt="Legion" Hspace="16px" align="left"/>Legion (UP)</p>
+					<p class="info2"><span class="dark">Base slash armor was 2 should have been 1.</span></p>
+				<br><p class="name2"> <img src="Pictures/icons/logistics.gif" width="35" height="35" alt="Logistics" Hspace="16px" align="left"/>Babylonian (UP)</p>
+					<p class="info2"><span class="dark">Barrack units didn't get the bonus slash armor from Logistics.</span></p>
+			</div>
+	</div> <!-- Content --> 
+</div><!-- Container --> 
+</article>
+<footer>
+	<script src="script/footerText.js"></script><!-- footer scripted -->
+</footer>
+</main>
+</body>
+</html>

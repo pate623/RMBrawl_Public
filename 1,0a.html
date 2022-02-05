@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=500, initial-scale=0.55">
+<link rel="stylesheet" href="style/style.css"/>
+<link rel="stylesheet" href="style/header.css"/>
+<link rel="stylesheet" href="style/footer.css"/>
+<link rel="stylesheet" href="style/log.css"/>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="script/headerScripts.js"></script>
+<script type="text/javascript" src="script/log.js"></script>
+<script src="script/mobileHeaderScroll.js"></script>
+<script src="script/AllAffectingMobileScaling.js"></script>
+<title>Change Log ROR 1.0a</title>
+<link rel="shortcut icon" href="Pictures/favicon/r+m.png" />
+</head>
+
+<body>
+<main>
+<header>
+	<div id="desktopHeaderInfo">
+		<script src="script/headerText.js"></script>
+	</div>
+	<div id="mobileHeaderInfo">
+		<script src="script/headerMobileText.js"></script>
+	</div>
+</header>
+<article>
+<div id="container">
+	<div id= "content">
+		<!-- Release notes -->
+			<div class="piece2">
+				<div id="colorBlindRG"><img src="Pictures/buttons/greenBlue.png" width="35" height="35" alt="green blue switch" title="Change green text to blue" /></div>
+				<p class="otsikko">RM Brawl 1.27U Change Log (ROR&nbsp;1.0a) </p>
+					<p class="explanation2">Below are shown all of the changes compared to Age of Empires Rise of Rome 1.0a.</p>
+       				<p class="explanation2">Changes compared to Changes compared to AOE DE are written <a href="aoe-de.html">Here</a>,<br>
+					and changes compared to UPatch 1.1 R4 are written <a href="upatch.html">Here</a>.</p>
+					<p class="explanation2">Civilization changes can also be found from the <a href="civs-ror.html">Tech trees</a> page.</p>
+        			<p class="explanation2">Patch 1.27U.N changes can also be seen in the list below.<br>Technology trees for patch 1.27U.N can be found from the mod files.</p>
+					<div id="settings">
+            			<!-- button text -->
+                			<div id="important" class="non-dragable">Show Important</div>
+                			<div id="relevant" class="non-dragable">Show Essential</div>
+                			<div id="comment" class="non-dragable">Disable/Enable<br>Comments</div>  
+               				<div id="all" class="non-dragable">Show All</div> 
+                		<!--  buttons -->
+                			<div id="importantNap" class="clickable"></div>
+                			<div id="importantNapBlack"></div>
+                			<div id="importantNap2" class="clickable"></div>
+                			<div id="importantNap2Black"></div>
+                			<div id="importantNap3" class="clickable"></div>
+                			<div id="importantNap3Black" ></div>
+                			<div id="commentdisabled" class="clickable"><img src="Pictures/buttons/puhekupla-disabled.gif" width="50" height="34" alt="disable comments" /></div>
+                			<div id="commentenabled" class="clickable"><img src="Pictures/buttons/puhekupla-enabled.gif" width="50" height="34" alt="enable comments" /></div>
+					</div>
+			</div> <!-- end of header -->
+        <!-- Workers -->
+			<div class="breaker">
+    			<p class="starter">
+        			<span class="white">Economy</span>
+        			<img src="Pictures/buttons/style-00/comments-enabled.png" width="22" height="22" alt="enable comments" Hspace="5" align="right" id="commentenabled-worker" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/comments-disabled.png" width="22" height="22" alt="disable comments" Hspace="5" align="right" id="commentdisabled-worker" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus-faded.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="worker-most" class="smallImage"/>
+              		<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-worker-most" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-worker-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-worker-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-worker-least" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus-faded.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="worker-least" class="smallImage"/>
+       			</p>
+    		</div>
+		<!-- Resources -->
+			<div id="resource2"> <!-- important2 - toggles borders off when toggled off -->
+    		<div class="piece" id="resources">
+				<!-- Farm -->
+        			<important-1>
+						<p class="header"> <img src="Pictures/icons/farm.gif" width="35" height="35" alt="Farm" Hspace="16" align="left"/>Farm</p>
+							<p class="text"><span class="nerf">Wood cost</span> <span class="removed">75</span> -&gt;<span class="dark"> 100</span></p>
+							<p class="text"><span class="buff">Food amount</span> <span class="removed">250</span> -&gt;<span class="dark"> 400</span></p>
+								<p class="comment">Replenishing farms was too micro intensive.</p>
+					</important-1>
+				<!-- farmer -->
+					<important-2>
+						<p class="header"><img src="Pictures/icons/farmer.gif" width="35" height="35" alt="farmer" Hspace="16" align="left" />Farmer</p>
+							<p class="text"><span class="buff">Work rate  </span><span class="removed">0.45</span> -&gt; <span class="dark">0.4725</span></p>
+								<p class="comment">More expensive Government center is enough to prevent runaway boom.</p>
+					</important-2>
+				<!-- Domestication -->
+					<important-2>
+						<p class="header"><img src="Pictures/icons/domestication.gif" width="35" height="35" alt="Domestication" Hspace="16" align="left" />Domestication</p>
+							<p class="text"><span class="buff">Food cost </span><span class="removed">200</span> -&gt; <span class="dark">150</span></p>
+							<p class="text"><span class="buff">New bonus </span> <span class="dark">Farms, Storage Pits and Granaries cost -10%</span></p>
+								<p class="comment">Too expensive to be usable before 20 min.</p>
+					</important-2>
+				<!-- Plow -->
+					<important-3>
+						<p class="header"><img src="Pictures/icons/plow.gif" width="35" height="35" alt="Plow" Hspace="16" align="left" />Plow</p>
+							<p class="text"><span class="buff">Food in Farms </span> +<span class="removed">75</span> -&gt; <span class="dark">+100</span></p>
+							<p class="text"><span class="buff">New bonus </span> <span class="dark">Farms, Storage Pits and Granaries cost -10%</span></p>
+								<p class="comment">Doing Plow right after all other upgrades have been done is now good for your economy. </p>
+					</important-3>
+				<!-- Irrigation -->
+					<important-3>
+						<p class="header"><img src="Pictures/icons/irrigation.gif" width="35" height="35" alt="Irrigation" Hspace="16" align="left" />Irrigation</p>
+							<p class="text"><span class="buff">Food in Farms </span> +<span class="removed">75</span> -&gt; <span class="dark">+125</span></p>
+							<p class="text"><span class="buff">New bonus </span> <span class="dark">Farms, Storage Pits and Granaries cost -10%</span></p>
+								<p class="comment">Irrigation was only researched after all other Market upgrades were done and it’s bonus was too small to have any deciding value.</p>
+					</important-3>
+					<!-- Tool Age -->
+					<important-1>
+						<p class="header"><img src="Pictures/icons/ToolAge.gif" width="35" height="35" alt="Tool Age" Hspace="16" align="left" />Tool Age</p>
+						<p class="text">
+							<span class="nerf">Requirement </span><span class="removed">2 Stone Age buildings</span> -&gt; <span class="dark">Granary and Storage Pit</span>
+						</p>
+						<p class="comment">
+							Having good enough map to go into Tool Age without Granary was already great advantage, not having to even build Granary was unnecessarily good bonus.<br>
+							Starting with Storage Pit and going into Dock + Tool Age was too strong on water maps.
+						</p>
+					</important-1>
+				<!-- hunter -->
+					<important-2>
+						<p class="header"><img src="Pictures/icons/hunter.gif" width="35" height="35" alt="hunter" Hspace="16" align="left" />Hunter</p>
+							<p class="text"><span class="buff">Work rate</span> <span class="removed">0.45</span> -&gt; <span class="dark">0.4725</span></p>
+							<p class="text"><span class="buff">Accuracy</span> <span class="removed">80%</span> -&gt; <span class="dark">100%</span></p>
+								<p class="comment">Hunting is harder than foraging and as so its reward should also be higher.<br>
+								With 80% accuracy villager could die to one lion, this made early game scouting too dangerous.</p>
+					</important-2>
+				<!-- Gazelle -->
+        			<important-3>
+            			<p class="header"><img src="Pictures/icons/gazelle.bmp" width="35" height="35" alt="Gazelle" Hspace="16" align="left" />Gazelle</p>
+							<p class="text"><span class="buff">Food amount </span><span class="removed">150</span> -&gt; <span class="dark">180</span></p>
+							<p class="text"><span class="nerf">Gazelles on big pack </span><span class="removed">6</span> -&gt; <span class="dark">5</span></p>
+								<p class="comment">Now getting second pit with gazelles is easier.<br>
+								Having extra gazelles instead of extras elephants isn't as bad now.</p>
+					</important-3>
+        		<!-- Gold miner -->
+					<important-2>
+						<p class="header"><img src="Pictures/icons/goldMiner.gif" width="35" height="35" alt="Gold miner" Hspace="16" align="left" />Gold Miner &amp; Stone Miner</p>
+							<p class="text"><span class="buff">Work rate</span> <span class="removed">0.45</span> -&gt; <span class="dark">0.5175</span></p>
+								<p class="comment">With balanced bonuses the civilization specific units aren’t giving that much power compared to less gold costing units.<br>
+                        		Using gold for units that you don’t have any bonuses is more viable.</p>
+					</important-2>
+				<!-- Fisherman -->
+        			<important-1>
+            			<p class="header"><img src="Pictures/icons/fisher.gif" width="35" height="35" alt="Fisherman" Hspace="16" align="left" />Fisherman</p>
+							<p class="text"><span class="nerf">Work rate </span><span class="removed">0.6</span> -&gt; <span class="dark">0.5175</span><br>
+							<span class="buff">Carry capacity </span><span class="removed">10</span> -&gt; <span class="dark">20</span></p>
+								<p class="comment">Good storage pit position in water maps is rare but having that gives too strong start.<br>
+								Now there is more possible storage pit positions but none of them too strong to give game deciding advantages.</p>
+					</important-1>
+				<!-- Dock -->
+        			<important-3>
+            			<p class="header"><img src="Pictures/icons/dock.gif" width="35" height="35" alt="Dock" Hspace="16" align="left" />Dock</p>
+							<p class="text"><span class="nerf">Work rate bonus at Stone Age</span> +<span class="removed">50%</span> -&gt; <span class="dark">none</span></p>
+								<p class="comment">Early dock was accumulating food at a too high rate. In water maps having good stranglers gave too strong economy boost.</p>
+					</important-3>
+			</div><!--end of Resources -->
+        <!-- Siege units -->
+			<div class="breaker">
+    			<p class="starter">
+        			<span class="white">Map Changes</span>
+            		<img src="Pictures/buttons/style-00/comments-enabled.png" width="22" height="22" alt="enable comments" Hspace="5" align="right" id="commentenabled-siege" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/comments-disabled.png" width="22" height="22" alt="disable comments" Hspace="5" align="right" id="commentdisabled-siege" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus-faded.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="siege-most" class="smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-siege-most" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-siege-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-siege-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-siege-least" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus-faded.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="siege-least" class="smallImage"/>
+        		</p>
+    		</div>
+			<div class="piece" id="siege">
+				<!-- All maps -->
+					<important-1>
+						<p class="header"><img src="Pictures/icons/hillCountry.gif" width="35" height="35" alt="All maps" Hspace="16" align="left" />All maps</p>
+							<p class="text"><span class="buff">Player spawn </span> <span class="dark">guaranteed one straggler close to the base</span></p>
+							<p class="text"><span class="buff">Lion spawn </span> <span class="dark">No longer double lion spawns on maps</span></p>
+								<p class="comment">Tool Age timings were too dependant on a decent straglers.</p>
+					</important-1>
+				<!-- All maps -->
+					<important-1>
+						<p class="header"><img src="Pictures/icons/hillCountry.gif" width="35" height="35" alt="All maps" Hspace="16" align="left" />All maps except Continental and Narrow</p>
+							<p class="text"><span class="buff">Gold pile amounts per player</span> <span class="removed">2</span> -&gt; <span class="dark">3</span></p>
+								<p class="comment">There wasn't enough gold in maps to sustain late iron age fights.</p>
+					</important-1>
+				<!-- Hill Country & Highland -->
+        			<important-2>
+            			<p class="header"><img src="Pictures/icons/hillCountry.gif" width="35" height="35" alt="Hill Country" Hspace="16" align="left" />Hill Country & Highland</p>
+							<p class="text"><span class="nerf">Old elephant spawn (12-0 distance)</span> <span class="removed">Spawn amounts  7+(1 per map size)</span> -&gt; <span class="dark">5+(1 per map size)</span></p>
+							<p class="text"><span class="buff">New Elephant spawn</span> <span class="dark">One Elephant for each player, Distance from TC 20-28</span></p>
+                    			<p class="comment">There needs to be always enough resources to do something more than 18 villager rush.</p>
+            		</important-2>
+				<!-- fish whale -->
+					<important-3>
+						<p class="header"><img src="Pictures/icons/fish.gif" width="35" height="35" alt="fish whale" Hspace="16" align="left" />Fish Whale</p>
+                   			<p class="text"><span class="buff">Food amount</span> <span class="removed">250</span> -&gt; <span class="dark">300</span></p>
+								<p class="comment">At late game the water control wasn't important enough in a maps which players had access to others bases through land.</p>
+					</important-3>
+				<!-- Stone mine  -->
+					<important-3>
+						<p class="header"><img src="Pictures/icons/stoneMine.gif" width="35" height="35" alt="Stone mine" Hspace="16" align="left" />Stone mine</p>
+							<p class="text"><span class="buff">Stone amount </span><span class="removed">250</span> -&gt; <span class="dark">300</span></p>
+								<p class="comment">Gold was too sparse resource.</p>
+					</important-3>
+				<!-- Gold mine  -->
+					<important-3>
+						<p class="header"><img src="Pictures/icons/goldMine.bmp" width="35" height="35" alt="Gold mine" Hspace="16" align="left" />Gold mine</p>
+							<p class="text"><span class="buff">Gold amount</span> <span class="removed">400</span> -&gt; <span class="dark">450</span></p>
+								<p class="comment">Gold was too sparse resource.</p>
+					</important-3>
+			</div>
+		<!-- end of siege units -->
+			</div><!--end of workers -->
+		<!-- Market -->
+			<div class="breaker">
+    			<p class="starter">
+        			<span class="white">Villagers</span>
+                    <img src="Pictures/buttons/style-00/comments-enabled.png" width="22" height="22" alt="enable comments" Hspace="5" align="right" id="commentenabled-market" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/comments-disabled.png" width="22" height="22" alt="disable comments" Hspace="5" align="right" id="commentdisabled-market" class="clickable smallImage"/>	
+                	<img src="Pictures/buttons/style-00/info-plus-faded.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="market-most" class="smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-market-most" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-market-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-market-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-market-least" class="clickable smallImage"/>
+					<img src="Pictures/buttons/style-00/info-minus-faded.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="market-least" class="smallImage"/>
+        		</p>
+    		</div>
+			<div class="piece" id="market">
+				<!-- Villager -->
+        			<important-1>
+            			<p class="header"><img src="Pictures/icons/villager.gif" width="35" height="35" alt="Villager" Hspace="16" align="left" />Villager</p>
+							<p class="text"><span class="buff">Hit points </span><span class="removed">25</span> -&gt; <span class="dark">35</span></p>
+								<p class="comment">Early aggression was too decisive and quick way to win a game.</p>
+					</important-1>
+        		<!-- Linen cloth -->
+        			<important-1>
+            			<p class="header"><img src="Pictures/icons/linenCloth.gif" width="35" height="35" alt="Linen cloth" Hspace="16" align="left" />Linen Cloth(<span class="buff"> New technology</span>)</p>
+							<p class="text"><span class="buff">Requires</span> <span class="dark">Tool Age, Leather Armor Infantry</span><br>
+							<span class="buff">Stone cost </span><span class="dark">75</span><br>
+                			<span class="buff">Gold cost </span><span class="dark">50</span><br>
+                			<span class="buff">Research time</span> <span class="dark">20 seconds</span><br>
+                			<span class="buff">Research location</span> <span class="dark">Town Center</span><br>
+                			<span class="buff">Effect</span> <span class="dark">Villagers +5 hit points and +1 armor base melee</span></p>
+								<p class="comment">Villagers died too fast. With even the smallest skill difference the games ended too fast.<br>
+						Often late game civilizations that should only get to Iron Age at weaker state didn’t get there at all due to the importance of a singe military unit and the ineffectiveness of the defensive units.</p>
+					</important-1>
+				<!-- wheel -->
+					<important-2>
+						<p class="header"><img src="Pictures/icons/wheel.gif" width="35" height="35" alt="wheel" Hspace="16" align="left" />Wheel</p>
+							<p class="text"><span class="nerf">Villagers move</span> <span class="removed">63,6% faster</span> -&gt; <span class="dark">60% faster</span> (<span class="removed">0.7</span> -&gt; <span class="dark">0.66</span>)</p>
+                			<p class="text"><span class="nerf">Research time</span> <span class="removed">75s</span> -&gt; <span class="dark">90s</span></p>
+										<p class="text2"><span class="buff">Available for all civilizations</span> (enabled for Macedonian and Persian)</p>
+                    						<p class="comment2">Wheel is a vital part of the game and needs to be available for all civilizations.</p>
+            		</important-2>
+				<!-- Siegecraft -->
+					<important-3>
+						<p class="header"><img src="Pictures/icons/siegecraft.gif" width="35" height="35" alt="Siegecraft" Hspace="16" align="left" />Siegecraft</p>
+							<p class="text"><span class="nerf">Villagers bonus damage against towers and walls</span> +<span class="removed">30</span> -&gt; <span class="dark">+10</span></p>
+							<p class="comment">illagers were busting down towers and walls way too fast.</p>
+            		</important-3>
+         		<!-- jihad -->
+            		<important-3>
+                		<p class="header"><img src="Pictures/icons/jihad.gif" width="35" height="35" alt="jihad" Hspace="16" align="left" />Jihad -> Zealotry</p>
+							<p class="text"><span class="nerf">Villager movement speed </span>+<span class="removed">0.3</span> -&gt;<span class="dark"> +0.11</span><br>
+                    		<span class="nerf">Villager bonus hit points</span> +<span class="removed">40</span> -&gt; <span class="dark">+30</span></p>
+								<p class="comment">Having 65 HP was high enough, no need to up it furthermore. The bonus HP should only make it easier to play with open base and not make villagers capable of fighting back without support.</p>
+					</important-3>
+			</div> 
+		<!-- end of market changes -->
+		<!-- Towers and walls -->
+			<important-3>
+			<div class="breaker">
+				<p class="starter">
+        			<span class="white">Towers and walls</span>
+        			<img src="Pictures/buttons/style-00/comments-enabled.png" width="22" height="22" alt="enable comments" Hspace="5" align="right" id="commentenabled-towers" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/comments-disabled.png" width="22" height="22" alt="disable comments" Hspace="5" align="right" id="commentdisabled-towers" class="clickable smallImage"/>	
+                	<img src="Pictures/buttons/style-00/info-plus-faded.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="towers-most" class="smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-towers-most" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-towers-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-towers-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-towers-least" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus-faded.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="towers-least" class="smallImage"/>
+        		</p>
+    		</div>
+			<div class="piece" id="towers">
+				<!-- Small wall -->
+           			<important-1>
+            			<p class="header"><img src="Pictures/icons/smallWall.gif" width="35" height="35" alt="Small wall" Hspace="16" align="left" />Small wall</p>
+							<p class="text"><span class="nerf">Hit points </span> <span class="removed">200</span> -&gt;<span class="dark"> 120</span></p>
+            					<p class="comment">Axemen and Cavalry were blocked out too effectively.</p>
+            		</important-1>
+            <!-- Medium Wall -->
+            <important-2>
+                <p class="header"><img src="Pictures/icons/mediumWall.gif" width="35" height="35" alt="Medium Wall" Hspace="16" align="left" />Medium Wall</p>
+                <p class="text"><span class="nerf">Hit points </span><span class="removed">300</span> -&gt; <span class="dark">250</span></p>
+                <p class="header2">Upgrade</p>
+                <p class="text2">
+                    <span class="nerf">Food cost </span><span class="removed">180</span> -&gt; <span class="dark">260</span>
+                </p>
+                <p class="comment2">
+                    Getting Medium Wall and sitting in your base until Iron Age was too easy way to avoid Bronze Age wars.
+                </p>
+            </important-2>
+				<!-- Watch tower -->
+					<important-2>
+            			<p class="header"><img src="Pictures/icons/watchTower.gif" width="35" height="35" alt="Watch tower" Hspace="16" align="left" />Watch Tower</p>
+            				<p class="text"><span class="buff">Hit points </span> <span class="removed">100</span> -&gt; <span class="dark">125</span></p>
+            		</important-2>
+				<!-- Sentry tower -->
+					<important-3>
+        				<p class="header"><img src="Pictures/icons/sentryTower.gif" width="35" height="35" alt="Sentry tower" Hspace="16" align="left" />Sentry Tower</p>
+            				<p class="text"><span class="buff">Hit points </span> <span class="removed">150</span> -&gt; <span class="dark">185</span></p>
+           			</important-3>
+        		<!-- Guard tower -->
+            		<important-3>
+            			<p class="header"><img src="Pictures/icons/guardTower.gif" width="35" height="35" alt="Guard tower" Hspace="16" align="left" />Guard Tower</p>
+            				<p class="text"><span class="buff">Hit points </span> <span class="removed">200</span> -&gt; <span class="dark">240</span></p>
+            		</important-3>
+            		<important-3>
+				<!-- ballista tower -->
+            			<p class="header"><img src="Pictures/icons/ballistaTower.gif" width="35" height="35" alt="ballsita tower" Hspace="16" align="left" />Ballista Tower</p>
+            				<p class="text"><span class="buff">Hit points </span> <span class="removed">200</span> -&gt; <span class="dark">240</span><br>
+							<span class="buff">Reload time</span> <span class="removed">3.2</span> -&gt; <span class="dark">2.7</span></p>
+					</important-3>
+			</div>
+			</important-3>
+		<!-- end of towers -->
+        <!-- Tool Age fights -->			
+			<div class="breaker">
+    			<p class="starter">
+        			<span class="white">Tool Age fights</span>
+            		<img src="Pictures/buttons/style-00/comments-enabled.png" width="22" height="22" alt="enable comments" Hspace="5" align="right" id="commentenabled-tool" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/comments-disabled.png" width="22" height="22" alt="disable comments" Hspace="5" align="right" id="commentdisabled-tool" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus-faded.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="tool-most" class="smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-tool-most" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-tool-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-tool-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-tool-least" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus-faded.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="tool-least" class="smallImage"/>
+        		</p>
+    		</div>
+			<div class="piece" id="tool">
+				<!-- scout -->
+           			<important-1>
+            			<p class="header"><img src="Pictures/icons/scout.gif" width="35" height="35" alt="scout" Hspace="16" align="left" />Scout</p>
+							<p class="text"><span class="buff">Food cost</span> <span class="removed">100</span> -&gt; <span class="dark">90</span></p>
+							<p class="text"><span class="buff">Hit points </span><span class="removed">60</span> -&gt; <span class="dark">70</span></p>
+					</important-1>
+					<important-2>
+                   			<p class="text"><span class="nerf">Line of sight </span><span class="removed">12</span> -&gt; <span class="dark">7/9/11</span> (Tool/Bronze/Iron)</p>
+					</important-2>
+					<important-1>
+								<p class="comment">Scout wasn’t strong enough to fight against Tool Age units. And now with Villager changes it’s even harder to harass enemy workers because at least two Scouts is needed to have a sufficient effect on enemy economy. <br>
+								<important-2>
+                        		Scouting enemy base happened too fast.
+								</important-2>
+								</p>
+					</important-1>
+				<!-- Slinger -->
+            		<important-1>
+            			<p class="header"><img src="Pictures/icons/slinger.gif" width="35" height="35" alt="Slinger" Hspace="16" align="left" />Slinger</p>
+                			<p class="text"><span class="nerf">Movement speed </span><span class="removed">1.2</span> -&gt; <span class="dark">1.1</span></p>
+                			<p class="text"><span class="nerf">Training time </span><span class="removed">24s</span> -&gt; <span class="dark">30s</span></p>
+					<important-2>
+							<p class="text"><span class="nerf">Attack bonus vs Walls and Towers</span> <span class="removed">7</span> -&gt; <span class="dark">5</span></p>
+							<p class="text"><span class="buff">Attack bonus vs mounted archers </span> <span class="removed">2</span> -&gt; <span class="dark">4</span></p>
+					</important-2>
+					<important-1>
+            					<p class="comment">Slingers were too strong against all Tool Age units.</p>
+					</important-1>
+			</div>
+		<!-- end of tool age fights -->
+        <!-- Bronze Age fights  -->
+			<div class="breaker">
+    			<p class="starter">
+        			<span class="white"> Bronze Age fights</span>
+            		<img src="Pictures/buttons/style-00/comments-enabled.png" width="22" height="22" alt="enable comments" Hspace="5" align="right" id="commentenabled-bronze" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/comments-disabled.png" width="22" height="22" alt="disable comments" Hspace="5" align="right" id="commentdisabled-bronze" class="clickable smallImage"/>	
+                	<img src="Pictures/buttons/style-00/info-plus-faded.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="bronze-most" class="smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-bronze-most" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-bronze-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-bronze-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-bronze-least" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus-faded.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="bronze-least" class="smallImage"/>
+        		</p>
+    		</div>
+    		<div class="piece" id="bronze">
+        		<!-- Cavalry -->
+            		<important-1>
+            			<p class="header"><img src="Pictures/icons/cavalry.gif" width="35" height="35" alt="Cavalry" Hspace="16" align="left" />Cavalry</p>
+							<p class="text"><span class="nerf">Hit points</span> <span class="removed">150</span> -&gt; <span class="dark">125</span></p>
+							<p class="text"><span class="buff">Pierce armor</span> <span class="removed">0</span> -&gt; <span class="dark">1</span></p>
+					</important-1>
+					<important-1>
+                    			<p class="comment"> Cavalry had too little use after the initial rush.</p>
+             		</important-1>
+        		<!-- Camel Rider -->
+            		<important-1>
+            			<p class="header"><img src="Pictures/icons/camelRider.gif" width="35" height="35" alt="Camel Rider" Hspace="16" align="left" />Camel Rider</p>
+							<p class="text"><span class="buff">Movement speed</span> <span class="removed">2.0</span> -&gt; <span class="dark">2.2</span></p>
+                			<p class="text"><span class="buff">Gold cost</span> <span class="removed">60</span> -&gt; <span class="dark">40</span></p>
+							<p class="text"><span class="nerf">Attack bonus vs cavalry</span> <span class="removed">8</span> -&gt; <span class="dark">4</span></p>
+                    			<p class="comment">Camel riders had too short window of opportunity. Once the enemy had massed any other unit than Cavalry those Camel Riders become almost useless.</p>
+					</important-1>
+				<!-- Composite Bowman -->
+        			<important-1>
+            			<p class="header"><img src="Pictures/icons/compositeBowman.gif" width="35" height="35" alt="Composite Bowman" Hspace="16" align="left" />Composite Bowman</p>
+									<p class="header2">Upgrade</p>
+										<p class="text2"><span class="nerf">Food cost </span><span class="removed">180</span> -&gt; <span class="dark">360</span><br>
+										<span class="nerf">Wood cost </span><span class="removed">100</span> -&gt; <span class="dark">200</span></p>
+											<p class="comment2">Composite bowmen are good units and with all other changes they are going to be even stronger. <br>
+											High cost makes this a choice and not an automatic upgrade.</p>
+					</important-1>
+				<!-- Short Swordsman -->
+            		<important-3>
+            			<p class="header"><img src="Pictures/icons/shortSwordsman.gif" width="35" height="35" alt="Short Swordsman" Hspace="16" align="left" />Short Swordsman</p>
+            						<p class="header2">Upgrade<span class="nerf"></span></p>
+            							<p class="text2"><span class="buff">REMOVED</span></p>
+											<p class="comment2">Having to research the unit pushed all barrack units too far back making them almost unusable at Bronze Age.</p>
+        			</important-3>
+					<!-- Logistics -->
+						<important-2>
+							<p class="header"><img src="Pictures/icons/logistics.gif" width="35" height="35" alt="Logistics" Hspace="16" align="left" />Logistics</p>
+							<p class="text"><span class="nerf">Bonus removed</span> Barrack units take ½ population</p>
+							<p class="text"><span class="buff">New bonus </span> <span class="dark">Barrack units move 20% faster, Barracks work 25% faster</span></p>
+							<p class="comment">
+								Half population costing units cause path finding problems in team games. Having 3 or more Legion producing players in a full on 4v4 games caused the servers to lag.<br>
+								Now Swordsmen can be used as a cheap harassing unit.<br>
+								Legions are now weaker but can spike up faster than Centurions leaving them good enough advantage point.<br>
+							</p>
+						</important-2>
+					<!-- Mathematics -->
+					<important-2>
+						<p class="header"><img src="Pictures/icons/Mathematics.png" width="35" height="35" alt="Mathematics" Hspace="16" align="left" />Mathematics<span class="buff"> (New technology)</span></p>
+						<p class="text">
+							<span class="buff">Requires</span> <span class="dark">Bronze Age</span><br>
+							<span class="buff">Food cost </span><span class="dark">120</span><br>
+							<span class="buff">Wood cost </span><span class="dark">60</span><br>
+							<span class="buff">Research time</span> <span class="dark">50 seconds</span><br>
+							<span class="buff">Research location</span> <span class="dark">Government Center</span><br>
+							<span class="buff">Effect</span> <span class="dark">All siege units +1 range and LoS</span>
+						</p>
+						<p class="comment">
+							Bronze Age aggression can be stopped too easily by creating Medium Walls, causing all players to go into Iron Age.<br>
+							Now players can use Bronze Age units longer, giving civilizations with poor Iron Age better choices.
+						</p>
+					</important-2>
+				<!-- Stone Thrower -->
+        			<important-2>
+        				<p class="header"><img src="Pictures/icons/stoneThrower.gif" width="35" height="35" alt="Stone Thrower" Hspace="16" align="left" />Stone Thrower</p>
+							<p class="text"><span class="buff">Blast width </span><span class="removed">0.5</span> -&gt; <span class="dark">0.7</span></p>
+                   			<p class="text"><span class="buff">Pierce armor</span> <span class="removed">0</span> -&gt; <span class="dark">2</span></p>
+								<p class="comment">Composite Bowmen were too reliable one unit defense.</p>
+        			</important-2>
+        		<!-- Academy -->
+            		<important-3>
+            			<p class="header"><img src="Pictures/icons/academy.gif" width="35" height="35" alt="Academy" Hspace="16" align="left" />Academy</p>
+							<p class="text"><span class="buff">Wood cost </span><span class="removed">200</span> -&gt; <span class="dark">150</span></p>
+								<p class="comment">The cost to get any hoplites was too high making it a late game unit only.</p>
+					</important-3>
+				<!-- Priest -->
+           			<important-3>
+            			<p class="header"><img src="Pictures/icons/priest.gif" width="35" height="35" alt="Priest" Hspace="16" align="left" />Priest</p>
+							<p class="text"><span class="buff">Bonus damage taken from chariots </span><span class="removed">7</span> -&gt; <span class="dark">0</span></p>
+								<p class="comment">Priests are expensive and countering them was too cheap.</p>
+					</important-3>
+			</div>	
+		<!-- end of bronze age fights -->
+        <!-- Iron Age fights -->
+			<div class="breaker">
+    			<p class="starter">
+        			<span class="white">Iron Age fights</span>
+            		<img src="Pictures/buttons/style-00/comments-enabled.png" width="22" height="22" alt="enable comments" Hspace="5" align="right" id="commentenabled-iron" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/comments-disabled.png" width="22" height="22" alt="disable comments" Hspace="5" align="right" id="commentdisabled-iron" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus-faded.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="iron-most" class="smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-iron-most" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-iron-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-iron-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-iron-least" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus-faded.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="iron-least" class="smallImage"/>
+        		</p>
+ 			</div>
+			<div class="piece" id="iron">
+				<!-- Heavy Cavalry -->
+            		<important-3>
+            			<p class="header"><img src="Pictures/icons/heavyCavalry.gif" width="35" height="35" alt="Heavy Cavalry" Hspace="16" align="left" />Heavy Cavalry</p>
+							<p class="text"><span class="buff">Armor base pierce</span> <span class="removed">1</span> -&gt;<span class="dark"> 2</span></p>
+                   			<p class="text"><span class="buff">Armor base melee</span> <span class="removed">1</span> -&gt;<span class="dark"> 2</span></p>
+							<p class="text"><span class="buff">Attack bonus versus infantry</span> <span class="removed">5</span> -&gt;<span class="dark"> 6</span></p>
+								<p class="comment">
+            					Swordsmen are stronger and Cavalry line needs to keep up with it.<br>
+            					Heavy Cavalry should works well as a surprise rush unit, but Bronze Age units were too strong to never give a change for Heavy Cavalry to be used.
+            					</p>
+            		</important-3>
+				<!-- Cataphract -->
+        			<important-2>
+            			<p class="header"><img src="Pictures/icons/cataphract.gif" width="35" height="35" alt="Cataphract" Hspace="16" align="left" />Cataphract</p>
+							<p class="text"><span class="buff">Hit points</span> <span class="removed">180</span> -&gt;<span class="dark"> 240</span></p>
+                    		<p class="text"><span class="buff">Armor base pierce</span> <span class="removed">1</span> -&gt;<span class="dark"> 3</span></p>
+                    		<p class="text"><span class="buff">Armor base melee</span> <span class="removed">3</span> -&gt;<span class="dark"> 5</span></p>
+							<p class="text"><span class="buff">Attack bonus versus infantry</span> <span class="removed">5</span> -&gt;<span class="dark"> 7</span></p>
+									<p class="header2">Upgrade</p>
+										<p class="text2"><span class="buff">Food cost</span> <span class="removed">2000</span> -&gt;<span class="dark"> 1600</span><br>
+										<span class="buff">Gold cost</span> <span class="removed">850</span> -&gt;<span class="dark"> 600</span></p>
+											<p class="comment">Cataphract was too weak agaisnt all units.<br>
+											Initial gold cost to use Cavalry line in Iron Age was too high.</p>
+					</important-2>
+       			<!-- Scythe Chariot -->
+            		<important-1>
+            			<p class="header"><img src="Pictures/icons/scytheChariot.gif" width="35" height="35" alt="Scythe Chario" Hspace="16" align="left" />Scythe Chariot</p>
+							<p class="text"><span class="nerf">Armor base melee</span> <span class="removed">2</span> -&gt; <span class="dark">1</span></p>
+            				<p class="text"><span class="nerf">Blast width</span> <span class="removed">2.0</span> -&gt; <span class="dark">1.5</span></p>
+									<p class="header2">Upgrade</p>
+										<p class="text2"><span class="nerf">Wood cost</span> <span class="removed">1200</span> -&gt;<span class="dark"> 1400</span><br>
+										<span class="nerf">Gold cost</span> <span class="removed">800</span> -&gt;<span class="dark"> 1000</span><br>
+										<span class="nerf">Research time</span> <span class="removed">150s</span> -&gt;<span class="dark"> 200s</span></p>
+								<p class="comment">Scythe Chariot were too strong. It is now easier to take them down if you have units to counter them.</p>
+					</important-1>
+        		<!-- War Elephant -->
+            		<important-3>
+            			<p class="header"><img src="Pictures/icons/armoredElephant.gif" width="35" height="35" alt="War Elephant" Hspace="16" align="left" />War Elephant &amp; Armored Elephant</p>
+                			<p class="text"><span class="nerf">Blast width</span> <span class="removed">2.0</span> -&gt; <span class="dark">1.5</span></p>
+      							<p class="comment">2.0 blast width was too huge.</p>
+       		 		</important-3>
+        		<!-- Elephant Archer -->
+            		<important-2>
+            			<p class="header"><img src="Pictures/icons/elephantArcher.gif" width="35" height="35" alt="Elephant Archer" Hspace="16" align="left" />Elephant Archer</p>
+							<p class="text"><span class="buff">Attack base pierce</span> <span class="removed">5</span> -&gt; <span class="dark">6</span></p>
+								<p class="comment">Elephants Archers were winning fights only against few other ranged units and even then they were only barely winning the fights.</p>
+       				</important-2>
+				<!-- Horse Archer -->
+        			<important-1>
+            			<p class="header"><img src="Pictures/icons/horseArcher.gif" width="35" height="35" alt="Horse Archers" Hspace="16" align="left" />Horse Archer</p>
+							<p class="text"><span class="buff">Hit points</span> <span class="removed">60</span> -&gt; <span class="dark">75</span></p>
+							<p class="text"><span class="nerf">Armor base pierce</span> <span class="removed">2</span> -&gt; <span class="dark">1</span></p>
+								<p class="comment">Horse Archer was too weak unit on a civilizations which didn't have access to the HHA upgrade.<br>
+								Raiding isn't as effective as it used to be because of stronger villagers and better towers.<br>
+                        		2 pierce armor made horse archers too strong and versatile pick.</p>
+        			</important-1>
+			</div>
+		<!-- end of iron age fights -->
+        <!-- Patch 1.27U.N -->
+			<div class="breaker">
+    			<p class="starter">
+        			<span class="white">Patch 1.27U.N Changes</span>
+            		<img src="Pictures/buttons/style-00/comments-enabled.png" width="22" height="22" alt="enable comments" Hspace="5" align="right" id="commentenabled-newUnits" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/comments-disabled.png" width="22" height="22" alt="disable comments" Hspace="5" align="right" id="commentdisabled-newUnits" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus-faded.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="newUnits-most" class="smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-newUnits-most" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-newUnits-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-newUnits-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-newUnits-least" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus-faded.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="newUnits-least" class="smallImage"/>
+        		</p>
+ 			</div>
+			<div class="piece" id="newUnits">
+				<!-- Spearman -->
+					<p class="header"><img src="Pictures/icons/spearmanROR.bmp" width="35" height="35" alt="Spearman" Hspace="16" align="left"/>Spearman (<span class="buff">New Unit</span>)</p>
+					<p class="text"><span class="blue">Requirement</span> <span class="dark">Tool Age</span><br>
+					<span class="blue">Training location </span> <span class="dark">Barrack</span><br>
+					<span class="buff">Food cost </span> <span class="dark">30</span><br>
+					<span class="nerf">Wood cost </span> <span class="dark">20</span><br>
+					<span class="nerf">Training time</span> <span class="dark">36s</span><br>
+					<span class="dark">Stats:</span><br>
+					<span class="nerf">Hit points </span> <span class="dark">35</span><br>
+					<span class="nerf">Attack base melee</span>  <span class="dark">3</span><br>
+					<span class="buff">Bonus damage vs mounted units</span> <span class="dark">6</span><br>
+					<span class="buff">Slash armor</span> <span class="dark">1</span><br>
+					<span class="blue">Weakness Infantry</span> <span class="dark">-7</span></p>
+					<p class="text"><span class="blue">Available</span> <span class="dark">All civilizations</span></p>
+						<p class="comment">
+							Compared to Axeman.<br>
+							Good unit against Scout. Shouldn't be strong against Cavalry.<br>
+							With equal upgrades Cavalry kills Spearmen in 3 hits.<br>
+							One armor makes this really strong against Scouts without being too good unit in overall.<br>
+							Having defensive unit against Scouts ensures there is enough leeway in the Scouts kit to make them usable without being overpowered.
+						</p>
+				<!-- scout -->
+            		<important-1>
+            			<p class="header"><img src="Pictures/icons/scout.gif" width="35" height="35" alt="scout" Hspace="16" align="left" />Scout</p>
+						<p class="text"><span class="buff">Pierce Armor</span> <span class="removed">0</span> -&gt; <span class="dark">1</span></p>
+							<p class="text"><span class="nerf">Hit points </span><span class="removed">70</span> -&gt; <span class="dark">60</span></p>
+								<p class="comment">Can be better against Bowmen defense when there are other ways to counter the Scouts.</p>
+					</important-1>
+				<!-- Improved Slinger -->
+					<p class="header"><img src="Pictures/icons/bronzeSlingerUP.bmp" width="35" height="35" alt="Improved Slinger" Hspace="16" align="left"/>Improved Slinger (<span class="buff">Unit Upgrade</span>)</p>
+						<p class="text"><span class="buff">Requirements</span> <span class="dark">Bronze Age, Logistics, Slinger</span><br>
+						<span class="buff">Food cost </span><span class="dark">120</span><br>
+						<span class="buff">Gold cost </span><span class="dark">50</span><br>
+						<span class="buff">Research time </span><span class="dark">60s</span><br>
+						<span class="dark">Effect:</span><br>
+						<span class="buff">Hit points </span>  <span class="removed">25</span> -&gt; <span class="dark">35</span><br>
+						<span class="buff">Range</span>  <span class="removed">4</span> -&gt; <span class="dark">5</span><br>
+						<span class="buff">Slash armor</span>  <span class="removed">0</span> -&gt; <span class="dark">3</span></p>	
+							<p class="comment">Now barrack units do not share same play style as Academy units but has instead its own play style allowing both Legion
+and Centurion exist without extreme overlapping.<br>
+Archers shouldn't be only viable Late Bronze Age unit.</p>
+				<!-- Heavy Slinger -->
+					<important-1>
+						<p class="header"><img src="Pictures/icons/ironSlingUP.bmp" width="35" height="35" alt="Heavy Slinger" Hspace="16" align="left"/>Heavy Slinger (<span class="buff">Unit Upgrade</span>)</p>
+							<p class="text"><span class="buff">Requirements</span> <span class="dark">Iron Age, Tower Shield, Heavy Slinger</span><br>
+							<span class="buff">Food cost </span><span class="dark">500</span><br>
+							<span class="buff">Gold cost </span><span class="dark">300</span><br>
+							<span class="buff">Research time </span><span class="dark">90s</span><br>
+							<span class="dark">Effect:</span><br>
+							<span class="buff">Hit points </span>  <span class="removed">35</span> -&gt; <span class="dark">50</span><br>
+							<span class="buff">Slash armor</span>  <span class="removed">3</span> -&gt; <span class="dark">5</span></p>	
+								<p class="comment">Now mass Elephant and Horse Archers can be countered easier making them less suitable for all situations.<br>
+	Archers shouldn't be only viable Late Bronze Age unit.</p>
+					</important-1>
+				<!-- Legion -->
+        			<important-3>
+            			<p class="header"><img src="Pictures/icons/legion.gif" width="35" height="35" alt="Legion" Hspace="16" align="left" />Legion</p>
+						<p class="header2">Upgrade</p>
+						<p class="text2">
+							<span class="nerf">Food cost </span><span class="removed">1000</span> -&gt; <span class="dark">1400</span>
+						</p>
+                                <p class="comment">With Heavy Slinger available the Barrack was stronger building. Legions needn't anymore the earlier timer to push against archers.</p>
+        			</important-3>
+				<!-- Recurve Slinger -->
+					<important-1>
+						<p class="header"><img src="Pictures/icons/recurveBowman.bmp" width="35" height="35" alt="Recurve Bowman" Hspace="16" align="left"/>Recurve Bowman (<span class="buff">Unit Upgrade</span>)</p>
+                        <p class="text">
+                            <span class="buff">Requirements</span> <span class="dark">Iron Age, Alchemy, Composite Bow</span><br>
+                            <span class="buff">Food cost </span><span class="dark">900</span><br>
+                            <span class="buff">Wood cost </span><span class="dark">600</span><br>
+                            <span class="buff">Research time </span><span class="dark">150s</span><br>
+                            <span class="dark">Effect:</span><br>
+                            <span class="buff">Hit points </span>  <span class="removed">45</span> -&gt; <span class="dark">50</span><br>
+                            <span class="buff">Reload time</span>  <span class="removed">1.4</span> -&gt; <span class="dark">1.12</span> (+25% attack speed)
+                        </p>	
+								<p class="comment">Now that there is enough ways to counter Composite Bowmen they can have Iron Age upgrade without becoming viable
+	single unit strategy.<br>Transitioning from Bronze age Slow siege push to Iron Age is now far less punishing.</p>
+					</important-1>
+				<!-- Composite Bow -->
+        			<important-3>
+            			<p class="header"><img src="Pictures/icons/compositeBow.gif" width="35" height="35" alt="Composite Bow" Hspace="16" align="left" />Composite Bow</p>
+						<p class="header2">Upgrade</p>
+						<p class="text2">
+							<span class="nerf">Food cost </span><span class="removed">360</span> -&gt; <span class="dark">500</span>
+						</p>
+                                <p class="comment">With Iron Age upgrade there was no longer such a huge timer to do something. This made booming Composite Bowmen mass far less punishing.</p>
+        			</important-3>
+				<!-- Heavy Camel Rider -->
+					<important-2>
+						<p class="header"><img src="Pictures/icons/HeavyCamel.gif" width="35" height="35" alt="Heavy Camel" Hspace="16" align="left" />Heavy Camel Rider (<span class="buff">Unit Upgrade</span>)</p>
+						<p class="text">
+							<span class="buff">Requirements</span> <span class="dark">Iron Age</span><br>
+							<span class="buff">Food cost </span><span class="dark">1300</span><br>
+							<span class="buff">Gold cost </span><span class="dark">500</span><br>
+							<span class="buff">Research time </span><span class="dark">150s</span><br>
+							<span class="dark">Effect:</span><br>
+							<span class="buff">Hit points </span>  <span class="removed">125</span> -&gt; <span class="dark">180</span><br>
+							<span class="buff">Attack base melee </span>  <span class="removed">6</span> -&gt; <span class="dark">9</span><br>
+							<span class="buff">Attack bonus vs cavalry </span>  <span class="removed">4</span> -&gt; <span class="dark">8</span><br>
+							<span class="buff">Slash Armor </span>  <span class="removed">0</span> -&gt; <span class="dark">3</span><br>
+							<span class="buff">Pierce Armor</span>  <span class="removed">0</span> -&gt; <span class="dark">1</span>
+						</p>
+						<p class="comment">
+							Now all civilizations have access to good fast units in Iron Age, this allows all civilizations to go aggressive Iron Age plays.
+						</p>
+					</important-2>
+        		<!-- Camel Rider -->
+            		<important-3>
+            			<p class="header"><img src="Pictures/icons/camelRider.gif" width="35" height="35" alt="Camel Rider" Hspace="16" align="left" />Camel Rider</p>
+							<p class="text"><span class="nerf">Bonus damage against elephants</span> <span class="removed">4</span> -&gt; <span class="dark">0</span></p>
+								<p class="comment">Shouldn't counter Elephant Archers or elephants, early on there is enough ways to deal with them.</p>
+					</important-3>
+        		<!-- Scythe Chariot -->
+            		<important-1>
+            			<p class="header"><img src="Pictures/icons/scytheChariot.gif" width="35" height="35" alt="Scythe Chariot" Hspace="16" align="left" />Scythe Chariot</p>
+							<p class="text"><span class="nerf">Attack base melee</span> <span class="removed">9</span> -&gt; <span class="dark">7</span></p>
+							<p class="text"><span class="nerf">Armor base melee</span> <span class="removed">1</span> -&gt; <span class="dark">0</span></p>
+					</important-1>
+					<important-2>
+									<p class="header2">Upgrade</p>
+										<p class="text2"><span class="buff">Wood cost</span> <span class="removed">1400</span> -&gt;<span class="dark"> 600</span><br>
+										<span class="buff">Gold cost</span> <span class="removed">1000</span> -&gt;<span class="dark"> 400</span></p>
+					</important-2>
+					<important-1>
+								<p class="comment">With other strong units available for all civilizations the Scythe Chariot needn't be a generic unit anymore.<br>
+									Now it can be a dedicated siege counter stacked with late Iron Age strength and an early Iron Age archer counter.</p>
+					</important-1>
+    			<!-- bronzeSlingerUP -->
+            		<important-1>
+        				<p class="header"><img src="Pictures/icons/bronzeSlingerUP.bmp" width="35" height="35" alt="Improved Slinger" Hspace="16" align="left" />Improved Slinger</p>
+            				<p class="text"><span class="buff">Available</span> <span class="dark">Babylonian, Berbers, Carthaginian, Choson, Egyptian, Greek, Macedonian, Minoan, Palmyra, Parthia, Persian, Phoenician, Roman, Scythia, Shang, Sumerian, Thrace, Yamato</span><br>
+               	 			<span class="nerf">Unavailable</span> <span class="dark">Assyrian, Hittite </span></p>
+        			</important-1>
+    			<!-- ironSlingUP -->
+            		<important-1>
+        				<p class="header"><img src="Pictures/icons/ironSlingUP.bmp" width="35" height="35" alt="Heavy Slinger" Hspace="16" align="left" />Heavy Slinger</p>
+            				<p class="text"><span class="buff">Available</span> <span class="dark">Carthaginian, Greek, Macedonian, Minoan, Parthia, Persian, Phoenician, Roman, Shang</span><br>
+               	 			<span class="nerf">Unavailable</span> <span class="dark">Babylonian, Berbers, Assyrian, Choson, Egyptian, Hittite,  Palmyra, Scythia, Sumerian, Thrace, Yamato</span></p>
+        			</important-1>
+    			<!-- recurveBowman -->
+            		<important-1>
+        				<p class="header"><img src="Pictures/icons/recurveBowman.bmp" width="35" height="35" alt="HRecurve Bowman" Hspace="16" align="left" />Recurve Bowman</p>
+            				<p class="text"><span class="buff">Available</span> <span class="dark">Babylonian, Egyptian, Macedonian, Minoan, Palmyra, Persian, Phoenician, Thrace</span><br>
+               	 			<span class="nerf">Unavailable</span> <span class="dark">Assyrian, Berbers, Carthaginian, Choson, Greek, Hittite, Parthia, Roman, Scythia, Shang, Sumerian, Yamato</span></p>
+        			</important-1>
+					<!-- Heavy Camel -->
+					<important-2>
+						<p class="header"><img src="Pictures/icons/HeavyCamel.gif" width="35" height="35" alt="Heavy Camel" Hspace="16" align="left" />Heavy Camel Rider</p>
+						<p class="text">
+							<span class="buff">Available</span> <span class="dark">Berbers, Carthaginian, Egyptian, Hittite, Minoan, Palmyra, Phoenician, Scythia, Sumerian</span><br>
+							<span class="nerf">Unavailable</span> <span class="dark">Assyrian, Babylonian, Choson, Greek, Macedonian, Parthia, Persian, Roman, Shang, Thrace, Yamato</span>
+						</p>
+					</important-2>
+			</div>
+		<!-- end of Patch 1.27U.N  -->
+        <!-- Others -->
+			<div class="breaker">
+    			<p class="starter">
+        			<span class="white">Small Adjustments</span>
+            		<img src="Pictures/buttons/style-00/comments-enabled.png" width="22" height="22" alt="enable comments" Hspace="5" align="right" id="commentenabled-others" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/comments-disabled.png" width="22" height="22" alt="disable comments" Hspace="5" align="right" id="commentdisabled-others" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus-faded.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="others-most" class="smallImage"/>
+               		<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-others-most" class="clickable smallImage"/>
+               		<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-others-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-others-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-others-least" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus-faded.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="others-least" class="smallImage"/>
+        		</p>
+    		</div>
+			<div class="piece" id="others">
+				<!-- farm -->
+					<important-3>
+						<p class="header"><img src="Pictures/icons/farm.gif" width="35" height="35" alt="farm" Hspace="16" align="left" />Farm</p>
+							<p class="text"><span class="buff">Build time </span> <span class="removed">30s</span> -&gt; <span class="dark">24s</span></p>
+								<p class="comment">Having to transform into farms earlier than your opponent made you take too huge hit into your eco.</p>
+        			</important-3>
+				<!-- buildings -->
+        			<important-3>
+            			<p class="header"><img src="Pictures/icons/resourceBuildings.gif" width="35" height="35" alt="Resource buildings" Hspace="16" align="left" />Farm, Storage pit, Granary</p>
+							<p class="text"><span class="buff">Max elevation difference </span><span class="removed">0</span> -&gt; <span class="dark">1</span></p>
+								<p class="comment">Starting resources were too often placed in hard to gather places or in hills making them too slow to collect if there wasn’t any good spot for the deposit building.<br>
+                        		Farms could take way too much space if the map was unfairly generated.</p>
+					</important-3>
+        		<!-- writing --> 
+            		<important-2>
+            			<p class="header"><img src="Pictures/icons/writing.gif" width="35" height="35" alt="writing" Hspace="16" align="left" />Writing <span class="nerf">(Removed)</span></p>
+							<p class="text"><span class="buff">The bonus is now available from the star of the game.</span></p>
+								<p class="comment">The lack of vision wasn’t funny or intriguing to play with but rather annoying. Having the vision at the start of the game allows better coordination which creates more enjoyable team play.</p>
+        			</important-2>
+				<!-- Broad Swordsman -->
+           			<important-2>
+            			<p class="header"><img src="Pictures/icons/broadSwordsman.gif" width="35" height="35" alt="Broad Swordsman" Hspace="16" align="left" />Broad Swordsman</p>
+							<p class="text"><span class="buff">Hit points</span> <span class="removed">70</span> -&gt; <span class="dark">80</span></p>
+            						<p class="header2">Upgrade<span class="nerf"></span></p>
+										<p class="text2"><span class="nerf">Research time</span> <span class="removed">80s</span> -&gt; <span class="dark">90s</span></p>
+					</important-2>
+        		<!-- Camel Rider -->
+            		<important-3>
+            			<p class="header"><img src="Pictures/icons/camelRider.gif" width="35" height="35" alt="Camel Rider" Hspace="16" align="left" />Camel Rider</p>
+							<p class="text"><span class="buff">Bonus damage against elephants</span> <span class="removed">0</span> -&gt; <span class="dark">4</span></p>
+					</important-3>
+				<!-- Heavy Horse Archer -->
+        			<important-3>
+            			<p class="header"><img src="Pictures/icons/heavyHorseArcher.gif" width="35" height="35" alt="Heavy Horse Archer" Hspace="16" align="left" />Heavy Horse Archer</p>
+                    		<p class="text"><span class="nerf">Armor base pierce</span> <span class="removed">2</span> -&gt; <span class="dark">1</span></p>
+								<p class="comment">2 pierce armor made horse archers too strong and versatile pick.</p>
+        			</important-3>
+        		<!-- Catapult & Heavy Catapult -->
+        			<important-3>
+        				<p class="header"><img src="Pictures/icons/catapult.gif" width="35" height="35" alt="Catapult & Heavy Catapult" Hspace="16" align="left" />Catapult &amp; Heavy Catapult</p>
+                   			<p class="text"><span class="buff">Pierce armor</span> <span class="removed">0</span> -&gt; <span class="dark">2</span></p>
+							<p class="text"><span class="nerf">Blast width </span><span class="removed">1.5</span> -&gt; <span class="dark">1.2</span></p>
+								<p class="comment">Preparing to use siege took too much resources and time. In combination with the easy to counter style of the siege units it was too easy to exploit siege units weaknesses.Faster projectile speed allows shooting fast units if you see them early enough.<br>
+                        		Landing shots at slow units was too easy. Damage is now more reliable. With smaller max damage on Catapults Helepolis is better choice for some situations.</p>
+        			</important-3>
+       			<!-- Long Swordsman -->
+        			<important-3>
+            			<p class="header"><img src="Pictures/icons/longSwordsman.gif" width="35" height="35" alt="Long Swordsman" Hspace="16" align="left" />Long Swordsman</p>
+							<p class="text"><span class="buff">Hit points</span> <span class="removed">80</span> -&gt; <span class="dark">100</span></p>
+									<p class="header2">Upgrade</p>
+										<p class="text2"><span class="nerf">Food cost </span><span class="removed">140</span> -&gt; <span class="dark">240</span><br>
+										<span class="nerf">Gold cost </span><span class="removed">50</span> -&gt; <span class="dark">100</span></p>
+                    			<p class="comment">Swordsmen are playing much bigger part in the fights and now the power reaches all the way to the late Iron Age making the available Swordsmen upgrades much more important.</p>
+            		</important-3>
+        		<!-- Legion -->
+        			<important-3>
+        				<p class="header"><img src="Pictures/icons/legion.gif" width="35" height="35" alt="Legion" Hspace="16" align="left" />Legion </p>
+						<p class="header2">Upgrade</p>
+							<p class="text2"><span class="buff">Food cost </span><span class="removed">1400</span> -&gt; <span class="dark">1000</span></p>
+											<p class="comment2">Legions were weaker with the changed Logistics.</p>
+					</important-3>
+                <!-- Aristocracy -->
+                    <important-2>
+                        <p class="header"><img src="Pictures/icons/aristocracy.gif" width="35" height="35" alt="Aristocracy" Hspace="16" align="left" />Aristocracy</p>
+                          <p class="text"><span class="nerf">Effect</span><span class="dark"> Academy units move </span> <span class="removed">25% faster</span> -&gt; <span class="dark">20% faster</span></p>
+                                <p class="comment">
+                                    Centurions were too good against all of it's counters creating too good one unit type army composition.
+                                </p>
+                    </important-2>
+				<!-- Helepolis -->
+        			<important-2>
+            			<p class="header"><img src="Pictures/icons/helepolis.gif" width="35" height="35" alt="Helepolis" Hspace="16" align="left" />Helepolis</p>
+							<p class="text"><span class="nerf">Reload time</span> <span class="removed">1.5</span> -&gt; <span class="dark">1.85</span></p>
+							<p class="text"><span class="buff">Pierce damage</span> <span class="removed">40</span> -&gt; <span class="dark">45</span></p>
+									<p class="header2">Upgrade</p>
+										<p class="text2"><span class="buff">Food cost </span><span class="removed">1500</span> -&gt; <span class="dark">1200</span></p>
+								<p class="comment">1.5 reload time was too fast making late game revolve around Helepolis. Either use it or counter it.</p>
+			 		</important-2>
+				<!-- Catapult Trireme -->
+        			<important-3>
+            			<p class="header"><img src="Pictures/icons/catapultTrireme.gif" width="35" height="35" alt="Catapult Trireme" Hspace="16" align="left" />Catapult Trireme</p>
+            				<p class="text"><span class="buff">Hit points</span> <span class="removed">120</span> -&gt; <span class="dark">135</span></p>
+					</important-3>
+				<!-- Catapult Trireme -->
+        			<important-3>
+            			<p class="header"><img src="Pictures/icons/catapultTrireme.gif" width="35" height="35" alt="Catapult Trireme" Hspace="16" align="left" />Catapult Trireme &amp; Juggernaught</p>
+            				<p class="text"><span class="buff">Movement speed</span> <span class="removed">1.35</span> -&gt; <span class="dark">1.45</span><br>
+                    		<span class="buff">Gold cost</span> <span class="removed">75</span> -&gt; <span class="dark">50</span></p>
+                				<p class="comment">Getting water control as civ with Catapult trireme is hard and the reward wasn’t good enough.</p>
+					</important-3>
+				<!-- Fire Galley -->
+				<important-3>
+					<p class="header"><img src="Pictures/icons/fireGalley.gif" width="35" height="35" alt="Fire Galley" Hspace="16" align="left" />Fire Galley</p>
+					<p class="text"><span class="buff">Bonus damage taken from catapults</span> <span class="removed">10</span> -&gt; <span class="dark">0</span></p>
+					<p class="text"><span class="buff">Bonus damage taken from Ballista/Helepolis </span> <span class="removed">5</span> -&gt;<span class="dark"> 0</span></p>
+					<p class="comment">
+						Unnecessary complication to otherwise clean bonus damage list.<br>
+						Now that Helepolis has a base damage of 45 the +5 makes it too good against Fire Galleys.<br>
+						Fire Galleys should be the strongest water units since they can not posses a good threat to land units.<br>
+					</p>
+				</important-3>
+    			<!-- Watch tower -->
+					<important-2>
+            			<p class="header"><img src="Pictures/icons/watchTower.gif" width="35" height="35" alt="Watch tower" Hspace="16" align="left" />Watch Tower, Sentry Tower, Guard Tower &amp; Ballista Tower</p>
+            				<p class="text"><span class="buff">Build time</span> <span class="removed">80s</span> -&gt; <span class="dark">72s</span></p>
+					</important-2>
+				<!-- ballista tower -->
+					<important-3>
+						<p class="header"><img src="Pictures/icons/ballistaTower.gif" width="35" height="35" alt="ballsita tower" Hspace="16" align="left" />Ballista Tower</p>
+							<p class="text"><span class="buff">reload time</span> <span class="removed">3.0</span> -&gt; <span class="dark">2.7</span></p>
+                    		<p class="text"><span class="buff">Projectile speed </span> <span class="removed">4.5</span> -&gt; <span class="dark">4.9</span></p>
+					</important-3>
+				<!-- Light Transport -->
+				<important-3>
+					<p class="header"><img src="Pictures/icons/lightTransport.bmp" width="35" height="35" alt="Light Transport" Hspace="16" align="left" />Light Transport</p>
+					<p class="text"><span class="buff">Training time </span> <span class="removed">75s</span> -&gt;<span class="dark"> 60s</span></p>
+					<p class="comment">Water rushes were hard to execute and with the increased villager hit points it was even harder.<br>
+						Enabling transport ship at Stone Age would have been too strong.
+					</p>
+				</important-3>
+				<!-- Heavy Transport -->
+				<important-3>
+					<p class="header"><img src="Pictures/icons/heavyTransport.gif" width="35" height="35" alt="Heavy Transport" Hspace="16" align="left" />Heavy Transport</p>
+					<p class="text"><span class="buff">Carry capacity</span> <span class="removed">10</span> -&gt; <span class="dark">20</span></p>
+					<p class="text"><span class="buff">Training time </span> <span class="removed">75s</span> -&gt;<span class="dark"> 60s</span></p>
+					<p class="comment">
+						Loading and unloading units was both micro intensive and tedious.<br>
+						Now players can jump islands much smoother at Iron Age. 
+					</p>
+				<!-- Scout Ship, War Galley & Trireme -->
+        			<important-1>
+            			<p class="header"><img src="Pictures/icons/scoutShip.gif" width="35" height="35" alt="Scout Ship, War Galley and Trireme" Hspace="16" align="left" />Scout Ship, War Galley & Trireme</p>
+							<p class="text"><span class="nerf">Training time</span> <span class="removed">60s</span> -&gt; <span class="dark">70s</span></p>
+                				<p class="comment">Rushing in water maps was too effective.</p>
+					</important-1>
+        		<!-- Trireme -->
+           			<important-2>
+            			<p class="header"><img src="Pictures/icons/trireme.gif" width="35" height="35" alt="Trireme" Hspace="16" align="left" />Trireme</p>
+                    		<p class="text"><span class="nerf">Reload time</span> <span class="removed">1.8</span> -&gt; <span class="dark">1.89</span></p>
+                    		<p class="text"><span class="buff">Projectile speed </span> <span class="removed">4.5</span> -&gt; <span class="dark">4.9</span></p>
+								<p class="comment">Fire galley was rarely used due to dying so fast to the mases of Triremes. Now both Fire galley and Catapult Trireme are more relevant in the Iron Age water battles.</p>
+        			</important-2>
+				<!-- Catapult Trireme -->
+        			<important-3>
+            			<p class="header"><img src="Pictures/icons/catapultTrireme.gif" width="35" height="35" alt="Catapult Trireme" Hspace="16" align="left" />Catapult Trireme &amp; Juggernaught</p>
+                    		<p class="text"><span class="buff">Projectile speed</span> <span class="removed">2.7</span> -&gt; <span class="dark">3.1</span><br>
+							<span class="nerf">Reload time</span> <span class="removed">5.0</span> -&gt; <span class="dark">5.3</span></p>
+					</important-3>
+        		<!-- Juggernaught -->
+            		<important-2>
+            			<p class="header"><img src="Pictures/icons/juggernaught.gif" width="35" height="35" alt="Juggernaught" Hspace="16" align="left" />Juggernaught</p>
+            				<p class="text"><span class="nerf">Blast width</span> <span class="removed">1.5</span> -&gt; <span class="dark">1.2</span><br>
+                    		<span class="nerf">Projectiles no longer destroy trees.</span></p>
+									<p class="header2">Upgrade</p>
+										<p class="text2"><span class="buff">Food cost </span><span class="removed">2000</span> -&gt; <span class="dark">1300</span><br>
+										<span class="buff">Wood cost </span><span class="removed">900</span> -&gt; <span class="dark">700</span><br>
+                                		<span class="nerf">Research time </span><span class="removed">180s</span> -&gt; <span class="dark">200s</span></p>
+        			</important-2>
+        		<!-- Ballista -->
+        			<important-3>
+						<p class="header"><img src="Pictures/icons/ballista.gif" width="35" height="35" alt="Vallista" Hspace="16" align="left" />Ballista</p>
+							<p class="text"><span class="buff">Reload time</span> <span class="removed">3.0</span> -&gt; <span class="dark">2.7</span></p>
+        			</important-3>
+				<!-- Helepolis -->
+        			<important-3>
+            			<p class="header"><img src="Pictures/icons/helepolis.gif" width="35" height="35" alt="Helepolis" Hspace="16" align="left" />Ballista &amp; Helepolis</p>
+                    		<p class="text"><span class="buff">Projectile speed </span> <span class="removed">4.5</span> -&gt; <span class="dark">4.9</span></p>
+					</important-3>
+        		<!-- Catapult & Heavy Catapult -->
+        			<important-3>
+        				<p class="header"><img src="Pictures/icons/catapult.gif" width="35" height="35" alt="Catapult & Heavy Catapult" Hspace="16" align="left" />Stone Thrower, Catapult &amp; Heavy Catapult</p>
+                   			<p class="text"><span class="nerf">Projectile speed</span> <span class="removed">2.7</span> -&gt; <span class="dark">3</span></p>
+                   			<p class="text"><span class="buff">Reload time</span> <span class="removed">5</span> -&gt; <span class="dark">5.375</span></p>
+					</important-3>
+					<!-- Engineering -->
+					<important-3>
+						<p class="header"><img src="Pictures/icons/Engineering.gif" width="35" height="35" alt="Engineering" Hspace="16" align="left" />Engineering</p>
+						<p class="text"><span class="nerf">New requirement</span> <span class="dark">Mathematics</span></p>
+						<p class="text"><span class="nerf">Effect</span><span class="dark"> All siege units </span> +<span class="removed">2 range and LoS</span> -&gt; <span class="dark">+1 range and LoS</span></p>
+						<p class="comment">
+							Max range should remain same.
+						</p>
+					</important-3>
+				<!-- Martyrdom -->
+            		<important-3>
+            			<p class="header"><img src="Pictures/icons/martyrdom.gif" width="35" height="35" alt="Martyrdom" Hspace="16" align="left" />Martyrdom -> Sacrifice</p>
+							<p class="text"><span class="buff">Gold cost </span> <span class="removed">600</span> -&gt;<span class="dark"> 400</span></p>
+        			</important-3>
+        		<!-- Alchemy -->
+            		<important-3>
+            			<p class="header"><img src="Pictures/icons/alchemy.gif" width="35" height="35" alt="Alchemy" Hspace="16" align="left" />Alchemy</p>
+							
+            				<span class="nerf">Ballista/helepolis</span> <span class="dark">Bonus attack base Pierce</span> +<span class="removed">2</span> -> <span class="dark">+1</span><br>
+        			</important-3>
+			</div>
+		<!-- end of others -->
+		<!-- civs -->
+			<div class="breaker">
+        		<p class="starter">
+            		<span class="white">Civilization changes</span>
+                	<img src="Pictures/buttons/style-00/comments-enabled.png" width="22" height="22" alt="enable comments" Hspace="5" align="right" id="commentenabled-civs" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/comments-disabled.png" width="22" height="22" alt="disable comments" Hspace="5" align="right" id="commentdisabled-civs" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus-faded.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="civ-most" class="smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-civ-most" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-civ-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="lessinfo-civ-middle" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-plus.png" width="22" height="22" alt="more information" Hspace="5" align="right" id="moreinfo-civ-least" class="clickable smallImage"/>
+                	<img src="Pictures/buttons/style-00/info-minus-faded.png" width="22" height="22" alt="less information" Hspace="5" align="right" id="civ-least" class="smallImage"/>
+        		</p>
+			</div>
+			<div class="piece" id="allcivinfo">
+				<!-- linen cloth -->
+            		<important-1>
+						<p class="header"><img src="Pictures/icons/linenCloth.gif" width="35" height="35" alt="Linen Cloth" Hspace="16" align="left" />Linen Cloth</p>
+							<p class="text"><span class="buff">Available for all civilizations.</span></p>
+					</important-1>
+					<!-- Mathematics -->
+					<important-3>
+						<p class="header"><img src="Pictures/icons/Mathematics.png" width="35" height="35" alt="Mathematics" Hspace="16" align="left" />Mathematics</p>
+						<p class="text"><span class="buff">Available for all civilizations.</span></p>
+					</important-3>
+					<!-- coinage -->
+						<important-2>
+							<p class="header"><img src="Pictures/icons/coinage.gif" width="35" height="35" alt="Coinage" Hspace="16" align="left" />Coinage</p>
+								<p class="text"><span class="buff">Enabled for all civilizations</span> <span class="dark">(Egyptian, Palmyra, Persian, Shang, Sumerian)</span></p>
+									<p class="comment">Now all civilizations have strong early/mid Iron Age without making turtling too effective playstyle.</p>
+						</important-2>
+				<!-- Heavy Transport -->
+        			<important-3>
+        				<p class="header"><img src="Pictures/icons/heavyTransport.gif" width="35" height="35" alt="Heavy Transport" Hspace="16" align="left" />Heavy Transport</p>
+							<p class="text"><span class="buff">Enabled for all civilizations</span> <span class="dark">(Assyrian, Babylonian, Choson, Hittite, Palmyra, Shang, Sumerian)</span></p>
+								<p class="comment">Not having upgrade to Light Transport didn’t make the civilizations that much weaker, but was more of a slowing aspect due to the bad path fining when loading transport ships.<br>
+                    			Enabling Heavy Transport for all civilizations allows smoother gameplay.</p>
+					</important-3>
+					<!-- Catapult -->
+					<important-1>
+						<p class="header"><img src="Pictures/icons/catapult.gif" width="35" height="35" alt="Catapult" Hspace="16" align="left" />Catapult</p>
+						<p class="text">
+							<span class="buff">Enabled for all civilizations</span> (Carthaginian, Choson, Egyptian, Macedonian, Phoenician, Yamato)
+						</p>
+					</important-1>
+    		</div>
+			<!-- Unique technologies -->
+				<div class="piece">
+					<p class="header"><img src="Pictures/icons/uniqueTech.bmp" width="35" height="35" alt="Unigue technology" Hspace="16" align="left" />Unique Technologies</p>
+					<p class="explanation2">
+						All civilizations will have one unique technology in Bronze Age.<br> Researched from Government Center, 60s research time, cost varies between three tiers.
+					</p>
+					<p class="header">Tiered Cost System</p>
+					<p class="text">
+						<span class="buff">Tier 1 </span> <span class="dark">&emsp;75F, 50G</span> &emsp;[5] (Carthaginian, Choson, Egyptian, Greek, Shang)<br>
+						<span class="buff">Tier 2 </span> <span class="dark"> &thinsp; 150F, 75G</span>&emsp;[7] (Assyrian, Babylonian, Berbers, Hittite, Parthia, Thrace, Yamato)<br>
+						<span class="buff">Tier 3 </span> <span class="dark">200F, 125G</span>&emsp;[8] (Macedonian, Minoan, Palmyra, Persian, Phoenician, Sumerian, Roman, Scythia)<br>
+					</p>
+		
+					<p class="header">Assyrian - Arson</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">150F, 75G</span><br>
+						<span class="buff">Effect </span> <span class="dark">Melee units deal +3 damage to buildings</span>
+					</p>
+					<p class="header">Babylonian - Plain Bearing</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">150F, 75G</span><br>
+						<span class="buff">Effect </span> <span class="dark">All chariot units move 15% faster</span>
+					</p>
+					<p class="header">Berbers - Smelting</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">150F, 75G</span><br>
+						<span class="buff">Effect </span> <span class="dark">Swordsmen and Legions +1 attack</span>
+					</p>
+					<p class="header">Carthaginian - Panoply</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">75F, 50G</span><br>
+						<span class="buff">Effect </span> <span class="dark">All Academy units +30% HP</span>
+					</p>
+					<p class="header">Choson - Fletching</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">75F, 50G</span><br>
+						<span class="buff">Effect </span> <span class="dark">All Archers +1 range</span>
+					</p>
+					<p class="header">Egyptian - Dipylon Shield</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">75F, 50G</span><br>
+						<span class="buff">Effect </span> <span class="dark">Hoplites attack 20% faster</span>
+					</p>
+					<p class="header">Greek - Levies</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">75F, 50G</span><br>
+						<span class="buff">Effect </span> <span class="dark">Swordsmen and bowmen cost wood instead of gold</span>
+					</p>
+					<p class="header">Hittite - Mahawi</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">150F, 75G</span><br>
+						<span class="buff">Effect </span> <span class="dark">Camel Riders attack 20% faster</span>
+					</p>
+					<p class="header">Macedonian - Dry Dock</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">200F, 125G</span><br>
+						<span class="buff">Effect </span> <span class="dark">War ships +1 attack</span>
+					</p>
+					<p class="header">Minoan - Machicolation</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">200F, 125G</span><br>
+						<span class="buff">Effect </span> <span class="dark">Towers +2 attack</span>
+					</p>
+					<p class="header">Palmyra - Vamplate</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">200F, 125G</span><br>
+						<span class="buff">Effect </span> <span class="dark">Academy units +1 slash armor</span>
+					</p>
+					<p class="header">Parthia - Tusk Swords</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">200F, 125G</span><br>
+						<span class="buff">Effect </span> <span class="dark">All elephants +20% HP</span>
+					</p>
+					<p class="header">Persian - Linothorax</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">150F, 75G</span><br>
+						<span class="buff">Effect </span> <span class="dark">All Barrack units +1 slash armor</span>
+					</p>
+					<p class="header">Phoenician - Padded Armor</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">200F, 125G</span><br>
+						<span class="buff">Effect </span> <span class="dark">All barrack units +1 pierce armor</span>
+					</p>
+					<p class="header">Roman - Bodkin</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">200F, 125G</span><br>
+						<span class="buff">Effect </span> <span class="dark">All bowmen ignore unit armor</span>
+					</p>
+					<p class="header">Scythia - Lamellar</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">150F, 75G</span><br>
+						<span class="buff">Effect </span> <span class="dark">Archery Ranges work 20% faster</span>
+					</p>
+					<p class="header">Shang - Husbandry</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">75F, 50G</span><br>
+						<span class="buff">Effect </span> <span class="dark">Stables work 33% faster</span>
+					</p>
+					<p class="header">Sumerian - Phajaan</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">200F, 125G</span><br>
+						<span class="buff">Effect </span> <span class="dark">Stable units +1 attack</span>
+					</p>
+					<p class="header">Thrace- Lead Bolts</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">75F, 50G</span><br>
+						<span class="buff">Effect </span> <span class="dark">Slingers +1 damage</span>
+					</p>
+					<p class="header">Yamato - Chemistry</p>
+					<p class="text">
+						<span class="nerf">Cost </span> <span class="dark">150F, 75G</span><br>
+						<span class="buff">Effect </span> <span class="dark">Siege units +10 damage</span>
+					</p>
+				</div>
+        		<!-- New civilizations -->
+			<div class="piece">
+				<!-- Nubia -->
+					<p class="header">Berbers (<span class="buff">new civilization</span>)</p>
+						<p class="text"><span class="buff">New bonus</span> <span class="dark">Gets Linen Cloth upon entering Tool Age</span> </p>
+						<p class="text"><span class="buff">New bonus</span> <span class="dark">Dock technologies are free</span></p>
+						<p class="text"><span class="buff">New bonus</span> <span class="dark">All units +25% blast width</span></p>
+				<!-- Parthia  -->
+					<p class="header">Parthia (<span class="buff">new civilization</span>)</p>
+						<p class="text"><span class="buff">New bonus</span> <span class="dark">Aging up has no building requirements</span></p>
+						<p class="text"><span class="buff">New bonus</span> <span class="dark">All Government Center upgrades are available at Bronze Age</span></p>
+				<!-- Scythia  -->
+					<p class="header">Scythia (<span class="buff">new civilization</span>)</p>
+						<p class="text"><span class="buff">New bonus</span> <span class="dark">Villagers benefit from armor upgrades</span></p>
+						<p class="text"><span class="buff">New bonus</span> <span class="dark">All units cost -20% gold</span></p>
+				<!-- Thrace -->
+					<p class="header">Thrace (<span class="buff">new civilization</span>)</p>
+						<p class="text"><span class="buff">New bonus</span> <span class="dark"> Foragers work 25% more efficiently</span></p>
+						<p class="text"><span class="buff">New bonus</span> <span class="dark">Military buildings cost -20%</span></p>
+			</div>
+			<div class="piece" id="specificcivinfo">
+        		<!-- Assyrian -->
+        			<important-2>
+            			<p class="header">Assyrian</p>
+                            <p class="text"><span class="nerf">Bonus removed </span>Villagers move 18% faster</p>
+                        <p class="text"><span class="nerf">Bonus</span> <span class="dark">Archers fire</span> <span class="removed">36,4% faster</span> -&gt; <span class="dark">33% faster</span></p>
+                            <p class="text"><span class="buff">New bonus</span> <span class="dark">Gets +60 food on age up</span></p>
+							<p class="text"><span class="buff">Technologies enabled </span><span class="dark">Alchemy, Chain Mail, Engineering</span></p>
+                    			<p class="comment">Assyrian was too weak on water maps and at late Iron Age.</p>
+					</important-2>
+				<!-- Babylonian -->
+        			<important-1>
+            			<p class="header">Babylonian</p>
+					</important-1>
+					<important-2>
+                			<p class="text"><span class="nerf">Bonus</span> <span class="dark">Towers and Walls bonus hit points</span>  +<span class="removed">60%</span> -&gt; <span class="dark">+75%</span><br>
+							 <span class="nerf">Bonus</span> <span class="dark">Stone Miners work</span> <span class="removed">44,4% faster</span> -&gt; <span class="dark">20% faster</span></p>
+        			</important-2>
+					<important-1>
+                			<p class="text"><span class="buff">New bonus</span> <span class="dark">Builders work 33% faster</span><br>
+							<span class="buff">New bonus</span> <span class="dark">Storage Pit upgrades cost -40%</span></p>
+      				</important-1>
+					<important-2>
+							<p class="text"><span class="buff">Technologies enabled</span><span class="dark">Trireme, Metallurgy, Chain Mail</span></p>
+      				</important-2>
+            					<p class="comment">
+					<important-1>
+        						Towers and Priests weren't usable often enough to be the only bonuses.<br>
+            		</important-1>
+            		<important-2>
+                    			
+					</important-2>
+            					</p>
+				<!-- Carthaginian -->
+        			<important-2>
+            			<p class="header">Carthaginian</p>
+            		</important-2>
+					<important-3><p class="text"><span class="nerf">Bonus</span> <span class="dark">Transport ships move </span> <span class="removed"> 25%/42,9% faster</span> -&gt; <span class="dark">25% faster</span></p>
+      				</important-3>
+  					<important-2>
+							<p class="text"><span class="nerf">Bonus removed </span>Elephants and Academy units +25% bonus hit points<br>
+							<span class="buff">New bonus</span> <span class="dark">All archers have +15% HP</span><br>
+							<span class="buff">New bonus</span> <span class="dark">Counter units deal +50% bonus damage</span><br>
+							<span class="buff">New bonus</span><span class="dark"> Starts the game with +30 of each resource</span></p>
+     				</important-2>
+								<p class="comment">
+					<important-2>
+                    			Carthaginian bonuses were too late game focused. Getting to utilize them almost never happened and they were unusable when most of the fights happened.<br>
+								Now Carthaginian has more reasonable power distribution.
+           			</important-2>
+                    			</p>
+				<!-- Choson -->
+        			<important-1>
+            			<p class="header">Choson</p>
+							<p class="text"><span class="nerf">Bonus removed</span> Long Swordsmen and Legion +80 HP<br>
+                    		<span class="buff">New bonus </span><span class="dark">Axeman, Short Swordsman, Broad Swordsman, Long Swordsman and Legion have +10/15/20/60/80 HP (respectively)</span><br>
+                    		<span class="buff">New bonus </span><span class="dark">All ranged units benefit from shield upgrades</span><br>
+                    		<span class="buff">New bonus </span><span class="dark"> All stable units +1 slash armor</span><br>
+                    		<span class="buff">New bonus </span><span class="dark"> Farms and Houses have +75% HP</span><br>
+               				<span class="buff">Technology enabled</span> <span class="dark">Nobility</span></p>
+								<p class="comment">Choson was too weak on water maps. it had no economy bonuses and it's other bonuses didn't contribute much to its weak navy.<br>
+								Swordsmen are much easier to counter making it too easy to play against Choson. Now Choson has more choices at Bronze age and early Iron age giving it a good window of opportunity against other late and mid game civilizations.</p>
+        			</important-1>
+				<!-- Egyptian -->
+        			<important-1>
+            			<p class="header">Egyptian</p>
+            		</important-1>
+            				<p class="text">
+            		<important-2>
+            				<span class="nerf">Bonus</span> <span class="dark">Gold Miners work</span> <span class="removed">44,4% faster</span> -&gt; <span class="dark">20% faster</span><br>
+            		</important-2>
+            		<important-1>
+							<span class="nerf">Bonus</span> <span class="dark">All chariot units</span> +<span class="removed">33% HP </span> -&gt; <span class="dark">+25% HP</span><br>
+                    		<span class="buff">New bonus</span> <span class="dark">Aging up is 15 seconds faster</span><br>
+							<p class="text"><span class="buff">Technology enabled</span> <span class="dark">Catapult</span></p>
+            		</important-1>
+            				</p>
+								<p class="comment">
+            		<important-3>
+                        		Gathering gold was too fasting making late Bronze Age plays too strong.<br/>
+          			</important-3>
+            		<important-1>
+            					Egyptian had no good way to fight at Tool Age.<br>
+								Egyptian chariots were way too good.<br>
+								Without massive HP bonus to chariots Egyptian needs to rely more on its infantry and siege.
+            		</important-1>
+            					</p>
+				<!-- Greek -->
+        			<important-1>
+            			<p class="header">Greek</p>
+                			<p class="text"><span class="nerf">Bonus removed</span> Academy units move 33,3% faster<br>
+                			<span class="buff">Bonus</span> <span class="removed">17% faster war ships</span> -&gt; <span class="dark">20% faster ships</span><br>
+                			<span class="buff">New bonus </span><span class="dark">Foot soldiers and siege workshop units move 5/10/20% faster at Tool/Bronze/Iron Age </span>(respectively)<br>
+                    		<span class="buff">New bonus </span><span class="dark">All cavalry units +10% HP</span><br>
+                    		<span class="buff">New bonus </span><span class="dark">All buildings +5 Line of sight</span><br>
+							<span class="buff">Technologies enabled</span> <span class="dark">Improved Bowman, Metallurgy, Fire Galley</span></p>
+								<p class="comment">Greek was too unbalanced between water and land maps.<br>
+                   				Greek late Iron Age was too strong whilst having too weak Bronze and Tool Age.</p>
+					</important-1>
+				<!-- Hittite -->
+        			<important-1>
+            			<p class="header">Hittite</p>
+            		</important-1>
+            				<p class="text">
+            		<important-2>
+                			<span class="nerf">Bonus </span><span class="dark">War ships bonus range</span> +<span class="removed">4</span> -&gt;<span class="dark"> +2/3/3 at Tool/Bronze/Iron Age (respectively)</span><br>
+           			</important-2>
+         			<important-2>
+            				<span class="nerf">Bonus </span><span class="dark">Stone Thrower, Catapult, Heavy Catapult</span> +<span class="removed">100% Hit Points</span> -&gt; <span class="dark">+50% Hit Points</span><br>
+        			</important-2>
+        			<important-1>
+            				<span class="buff">New bonus </span><span class="dark">Starts the game with +2 headroom</span><br>
+        			</important-1>
+         			<important-1>
+            				<span class="nerf">Technologies disabled</span> Architecture, Nobility, Scythe Chariot, Irrigation, Centurion, Elephant Archer<br>
+							<span class="buff">Technology enabled</span> <span class="dark">Fishing Ship</span>
+       				</important-1>
+            				</p>
+								<p class="comment">
+            		<important-1>
+                    			Small economy bonus gives Hittite good enough start to compete with any other civilization.<br>
+								Bowmen and CA were too strong with the +1 damage.<br>
+					</important-1>
+         			<important-2>
+								4 max range at early on was too strong.<br>
+								Now the Catapults can tank decent amount of damage and be used as shields in team games without being too strong in all of the trades.<br>
+                				Hittite isn’t strong enough on every water map to justify the missing fishing boat upgrade.
+        			</important-2>
+                    			</p>
+				<!-- Macedonian -->
+        			<important-1>
+            			<p class="header">Macedonian</p>
+           			</important-1>
+					<important-1>
+                			<p class="text"><span class="nerf">Bonus </span><span class="dark">Siege Workshop units cost </span> -&thinsp;<span class="removed">50%</span> -&gt;<span class="dark"> -25%</span><br>
+							<span class="nerf">Bonus </span><span class="dark">Academy units bonus pierce armor</span> <span class="removed">+2</span> -&gt;<span class="dark"> +1</span><br>
+							<span class="buff">Technologies enabled</span> <span class="dark">Wheel, Catapult</span></p>
+            		</important-1>
+            					<p class="comment">
+					<important-1>
+                    			Late Bronze Age bonuses needs to be tuned down so that early game buffs wouldn’t broke Macedonians balance.<br>
+      				</important-1>
+					<important-2>
+								With no early bonuses executing the intended play-style was almost impossible.<br>
+								Wheel is vital part of the game and needs to be unlocked for all civilizations.<br>
+								Macedonian should have good options against heavy tower defense.
+     				</important-2>
+            					</p>
+				<!-- Minoan -->
+        			<important-1>
+            			<p class="header">Minoan</p>
+							<p class="text"><span class="nerf">Bonus removed</span> Composite Bowmen +2 range<br>
+                   			<p class="text"><span class="nerf">Bonus </span>ships cost -&#8202;<span class="removed">30%</span> -&gt; <span class="dark">-15%</span><br>
+							<span class="buff">New bonus</span> <span class="dark">Houses support an additional +1 headroom</span><br>
+            				<span class="buff">New bonus</span> <span class="dark">All unit upgrades cost -30%</span><br>
+                   			<span class="buff">New bonus</span> <span class="dark">Camel Riders +10% HP</span></p>
+					</important-1>
+                				<p class="comment">
+            		<important-1>		
+                        		30% cheaper ships were too strong bonus giving uncontestable bonus in water maps.<br>
+                        		Range bonus was too simple and straight forward bonus.<br> 
+                        		Without strong Iron Age war ships Minoan needs to use its strong water power at early.<br>
+                    			Cheaper farms ensures that you have small economy bonus at early on even in land maps.
+            		</important-1>
+            					</p>
+				<!-- Palmyra -->
+        			<important-1>
+            			<p class="header">Palmyra</p>
+            		</important-1>
+					<important-1>
+                        <p class="text">
+                            <span class="nerf">Bonus removed </span>Villagers have +1 pierce/slash armor<br>
+                            <span class="nerf">Bonus removed </span>Villagers work 33%/44% faster at all tasks<br>
+                            <span class="nerf">Bonus removed </span>Tributes are free<br>
+                            <span class="buff">Bonus removed </span>Villagers cost 75<br>
+                            <span class="nerf">Bonus </span><span class="dark">Camel Riders move</span> <span class="removed">25% faster</span> -&gt;<span class="dark"> 15% faster</span><br>
+                            <span class="buff">New bonus</span> <span class="dark">Tool Age market upgrades are free</span></p>
+         			</important-1>
+					<important-1>
+                			<p class="text"><span class="buff">Technologies enabled</span> <span class="dark">Plow, Logistics,  Metallurgy</span></p>
+       				</important-1>
+								<p class="comment">
+       				<important-1>
+            					High cost Villagers with much faster work rate created weak early game and very strong mid game in most games.<br>
+								Normal starts were slow and easy to punish, but with a good elephant start Palmyra got it’s economy rolling very fast and was unstoppable.<br>
+								Having population efficiency on villagers was hitting on the game setting versatility too hard.
+      				</important-1>
+                    			</p>
+				<!-- Persian -->
+        			<important-2>
+            			<p class="header">Persian</p>
+           			 </important-2>
+					 <important-2>
+					 		<p class="text"><span class="nerf">Bonus removed</span> Hunters work 66,7% faster</p>
+					</important-2>		
+					<important-2>
+                			<p class="text"><span class="nerf">Bonus</span> <span class="dark">Triremes fire</span> <span class="removed">38,5% faster</span> -&gt; <span class="dark">20% faster</span></p>
+       				</important-2>
+					<important-2>
+                    		<p class="text"><span class="nerf">Bonus</span> <span class="dark">Elephants move</span> <span class="removed">55,6% faster</span> -&gt; <span class="dark">25% faster</span></p>
+        			</important-2>
+					<important-2>
+                			<p class="text"><span class="buff">New bonus</span> <span class="dark">Hunted animals grant 40% more food</span><br>
+							<span class="buff">New bonus</span> <span class="dark">All Temple technologies cost wood instead of gold</span><br>
+							<span class="buff">Technologies enabled</span> <span class="dark">Artisanship, Wheel, Plow, Ballistics</span></p>
+                			<p class="text"><span class="nerf">Technology disabled </span>Heavy Horse Archer</p>
+      				</important-2>
+								<p class="comment">
+					<important-2>
+                    			Without Wheel Bronze Age and onwards was too weak, but now that Wheel is enabled the strong bonuses are making Persian too strong.<br>
+                       			Faster hunting speed alone makes food run out too fast. Now the hunting bonus is making animals last longer giving power towards the late game and not just at the start of the game.<br>
+								Going into fast Iron Age and killing enemy foot soldiers with War Elephants was too strong strategy. <br>
+								With 25% movement speed bonus Composite Bowmen are capable of running away from Elephants forcing Persian player to have mixed army.<br>
+								Without Ballistics, Horse Archers and Elephant Archers were barely usable.
+         			</important-2>
+                    			</p>
+				<!-- Phoenician -->
+        			<important-2>
+            			<p class="header">Phoenician</p>
+            		</important-2>
+          			<important-2>
+                			<p class="text"><span class="nerf">Bonus removed </span>Catapult Trireme and Juggernaught fire 72,4% faster<br>
+                			<span class="buff">Bonus </span><span class="dark">Woodcutters work</span> <span class="removed">9,1% faster</span> -&gt; <span class="dark">15% faster</span> (carry capacity reduced from +3 -&gt; +2)</p>
+							<p class="text"><span class="nerf">Bonus</span> <span class="dark">All elephant units cost</span> -&#8202;<span class="removed">25%</span> -&gt; <span class="dark">-20%</span><br>
+							<span class="buff">New bonus</span> <span class="dark">All Temple technologies give bonus HP to Priests</span> (Max 95 HP)</p>
+                			<p class="text"><span class="nerf">Technologies disabled </span>Catapult Trireme, Juggernaught</p>
+                			<p class="text"><span class="buff">Technology enabled</span> <span class="dark">Metallurgy</span></p>
+        			</important-2>
+      							<p class="comment">
+            		<important-2>			
+                        		Having faster woodcutters is more than enough to ensure strong water battles.
+        			</important-2>
+                				</p>
+				<!-- Roman -->
+        			<important-2>
+            			<p class="header">Roman</p>
+							<p class="text"><span class="nerf">Bonus </span><span class="dark">buildings cost -&#8202;</span><span class="removed">15%</span> -&gt; <span class="dark">-10%</span><br>
+							<span class="nerf">Bonus </span><span class="dark">Swordsmen attack </span><span class="removed">50% faster</span> -&gt; <span class="dark">25% faster</span><br>
+							<span class="nerf">Bonus</span><span class="dark"> Towers cost</span> -&#8202;<span class="removed">50%</span> -&gt; <span class="dark">-40%</span></p>
+								<p class="comment">Roman economy allowed far better rushing than any other civ would.</p>
+        			</important-2>
+				<!-- Shang -->
+        			<important-1>
+            			<p class="header">Shang</p>
+            		</important-1>
+					<important-3>
+                			<p class="text"><span class="nerf">Bonus</span> <span class="dark">Wall bonus hit points</span>  +<span class="removed">100%</span> -&gt; <span class="dark">+60%</span></p>
+       				</important-3>
+            		<important-1>
+            				<p class="text"><span class="buff">Bonus removed</span> starting food -40</p>
+                			<p class="text"><span class="nerf">New bonus</span> <span class="dark">33% increased Town Centers and military buildings cost</span></p>
+					</important-1>
+					<important-3>
+                			<p class="text"><span class="nerf">New bonus</span> Town Centers cost increase takes effect after Tool Age</p>
+					</important-3>
+					<important-1>
+                			<p class="text"><span class="buff">Technologies enabled </span><span class="dark">Ballistics, Trireme</span></p>
+         			</important-1>
+								<p class="comment">
+					<important-1>
+                    			Reduced starting food did do made Shang more balanced, but it didn’t fix the problem.<br>
+								Shang was able to grow economy and military too well together. Now when Shang wants to commit into military its economy growth is slowing down enough for other civilizations to catch up and to be able to match it at certain times.<br>
+								With the better Architecture Shang had too strong mid Bronze Age military presence if it got few extra minutes to boom.
+					</important-1>
+                    			</p>
+				<!-- Sumerian -->
+        			<important-2>
+            			<p class="header">Sumerian</p>
+                			<p class="text">
+								<span class="nerf">Bonus removed</span> <span class="dark">Villagers have +15 HP</span><br>
+								<span class="nerf">Bonus</span> <span class="dark">Stone Thrower, Catapult, Heavy Catapult fire</span> <span class="removed">42,9% faster</span> -&gt; <span class="dark">30% faster</span><br>
+								<span class="nerf">Bonus</span> <span class="dark">Bonus food on Farms</span> +<span class="removed">250</span> -&gt; <span class="dark">+125</span><br>
+								<span class="buff">New bonus</span> <span class="dark">All units cost -10 wood</span><br>
+								<span class="buff">New bonus</span> <span class="dark">Can build farms at Stone Age</span><br>
+								<span class="buff">New bonus</span> <span class="dark">Villagers get +5 HP on age up</span>
+							</p>
+                    			<p class="comment">New villager upgrades are making Sumerian health bonus even more significant.<br>
+                    			Having too many options for tank killing makes countering Sumerian too hard.<br>
+								With Farm changes bonus food on Farms is more valuable and comes into play much earlier than it did before.<br>
+								Catapults being only units to fight effectively against back line makes countering Sumerian easier.</p>
+           			</important-2>
+				<!-- Yamato -->
+        			<important-1>
+            			<p class="header">Yamato</p>
+							<p class="text"><span class="nerf">Bonus removed</span> Villagers move 18% faster<br>
+							<span class="nerf">Bonus</span> <span class="dark">All cavalry units cost</span> -&#8202;<span class="removed">25%</span> -&gt; <span class="dark">-15%</span><br>
+							<span class="nerf">Bonus</span> <span class="dark">ships have</span> +<span class="removed">30% HP</span> -&gt; <span class="dark">+20% HP</span><br>
+							<span class="buff">New bonus</span> <span class="dark">Foragers work 5% faster</span><br>
+							<span class="buff">New bonus</span> <span class="dark">Towers fire 25% faster</span><br>
+							<span class="nerf">Technologies disabled </span>Catapult Trireme, Juggernaught, Engineering</p>
+								<p class="comment">18% faster villagers were too fast compared to Axemen.<br/>
+                        		Yamato had strong water control all the way from early Tool Age to Late iron age.<br>
+								Yamato had too strong early Iron Age presence with the buffed Horse Archers.</p>
+       				</important-1>
+			</div>
+		<!-- end of civs -->
+	</div> <!-- end of content -->
+</div> <!-- end of container -->
+</article>
+<footer>
+	<script src="script/footerText.js"></script><!-- footer scripted -->
+</footer>
+</main>
+</body>
+</html>

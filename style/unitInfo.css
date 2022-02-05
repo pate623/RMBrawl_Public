@@ -1,0 +1,2226 @@
+body {
+	background-color:#e9cd91;
+	background-image:url(../Pictures/ui/style-00/info-box.gif);
+	margin: auto;
+	padding: 0;
+	color: #000;
+	z-index: -9;
+	}
+	
+/* mobile text scaling */
+p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.header2, p.text, p.text2, p.comment, p.comment2, p.otsikko3, p.name, p.name2, p.name3, p.info, p.info2, p.info3, p.info4,footer a, #footer-adjust {
+	-webkit-text-size-adjust: 150%;
+	}
+
+#footerCreditsText, .footerExplanation, #siteWaterMarks {
+	-webkit-text-size-adjust: 165%;
+}
+
+/* keeps the nav bar in the middle of the page*/ 
+#footer{
+	/*min-width: 1790px; */
+	}
+	/* Mobile nav */
+		@media(max-width: 874px){
+			#desktopHeaderInfo{
+				display: none;
+				}
+			#mobileHeaderInfo{
+				display: block;
+				}
+		}
+#navbarMobile{
+	margin-top: 5px;
+	}
+	
+/*makes sure the top bar is shown at top always*/
+.backgroundlist{
+	min-width: 1790px;
+	}
+.top-list{
+	margin:auto;
+	}
+.backgroundlist{
+	height: 59px;
+	}
+	/* Includes both side bar and tech tree. Width changes when side bar changes */
+		#container { 
+			height: 2950px;
+			padding-top: 0px;
+			margin: 0px 0px 5px 0px;
+			user-drag: none; 
+			user-select: none;
+			-moz-user-select: none;
+			-webkit-user-drag: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			z-index: -8;
+			}
+		/* tech tree */
+			.content { /*bakcground at top which all pop ups will appear */
+				position:relative;
+				width: 1780px;
+				height: 2950px;
+				background-color: transparent;
+				background-repeat:no-repeat;
+				margin:auto;
+				padding: 0 0 0 0;
+				border-width: 5px;
+				border-style:double;
+				border-top-style:none;
+				border-color:#5c441a;
+				}
+				#low-background {
+					position:absolute;
+					left: 0px;
+					top: 0px;
+					opacity: 1;
+					z-index: -2;
+					}
+			/*Title and info of the civilization and it's bonuses*/
+				#title{ /* Civilizations name */
+					font-size: 95px;
+					color:#000;
+					font-variant: small-caps;
+					position: absolute;
+					left: 135px;
+					top: 16px;
+					width: 760px;
+					text-align: left;
+					alignment-adjust:central;
+					}
+				#civ-info{ /* Civilizations bonuses */
+					font-size: 15px;
+					font-weight:400;
+					font-family:Arial, Helvetica, sans-serif;
+					font-style: italic;
+					color:#000;
+					position: absolute;
+					left: 985px;
+					top: 35px;
+					width: 712px;
+					height: 275px;
+					padding: 8px 4px 4px 10px ;
+					background-color: #a58138;
+					border-radius: 12px;
+					border-style:solid;
+					border-width: 2px;
+					border-color:#a97c22;
+					background-image:url(../Pictures/backgrounds/wall.png);
+					}
+				.civInfoHeader{
+					font-size: 25px;
+					font-weight:bold;
+				}
+				.civInfoVersionNumber{
+					font-size: 12px;
+				}
+					
+				#color-info{ /* color info */
+					font-size: 28px;
+					font-weight:600;
+					font-family:Arial, Helvetica, sans-serif;
+					font-style: italic;
+					position: absolute;
+					left: 200px;
+					top: 110px;
+					width: 450px;
+					line-height: 150%;
+					text-shadow: 3px 2px #000;
+					}
+					/*colors*/
+						span.yellow{ 
+							color:#FF0;
+							}
+						span.green{ 
+							color:#0F0;
+							}
+						span.grey{ 
+							color:#a08531;
+							}
+						span.blue{ 
+							color:#3140d1;
+							}
+
+			/* Age names and seperations */
+				/* age seperation lines */
+					#tool-line{ /* stone -> tool Age */
+						position: absolute;
+						left: 385px;
+						top: 395px;
+						width: 4px;
+						height: 2495px;
+						background-color:#000;
+						}	
+					#bronze-line{ /* tool Age -> Bronze */
+						position: absolute;
+						left: 730px;
+						top: 395px;
+						width: 4px;
+						height: 2495px;
+						background-color:#000;
+						}
+					#iron-line{ /* Bronze -> Iron Age */
+						position: absolute;
+						left: 1240px;
+						top: 395px;
+						width: 4px;
+						height: 2495px;
+						background-color:#000;
+						}
+				/* age names */
+					#stone-age{ /* stone Age */
+						position: absolute;
+						left: 125px;
+						top: 365px;
+						width: 200px;
+						height: 200px;
+						}
+					#tool-age{ /* tool Age */
+						position: absolute;
+						left: 385px;
+						top: 365px;
+						width: 345px;
+						height: 200px;
+						}	
+					#bronze-age{ /* Bronze Age*/
+						position: absolute;
+						left: 730px;
+						top: 365px;
+						width: 530px;
+						height: 200px;
+						}
+					#iron-age{ /* Iron Age */
+						position: absolute;
+						left: 1240px;
+						top: 365px;
+						width: 500px;
+						height: 200px;
+						}
+						/*age text*/
+							.age{
+								font-variant: small-caps;
+								text-align: center;
+								text-shadow: 3px 2px #fff;
+								line-height: 75%;
+								color:#000;
+								font-size:48px;
+								font-weight:500;
+								font-style: italic;
+								}
+							
+			/* pop up texts effects */
+				.invisible{ /* Pop up effects and their starting style*/
+					display: none;
+					margin: 0px;
+					padding: 8px 4px 4px 10px ;
+					background-color: #a58138;
+					border-radius: 12px;
+					border-style:solid;
+					border-width: 2px;
+					border-color:#a97c22;
+					width: 215px;
+					font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+					line-height: 1.4;
+					font-style:normal;
+					font-weight:200;
+					text-align: left;
+					font-size:12px;
+					background-image:url(../Pictures/backgrounds/wall.png);
+					z-index: 1;
+					}
+					@-moz-document url-prefix() {
+    					.invisible {
+        				line-height: 1.1;
+						letter-spacing: -0.1px;
+    					}
+					}		
+					table, th, td { /* Stat list*/
+						padding: 0px;
+						margin: 0px;
+						font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+						line-height: 1.4;
+						font-style:normal;
+						font-weight:200;
+						text-align:left;
+						border:none;
+						border-collapse: collapse;
+						font-size:12px;
+						text-decoration:none;
+						}
+						@-moz-document url-prefix() {
+    						table, th, td {
+        					line-height: 1.1;
+    						}
+						}
+						.popup-title{
+							text-decoration:none;
+							font-weight:bold;
+							}
+						p{ /* Tool tip text all */
+							text-align:left;
+							border:none;
+							alignment-adjust:text-before-edge;
+							font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+							line-height: 1.4;
+							padding: 0px;
+							margin: 0px;
+							font-size:12px;
+							}
+						/* Opacity on hoover */	
+							#ground2{
+								position:absolute;
+								left: 0px;
+								top: -1px;
+								opacity: 1;
+								z-index: -2;
+								}
+							/*#ground3{
+								position:absolute;
+								left: 0px;
+								top: -1px;
+								opacity: 0.3;
+								z-index: 0;
+								}
+							.invisible:hover ~ .invisible{
+								z-index: -1;
+								opacity: 0.6;
+								} */
+							.invisible:hover{
+								z-index: 3;
+								border-color:#FF6600;
+								}
+							title{
+								transition-delay: 0.1s;
+								}
+			/*Unit and technology names beside the pictures*/
+				.units{ /* Usable units */
+					font: 100%/1.4 Arial, Helvetica, sans-serif;
+					font-size:20px;
+					font-weight:bold;
+					color:#000;
+    				text-align:center;
+					line-height: 105%;
+					padding-left: 50px;
+					cursor:pointer;
+					}
+							span.strong{ /* Unit and tecnology mames inside tips*/
+								font-weight:bold;
+								}
+							span.em{ /*usable units requirements text flavor */
+								color:#CC1111;
+								font-size: 19px;
+								font-style:italic;
+								text-shadow: 1px 1px #000;
+								}
+							span.emn{ /*tighten requirement text*/
+								letter-spacing: -1px;
+								font-size:17px;
+								color:#CC1111;
+								font-style:italic;
+								text-shadow: 1px 1px #000;
+									}
+
+	/* Positioning of all pop ups and unit names */
+		/*Water units*/
+			/*Dock*/
+				#dock {
+					position: absolute;
+					left: 82px;
+					top: 394px;
+					height: 210px;
+					}
+				#dock-nap {
+					position: absolute;
+					left: 96px;
+					top: 627px;
+					width: 150px;
+					height: 50px;
+					}
+			/*Scout Ship*/
+				#scout-ship {
+					position: absolute;
+					left: 417px;
+					top: 457px;
+					height: 85px;
+					}
+				#scout-ship-nap	{
+					position: absolute;
+					left: 433px;
+					top: 568px;
+					width: 150px;
+					height: 50px;
+					}
+			/*War Galley*/
+				#war-galley {
+					position:absolute;
+					left: 745px;
+					top: 420px;
+					height: 125px;
+					}
+				#war-galley-nap	{
+					position: absolute;
+					left: 758px;
+					top: 566px;
+					width: 150px;
+					height: 50px;
+					}
+			/*Trireme*/
+				#trieme {
+					position: absolute;
+					left: 1246px;
+					top: 412px;
+					height: 135px;
+					}
+				#trieme-nap	{
+					position: absolute;
+					left: 1260px;
+					top: 566px;
+					width: 150px;
+					height: 50px;
+					}
+			/*Juggernaught*/
+				#juggernaught {
+					position: absolute;
+					left: 1475px;
+					top: 311px;
+					height: 180px;
+					}
+				#juggernaught-nap	{
+					position: absolute;
+					left: 1488px;
+					top: 510px;
+					width: 150px;
+					height: 50px;
+					}
+			/*Fire Galley*/
+				#fire-galley {
+					position: absolute;
+					left: 1246px;
+					top: 341px;
+					height: 90px;
+					}
+				#fire-galley-nap	{
+					position: absolute;
+					left: 1260px;
+					top: 453px;
+					width: 150px;
+					height: 50px;
+					}
+			/*Catapult trieme*/
+				#catapult-trieme {
+					position: absolute;
+					left: 1246px;
+					top: 311px;
+					height: 180px;
+					}
+				#catapult-trieme-nap	{
+					position: absolute;
+					left: 1260px;
+					top: 510px;
+					width: 150px;
+					height: 50px;
+					letter-spacing: -1px;
+					}
+			/*Fishing boat*/
+				#fishing-boat {
+					position: absolute;
+					left: 152px;
+					top: 568px;
+					height: 90px;
+					}
+				#fishing-boat-nap	{
+					position: absolute;
+					left: 164px;
+					top: 685px;
+					width: 150px;
+					height: 50px;
+					}
+			/*Fishing Ship*/
+				#fishing-ship {
+					position: absolute;
+					left: 745px;
+					top: 529px;
+					height: 130px;
+					}
+				#fishing-ship-nap	{
+					position: absolute;
+					left: 757px;
+					top: 685px;
+					width: 150px;
+					height: 50px;
+					}	
+			/*Trade boat*/
+				#trade-boat {
+					position: absolute;
+					left: 152px;
+					top: 630px;
+					height: 85px;
+					}
+				#trade-boat-nap	{
+					position: absolute;
+					left: 164px;
+					top: 739px;
+					width: 150px;
+					height: 50px;
+					}
+			/*merchant-ship*/
+				#merchant-ship {
+					position: absolute;
+					left: 745px;
+					top: 583px;
+					height: 130px;
+					}
+				#merchant-ship-nap	{
+					position: absolute;
+					left: 757px;
+					top: 739px;
+					width: 150px;
+					height: 50px;
+					}	
+			/*light-transport*/
+				#light-transport {
+					position: absolute;
+					left: 417px;
+					top: 516px;
+					height: 83px;
+					}
+				#light-transport-nap	{
+					position: absolute;
+					left: 433px;
+					top: 627px;
+					width: 150px;
+					height: 50px;
+					}
+			/*heavy-transport*/
+				#heavy-transport {
+					position: absolute;
+					left: 1246px;
+					top: 478px;
+					height: 125px;
+					}
+				#heavy-transport-nap	{
+					position: absolute;
+					left: 1260px;
+					top: 627px;
+					width: 150px;
+					height: 50px;
+					letter-spacing: -1px;
+					}
+		/*Granary tecnologies*/
+			/*Granary*/
+				#granary {
+					position: absolute;
+					left: 135px;
+					top: 727px;
+					height: 120px;
+					}
+				#granary-nap	{
+					position: absolute;
+					left: 150px;
+					top: 872px;
+					width: 150px;
+					height: 50px;
+					}
+			/* Creel */
+				#creel {
+					position: absolute;
+					left: 135px;
+					top: 807px;
+					height: 100px;
+					}
+				#creel-nap	{
+					position: absolute;
+					left: 150px;
+					top: 930px;
+					width: 150px;
+					height: 50px;
+					}
+			/*Watch tower*/
+				#watch-tower {
+					position: absolute;
+					left: 417px;
+					top: 619px;
+					height: 175px;
+					}
+				#watch-tower-nap	{
+					position: absolute;
+					left: 430px;
+					top: 820px;
+					width: 150px;
+					height: 50px;
+					}
+			/*sentry-tower*/
+				#sentry-tower {
+					position: absolute;
+					left: 745px;
+					top: 619px;
+					height: 175px;
+					}
+				#sentry-tower-nap	{
+					position: absolute;
+					left: 757px;
+					top: 820px;
+					width: 150px;
+					height: 50px;
+					}
+			/*guard-tower*/
+				#guard-tower {
+					position: absolute;
+					left: 1246px;
+					top: 620px;
+					height: 175px;
+					}
+				#guard-tower-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 820px;
+					width: 150px;
+					height: 50px;
+					}
+			/*ballista-tower*/
+				#ballista-tower {
+					position: absolute;
+					left: 1475px;
+					top: 619px;
+					height: 175px;
+					}
+				#ballista-tower-nap	{
+					position: absolute;
+					left: 1487px;
+					top: 814px;
+					width: 150px;
+					height: 50px;
+					}
+			/*small-wall*/
+				#small-wall {
+					position: absolute;
+					left: 417px;
+					top: 723px;
+					height: 125px;
+					}
+				#small-wall-nap	{
+					position: absolute;
+					left: 429px;
+					top: 872px;
+					width: 150px;
+					height: 50px;
+					}
+			/*medium-wall*/
+				#medium-wall {
+					position: absolute;
+					left: 745px;
+					top: 723px;
+					height: 125px;
+					}
+				#medium-wall-nap	{
+					position: absolute;
+					left: 756px;
+					top: 872px;
+					width: 150px;
+					height: 50px;
+					}
+			/*big-wall*/
+				#big-wall {
+					position: absolute;
+					left: 1246px;
+					top: 723px;
+					height: 125px;
+					}
+				#big-wall-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 872px;
+					width: 150px;
+					height: 50px;
+					}
+		/*Temple units*/
+			/*temple*/
+				#temple {
+					position: absolute;
+					left: 745px;
+					top: 847px;
+					height: 95px;
+					}
+				#temple-nap	{
+					position: absolute;
+					left: 756px;
+					top: 967px;
+					width: 150px;
+					height: 50px;
+					}
+			/*priest*/
+				#priest {
+					position: absolute;
+					left: 745px;
+					top: 787px;
+					height: 206px;
+					}
+				#priest-nap	{
+					position: absolute;
+					left: 756px;
+					top: 1018px;
+					width: 150px;
+					height: 50px;
+					}
+			/*astrology*/
+				#astrology {
+					position: absolute;
+					left: 995px;
+					top: 774px;
+					height: 135px;
+					}
+				#astrology-nap	{
+					position: absolute;
+					left: 1007px;
+					top: 933px;
+					width: 150px;
+					height: 50px;
+					}
+			/*medicine*/
+				#medicine {
+					position: absolute;
+					left: 1246px;
+					top: 774px;
+					height: 135px;
+					}
+				#medicine-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 933px;
+					width: 150px;
+					height: 50px;
+					}	
+			/*fanaticism*/
+				#fanaticism {
+					position: absolute;
+					left: 1475px;
+					top: 808px;
+					height: 100px;
+					}
+				#fanaticism-nap	{
+					position: absolute;
+					left: 1487px;
+					top: 933px;
+					width: 150px;
+					height: 50px;
+					}	
+			/*mysticism*/
+				#mysticism {
+					position: absolute;
+					left: 995px;
+					top: 870px;
+					height: 100px;
+					}
+				#mysticism-nap	{
+					position: absolute;
+					left: 1007px;
+					top: 993px;
+					width: 150px;
+					height: 50px;
+					}
+			/*afterlife*/
+				#afterlife {
+					position: absolute;
+					left: 1246px;
+					top: 871px;
+					height: 100px;
+					}
+				#afterlife-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 993px;
+					width: 150px;
+					height: 50px;
+					}
+			/*jihad*/
+				#jihad {
+					position: absolute;
+					left: 1475px;
+					top: 796px;
+					height: 175px;
+					}
+				#jihad-nap	{
+					position: absolute;
+					left: 1487px;
+					top: 993px;
+					width: 150px;
+					height: 50px;
+					}
+			/*polytheism*/
+				#polytheism {
+					position: absolute;
+					left: 995px;
+					top: 929px;
+					height: 100px;
+					}
+				#polytheism-nap	{
+					position: absolute;
+					left: 1007px;
+					top: 1052px;
+					width: 150px;
+					height: 50px;
+					}
+			/*monotheism*/
+				#monotheism {
+					position: absolute;
+					left: 1246px;
+					top: 929px;
+					height: 100px;
+					}
+				#monotheism-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 1052px;
+					width: 150px;
+					height: 50px;
+					}
+			/*martyrdom*/
+				#martyrdom {
+					position: absolute;
+					left: 1475px;
+					top: 930px;
+					height: 100px;
+					}
+				#martyrdom-nap	{
+					position: absolute;
+					left: 1487px;
+					top: 1052px;
+					width: 150px;
+					height: 50px;
+					
+					}
+		/*Market tecnologies*/
+			/*farm*/
+				#farm {
+					position: absolute;
+					left: 470px;
+					top: 912px;
+					height: 108px;
+					}
+				#farm-nap	{
+					position: absolute;
+					left: 482px;
+					top: 1041px;
+					width: 150px;
+					height: 50px;
+					}
+			/*market*/
+				#market {
+					position: absolute;
+					left: 417px;
+					top: 943px;
+					height: 130px;
+					}
+				#market-nap	{
+					position: absolute;
+					left: 430px;
+					top: 1096px;
+					width: 150px;
+					height: 50px;
+					}
+			/*wheel*/
+				#wheel {
+					position: absolute;
+					left: 745px;
+					top: 989px;
+					height: 85px;
+					}
+				#wheel-nap	{
+					position: absolute;
+					left: 756px;
+					top: 1097px;
+					width: 150px;
+					height: 50px;
+					}
+			/*domestication*/
+				#domestication {
+					position: absolute;
+					left: 470px;
+					top: 1009px;
+					height: 120px;
+					}
+				#domestication-nap	{
+					position: absolute;
+					left: 482px;
+					top: 1154px;
+					width: 150px;
+					height: 50px;
+					}	
+			/*plow*/
+				#plow {
+					position: absolute;
+					left: 745px;
+					top: 1009px;
+					height: 120px;
+					}
+				#plow-nap	{
+					position: absolute;
+					left: 756px;
+					top: 1154px;
+					width: 150px;
+					height: 50px;
+					}	
+			/*irrigation*/
+				#irrigation {
+					position: absolute;
+					left: 1246px;
+					top: 1009px;
+					height: 120px;
+					}
+				#irrigation-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 1154px;
+					width: 150px;
+					height: 50px;
+					}	
+			/*goldmining*/
+				#goldmining {
+					position: absolute;
+					left: 470px;
+					top: 1098px;
+					height: 85px;
+					}
+				#goldmining-nap	{
+					position: absolute;
+					left: 482px;
+					top: 1206px;
+					width: 150px;
+					height: 50px;
+					}	
+			/*coinage*/
+				#coinage {
+					position: absolute;
+					left: 1246px;
+					top: 1068px;
+					height: 114px;
+					}
+				#coinage-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 1206px;
+					width: 150px;
+					height: 50px;
+					}	
+			/*stonemining*/
+				#stonemining {
+					position: absolute;
+					left: 470px;
+					top: 1132px;
+					height: 105px;
+					}
+				#stonemining-nap {
+					position: absolute;
+					left: 482px;
+					top: 1262px;
+					width: 150px;
+					height: 50px;
+					}	
+			/*siegecraft*/
+				#siegecraft {
+					position: absolute;
+					left: 1246px;
+					top: 1087px;
+					height: 150px;
+					}
+				#siegecraft-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 1262px;;
+					width: 150px;
+					height: 50px;
+					}
+			/*woodworking*/
+				#woodworking {
+					position: absolute;
+					left: 470px;
+					top: 1190px;
+					height: 100px;
+					}
+				#woodworking-nap	{
+					position: absolute;
+					left: 482px;
+					top: 1314px;
+					width: 150px;
+					height: 50px;
+					}
+			/*artisanship*/
+				#artisanship {
+					position: absolute;
+					left: 745px;
+					top: 1192px;
+					height: 100px;
+					}
+				#artisanship-nap	{
+					position: absolute;
+					left: 757px;
+					top: 1314px;
+					width: 150px;
+					height: 50px;
+					}
+			/*craftsmanship*/
+				#craftsmanship {
+					position: absolute;
+					left: 1246px;
+					top: 1186px;
+					height: 105px;
+					}
+				#craftsmanship-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 1314px;
+					width: 150px;
+					height: 50px;
+					}
+			/*pottery*/
+				#pottery {
+					position: absolute;
+					left: 470px;
+					top: 1246px;
+					height: 100px;
+					}
+				#pottery-nap	{
+					position: absolute;
+					left: 482px;
+					top: 1368px;
+					width: 150px;
+					height: 50px;
+					}
+		/*government center*/
+			/*government center*/
+				#governmentcenter {
+					position: absolute;
+					left: 745px;
+					top: 1321px;
+					height: 85px;
+					}
+				#governmentcenter-nap	{
+					position: absolute;
+					left: 757px;
+					top: 1425px;
+					width: 150px;
+					height: 50px;
+					}
+			/*town center*/
+				#towncenter {
+					position: absolute;
+					left: 745px;
+					top: 1345px;
+					height: 115px;
+					}
+				#towncenter-nap	{
+					position: absolute;
+					left: 757px;
+					top: 1482px;
+					width: 150px;
+					height: 50px;
+					}
+			/*logistics*/
+				#logistics {
+					position: absolute;
+					left: 995px;
+					top: 1456px;
+					height: 90px;
+					}
+				#logistics-nap	{
+					position: absolute;
+					left: 1007px;
+					top: 1567px;
+					width: 150px;
+					height: 50px;
+					}
+			/*architecture*/
+				#architecture {
+					position: absolute;
+					left: 995px;
+					top: 1346px;
+					height: 85px;
+					}
+				#architecture-nap	{
+					position: absolute;
+					left: 1007px;
+					top: 1457px;
+					width: 150px;
+					height: 50px;
+					}
+			/*engineering*/
+				#engineering {
+					position: absolute;
+					left: 1246px;
+					top: 1283px;
+					height: 85px;
+					}
+				#engineering-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 1391px;
+					width: 150px;
+					height: 50px;
+					}
+			/*alchemy*/
+				#alchemy {
+					position: absolute;
+					left: 1246px;
+					top: 1302px;
+					height: 116px;
+					}
+				#alchemy-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 1454px;
+					width: 150px;
+					height: 50px;
+					}
+			/*nobility*/
+				#nobility {
+					position: absolute;
+					left: 995px;
+					top: 1394px;
+					height: 95px;
+					}
+				#nobility-nap	{
+					position: absolute;
+					left: 1007px;
+					top: 1512px;
+					width: 150px;
+					height: 50px;
+					}
+			/*ballistics*/
+				#ballistics {
+					position: absolute;
+					left: 1246px;
+					top: 1389px;
+					height: 100px;
+					}
+				#ballistics-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 1511px;
+					width: 150px;
+					height: 50px;
+					}
+			/*crossBow // bracer*/
+				#crossBow {
+					position: absolute;
+					left: 995px;
+					top: 1464px;
+					height: 85px;
+					}
+				#crossBow-nap	{
+					position: absolute;
+					left: 1007px;
+					top: 1572px;
+					width: 150px;
+					height: 50px;
+					}
+			/*aristocracy*/
+				#aristocracy {
+					position: absolute;
+					left: 1246px;
+					top: 1460px;
+					height: 85px;
+					}
+				#aristocracy-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 1567px;
+					width: 150px;
+					height: 50px;
+					}
+			/*uniqueTechnology*/
+				#uniqueTechnology {
+					position: absolute;
+					left: 745px;
+					top: 336px;
+					height: 1180px;
+					}
+				#uniqueTechnology-nap	{
+					position: absolute;
+					left: 757px;
+					top: 1535px;
+					width: 150px;
+					height: 50px;
+					}
+			/* Mathematics */
+				#mathematics {
+					position: absolute;
+					left: 995px;
+					top: 1283px;
+					height: 88px;
+					}
+				#mathematics-nap	{
+					position: absolute;
+					left: 1007px;
+					top: 1391px;
+					width: 150px;
+					height: 50px;
+					}
+			/*house*/
+				#house {
+					position: absolute;
+					left: 132px;
+					top: 1140px;
+					height: 115px;
+					}
+				#house-nap	{
+					position: absolute;
+					left: 144px;
+					top: 1280px;
+					width: 150px;
+					height: 50px;
+					}	
+			/*towncenter2*/
+				#towncenter2 {
+					position: absolute;
+					left: 82px;
+					top: 1358px;
+					height: 115px;
+					}
+				#towncenter2-nap	{
+					position: absolute;
+					left: 96px;
+					top: 1495px;
+					width: 150px;
+					height: 50px;
+					}	
+			/*villager*/
+				#villager {
+					position: absolute;
+					left: 82px;
+					top: 1266px;
+					height: 255px;
+					}
+				#villager-nap	{
+					position: absolute;
+					left: 96px;
+					top: 1548px;
+					width: 150px;
+					height: 50px;
+					}
+			/*linencloth*/
+				#linencloth {
+					position: absolute;
+					left: 417px;
+					top: 1481px;
+					height: 80px;
+					}
+				#linencloth-nap	{
+					position: absolute;
+					left: 429px;
+					top: 1582px;
+					width: 150px;
+					height: 50px;
+					}
+			/*akinaka*/
+				#akinaka {
+					position: absolute;
+					left: 745px;
+					top: 1505px;
+					height: 80px;
+					}
+				#akinaka-nap{
+					position: absolute;
+					left: 757px;
+					top: 1606px;
+					width: 150px;
+					height: 50px;
+					letter-spacing: -1px;
+					}
+			/*toolage*/
+				#toolage {
+					position: absolute;
+					left: 132px;
+					top: 1535px;
+					height: 85px;
+					}
+				#toolage-nap{
+					position: absolute;
+					left: 144px;
+					top: 1641px;
+					width: 150px;
+					height: 50px;
+					letter-spacing: -1px;
+					}	
+			/*bronzeage*/
+				#bronzeage{
+					position: absolute;
+					left: 470px;
+					top: 1535px;
+					height: 85px;
+					}
+				#bronzeage-nap{
+					position: absolute;
+					left: 482px;
+					top: 1641px;
+					width: 150px;
+					height: 50px;
+					letter-spacing: -1px;
+					}	
+			/*ironage*/
+				#ironage {
+					position: absolute;
+					left: 995px;
+					top: 1535px;
+					height: 85px;
+					}
+				#ironage-nap	{
+					position: absolute;
+					left: 1007px;
+					top: 1641px;
+					width: 150px;
+					height: 50px;
+					letter-spacing: -1px;
+					}	
+			/*wonder*/
+				#wonder {
+					position: absolute;
+					left: 1475px;
+					top: 1490px;
+					height: 130px;
+					}
+				#wonder-nap	{
+					position: absolute;
+					left: 1487px;
+					top: 1644px;
+					width: 150px;
+					height: 50px;
+					}
+		/*Storage pit*/
+			/*storagepit*/
+				#storagepit {
+					position: absolute;
+					left: 132px;
+					top: 1651px;
+					height: 145px;
+					}
+				#storagepit-nap	{
+					position: absolute;
+					left: 144px;
+					top: 1820px;
+					width: 150px;
+					height: 50px;
+					}
+			/*leathercavalry*/
+				#leathercavalry {
+					position: absolute;
+					left: 417px;
+					top: 1608px;
+					height: 80px;
+					}
+				#leathercavalry-nap	{
+					position: absolute;
+					left: 429px;
+					top: 1708px;
+					width: 150px;
+					height: 50px;
+					}
+			/*scalecavalry*/
+				#scalecavalry {
+					position: absolute;
+					left: 745px;
+					top: 1608px;
+					height: 80px;
+					}
+				#scalecavalry-nap	{
+					position: absolute;
+					left: 757px;
+					top: 1708px;
+					width: 150px;
+					height: 50px;
+					}
+			/*chaincavalry*/
+				#chaincavalry {
+					position: absolute;
+					left: 1246px;
+					top: 1608px;
+					height: 80px;
+					}
+				#chaincavalry-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 1708px;
+					width: 150px;
+					height: 50px;
+					}
+			/*leatherarcher*/
+				#leatherarcher {
+					position: absolute;
+					left: 417px;
+					top: 1661px;
+					height: 80px;
+					}
+				#leatherarcher-nap	{
+					position: absolute;
+					left: 429px;
+					top: 1761px;
+					width: 150px;
+					height: 50px;
+					}
+			/*scalearcher*/
+				#scalearcher {
+					position: absolute;
+					left: 745px;
+					top: 1661px;
+					height: 80px;
+					}
+				#scalearcher-nap	{
+					position: absolute;
+					left: 757px;
+					top: 1761px;
+					width: 150px;
+					height: 50px;	
+					}
+			/*chainarcher*/
+				#chainarcher {
+					position: absolute;
+					left: 1246px;
+					top: 1661px;
+					height: 80px;
+					}
+				#chainarcher-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 1761px;
+					width: 150px;
+					height: 50px;				
+					}
+			/*leathermelee*/
+				#leathermelee {
+					position: absolute;
+					left: 417px;
+					top: 1713px;
+					height: 85px;
+					}
+				#leathermelee-nap	{
+					position: absolute;
+					left: 429px;
+					top: 1820px;
+					width: 150px;
+					height: 50px;			
+					}
+			/*scalemelee*/
+				#scalemelee {
+					position: absolute;
+					left: 745px;
+					top: 1713px;
+					height: 85px;
+					}
+				#scalemelee-nap	{
+					position: absolute;
+					left: 757px;
+					top: 1818px;
+					width: 150px;
+					height: 50px;
+					}
+			/*chainmelee*/
+				#chainmelee {
+					position: absolute;
+					left: 1246px;
+					top: 1713px;
+					height: 85px;
+					}
+				#chainmelee-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 1820px;
+					width: 150px;
+					height: 50px;	
+					}
+			/*toolworking*/
+				#toolworking {
+					position: absolute;
+					left: 417px;
+					top: 1767px;
+					height: 85px;
+					}
+				#toolworking-nap	{
+					position: absolute;
+					left: 429px;
+					top: 1875px;
+					width: 150px;
+					height: 50px;				
+					}
+			/*metalworking*/
+				#metalworking {
+					position: absolute;
+					left: 745px;
+					top: 1767px;
+					height: 85px;
+					}
+				#metalworking-nap	{
+					position: absolute;
+					left: 757px;
+					top: 1875px;
+					width: 150px;
+					height: 50px;
+					}
+			/*metallurgy*/
+				#metallurgy {
+					position: absolute;
+					left: 1246px;
+					top: 1767px;
+					height: 85px;
+					}
+				#metallurgy-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 1875px;
+					width: 150px;
+					height: 50px;
+					}
+			/*bronzeshield*/
+				#bronzeshield {
+					position: absolute;
+					left: 745px;
+					top: 1823px;
+					height: 85px;
+					}
+				#bronzeshield-nap	{
+					position: absolute;
+					left: 757px;
+					top: 1935px;
+					width: 150px;
+					height: 50px;
+					}
+			/*ironshield*/
+				#ironshield {
+					position: absolute;
+					left: 1246px;
+					top: 1823px;
+					height: 85px;
+					}
+				#ironshield-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 1935px;
+					width: 150px;
+					height: 50px;
+					}
+			/*towershield*/
+				#towershield {
+					position: absolute;
+					left: 1475px;
+					top: 1823px;
+					height: 85px;
+					}
+				#towershield-nap	{
+					position: absolute;
+					left: 1487px;
+					top: 1935px;
+					width: 150px;
+					height: 50px;
+					}
+		/*Academy units*/	
+			/*Academy*/
+				#academy {
+					position: absolute;
+					left: 745px;
+					top: 1911px;
+					height: 80px;
+					}
+				#academy-nap	{
+					position: absolute;
+					left: 757px;
+					top: 2015px;
+					width: 150px;
+					height: 50px;
+					}
+			/*hoplite*/
+				#hoplite {
+					position: absolute;
+					left: 745px;
+					top: 1941px;
+					height: 100px;
+					}
+				#hoplite-nap	{
+					position: absolute;
+					left: 757px;
+					top: 2067px;
+					width: 150px;
+					height: 50px;
+					}
+			/*phalanx*/
+				#phalanx {
+					position: absolute;
+					left: 1246px;
+					top: 1900px;
+					height: 145px;
+					}
+				#phalanx-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 2069px;
+					width: 150px;
+					height: 50px;
+					}
+			/*centurion*/
+				#centurion {
+					position: absolute;
+					left: 1475px;
+					top: 1900px;
+					height: 145px;
+					}
+				#centurion-nap	{
+					position: absolute;
+					left: 1487px;
+					top: 2069px;
+					width: 150px;
+					height: 50px;
+					letter-spacing: -1px;
+					}
+		/*Stable units*/
+			/*stable*/
+				#stable {
+					position: absolute;
+					left: 417px;
+					top: 2041px;
+					height: 85px;
+					}
+				#stable-nap	{
+					position: absolute;
+					left: 429px;
+					top: 2147px;
+					width: 150px;
+					height: 50px;
+					}
+			/*scout*/
+				#scout {
+					position: absolute;
+					left: 470px;
+					top: 2080px;
+					height: 100px;
+					}
+				#scout-nap	{
+					position: absolute;
+					left: 482px;
+					top: 2200px;
+					width: 150px;
+					height: 50px;
+					}
+			/*chariot*/
+				#chariot {
+					position: absolute;
+					left: 745px;
+					top: 2023px;
+					height: 102px;
+					}
+				#chariot-nap	{
+					position: absolute;
+					left: 757px;
+					top: 2147px;
+					width: 150px;
+					height: 50px;
+					}
+			/*scythe*/
+				#scythe {
+					position: absolute;
+					left: 1475px;
+					top: 1975px;
+					height: 151px;
+					}
+				#scythe-nap	{
+					position: absolute;
+					left: 1487px;
+					top: 2147px;
+					width: 150px;
+					height: 50px;
+					}
+			/*cavalry*/
+				#cavalry {
+					position: absolute;
+					left: 745px;
+					top: 2052px;
+					height: 130px;
+					}
+				#cavalry-nap	{
+					position: absolute;
+					left: 757px;
+					top: 2200px;
+					width: 150px;
+					height: 50px;
+					}
+			/*heavycav*/
+				#heavycav {
+					position: absolute;
+					left: 1246px;
+					top: 2010px;
+					height: 175px;
+					}
+				#heavycav-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 2205px;
+					width: 150px;
+					height: 50px;
+					}
+			/*cataphract*/
+				#cataphract {
+					position: absolute;
+					left: 1475px;
+					top: 2008px;
+					height: 175px;
+					}
+				#cataphract-nap	{
+					position: absolute;
+					left: 1487px;
+					top: 2202px;
+					width: 150px;
+					height: 50px;
+					}
+			/*warelephant*/
+				#warelephant {
+					position: absolute;
+					left: 1246px;
+					top: 2171px;
+					height: 125px;
+					}
+				#warelephant-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 2318px;
+					width: 150px;
+					height: 50px;
+					}
+			/*armorele*/
+				#armorele {
+					position: absolute;
+					left: 1475px;
+					top: 2104px;
+					height: 190px;
+					}
+				#armorele-nap	{
+					position: absolute;
+					left:  1487px;
+					top: 2315px;
+					width: 150px;
+					height: 50px;
+					letter-spacing: -1px;
+					font-size:19px;
+					}
+			/*camel*/
+				#camel {
+					position: absolute;
+					left: 745px;
+					top: 2138px;
+					height: 102px;
+					}
+				#camel-nap	{
+					position: absolute;
+					left: 757px;
+					top: 2262px;
+					width: 150px;
+					height: 50px;
+					}
+			/*heavyCamel*/
+				#heavyCamel {
+					position: absolute;
+					left: 1475px;
+					top: 2060px;
+					height: 180px;
+					}
+				#heavyCamel-nap	{
+					position: absolute;
+					left: 1487px;
+					top: 2262px;
+					width: 150px;
+					height: 50px;
+					}
+		/*Arhery units*/
+			/*archery*/
+				#archery {
+					position: absolute;
+					left: 417px;
+					top: 2297px;
+					height: 85px;
+					}
+				#archery-nap	{
+					position: absolute;
+					left: 434px;
+					top: 2403px;
+					width: 150px;
+					height: 50px;
+					}
+			/*improvedbow*/
+				#improvedbow {
+					position: absolute;
+					left: 745px;
+					top: 2281px;
+					height: 145px;
+					}
+				#improvedbow-nap	{
+					position: absolute;
+					left: 757px;
+					top: 2446px;
+					width: 150px;
+					height: 50px;
+					}
+			/*compie*/
+				#compie {
+					position: absolute;
+					left: 995px;
+					top: 2281px;
+					height: 145px;
+					}
+				#compie-nap	{
+					position: absolute;
+					left: 1007px;
+					top: 2446px;
+					width: 150px;
+					height: 50px;
+					}
+			/*recurvebow*/
+				#recurvebow {
+					position: absolute;
+					left: 1475px;
+					top: 2283px;
+					height: 145px;
+					}
+				#recurvebow-nap	{
+					position: absolute;
+					left: 1484px;
+					top: 2446px;
+					width: 154px;
+					height: 50px;
+					letter-spacing: -1px;
+					font-size:20px;
+					}
+			/*bowman*/
+				#bowman {
+					position: absolute;
+					left: 470px;
+					top: 2338px;
+					height: 100px;
+					}
+				#bowman-nap	{
+					position: absolute;
+					left: 482px;
+					top: 2458px;
+					width: 150px;
+					height: 50px;
+					}
+			/*chararch*/
+				#chararch {
+					position: absolute;
+					left: 745px;
+					top: 2246px;
+					height: 105px;
+					}
+				#chararch-nap	{
+					position: absolute;
+					left: 757px;
+					top: 2370px;
+					width: 150px;
+					height: 50px;
+					}
+			/*horsearcher*/
+				#horsearcher {
+					position: absolute;
+					left: 1246px;
+					top: 2349px;
+					height: 135px;
+					}
+				#horsearcher-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 2505px;
+					width: 150px;
+					height: 50px;
+					}
+			/*elearcher*/
+				#elearcher {
+					position: absolute;
+					left: 1246px;
+					top: 2270px;
+					height: 110px;
+					}
+				#elearcher-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 2400px;
+					width: 150px;
+					height: 50px;
+					}
+			/*heavhorsearch*/
+				#heavhorsearch {
+					position: absolute;
+					left: 1475px;
+					top: 2310px;
+					height: 175px;
+					}
+				#heavhorsearch-nap	{
+					position: absolute;
+					left: 1487px;
+					top: 2504px;
+					width: 150px;
+					height: 50px;
+					letter-spacing: -1px;
+					font-size:20px;
+					}
+		/*Siege workshop*/
+			/*siegeshop*/
+				#siegeshop {
+					position: absolute;
+					left: 745px;
+					top: 2500px;
+					height: 85px;
+					}
+				#siegeshop-nap	{
+					position: absolute;
+					left: 757px;
+					top: 2605px;
+					width: 150px;
+					height: 50px;
+					}
+			/*stonethrow*/
+				#stonethrow {
+					position: absolute;
+					left: 745px;
+					top: 2501px;
+					height: 140px;
+					}
+				#stonethrow-nap	{
+					position: absolute;
+					left: 757px;
+					top: 2664px;
+					width: 150px;
+					height: 50px;
+					}
+			/*ballista*/
+				#ballista {
+					position: absolute;
+					left: 1246px;
+					top: 2495px;
+					height: 90px;
+					}
+				#ballista-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 2607px;
+					width: 150px;
+					height: 50px;
+					}
+			/*helepolis*/
+				#helepolis {
+					position: absolute;
+					left: 1475px;
+					top: 2450px;
+					height: 135px;
+					}
+				#helepolis-nap	{
+					position: absolute;
+					left: 1485px;
+					top: 2604px;
+					width: 150px;
+					height: 50px;
+					}
+			/*catapult*/
+				#cat {
+					position: absolute;
+					left: 1246px;
+					top: 2457px;
+					height: 185px;
+					}
+				#cat-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 2662px;
+					width: 150px;
+					height: 50px;
+					}
+			/*heavycatapult*/
+				#heavycat {
+					position: absolute;
+					left: 1475px;
+					top: 2456px;
+					height: 185px;
+					}
+				#heavycat-nap	{
+					position: absolute;
+					left: 1487px;
+					top: 2660px;
+					width: 150px;
+					height: 50px;
+					}
+		/*Barrack units*/
+			/*barrack*/
+				#barrack {
+					position: absolute;
+					left: 82px;
+					top: 2552px;
+					height: 85px;
+					}
+				#barrack-nap	{
+					position: absolute;
+					left: 94px;
+					top: 2661px;
+					width: 150px;
+					height: 50px;
+					}
+			/*shortsword*/
+				#shortsword {
+					position: absolute;
+					left: 745px;
+					top: 2601px;
+					height: 130px;
+					}
+				#shortsword-nap	{
+					position: absolute;
+					left: 757px;
+					top: 2752px;
+					width: 150px;
+					height: 50px;
+					}
+			/*broadsword*/
+				#broadsword {
+					position: absolute;
+					left: 995px;
+					top: 2558px;
+					height: 175px;
+					}
+				#broadsword-nap	{
+					position: absolute;
+					left: 1007px;
+					top: 2752px;
+					width: 150px;
+					height: 50px;
+					}
+			/*longsword*/
+				#longsword {
+					position: absolute;
+					left: 1246px;
+					top: 2558px;
+					height: 175px;
+					}
+				#longsword-nap	{
+					position: absolute;
+					left: 1258px;
+					top: 2752px;
+					width: 150px;
+					height: 50px;
+					}
+			/*legion*/
+				#legion {
+					position: absolute;
+					left: 1475px;
+					top: 2558px;
+					height: 175px;
+					}
+				#legion-nap	{
+					position: absolute;
+					left: 1487px;
+					top: 2752px;
+					width: 150px;
+					height: 50px;
+					}
+			/*slinger*/
+				#slinger {
+					position: absolute;
+					left: 417px;
+					top: 2635px;
+					height: 155px;
+					}
+				#slinger-nap	{
+					position: absolute;
+					left: 429px;
+					top: 2812px;
+					width: 150px;
+					height: 50px;
+					}
+			/*improved slinger */
+				#Hslinger {
+					position: absolute;
+					left: 995px;
+					top: 2597px;
+					height: 195px;
+					}
+				#Hslinger-nap	{
+					position: absolute;
+					left: 1007px;
+					top: 2811px;
+					width: 150px;
+					height: 50px;
+					}
+			/*heavy slinger */
+				#ironSlinger {
+					position: absolute;
+					left: 1475px;
+					top: 2596px;
+					height: 195px;
+					}
+				#ironSlinger-nap	{
+					position: absolute;
+					left: 1487px;
+					top: 2811px;
+					width: 150px;
+					height: 50px;
+					}
+			/*clubman*/
+				#clubman {
+					position: absolute;
+					left: 152px;
+					top: 2578px;
+					height: 120px;
+					}
+				#clubman-nap	{
+					position: absolute;
+					left: 164px;
+					top: 2720px;
+					width: 150px;
+					height: 50px;
+					}
+			/*axeman*/
+				#axeman {
+					position: absolute;
+					left: 417px;
+					top: 2538px;
+					height: 160px;
+					}
+				#axeman-nap	{
+					position: absolute;
+					left: 429px;
+					top: 2720px;
+					width: 150px;
+					height: 50px;
+					}
+		/*wild animals*/
+			/*alligator*/
+				#alligator {
+					position: absolute;
+					left: 20px;
+					top: 590px;
+					height: 95px;
+					}
+				#alligator-nap {
+					position: absolute;
+					left: 72px;
+					top: 705px;
+					width: 15px;
+					height: 20px;
+					}
+			/*alligator2*/
+				#alligator6 {
+					position: absolute;
+					left: 570px;
+					top: 585px;
+					height: 95px;
+					}
+				#alligator6-nap {
+					position: absolute;
+					left: 655px;
+					top: 700px;
+					width: 15px;
+					height: 20px;
+					}
+			/*alligator3*/
+				#alligator3 {
+					position: absolute;
+					left: 1110px;
+					top: 580px;
+					height: 95px;
+					}
+				#alligator3-nap {
+					position: absolute;
+					left: 1218px;
+					top: 698px;
+					width: 15px;
+					height: 25px;
+					}
+			/*alligator4*/
+				#alligator7 {
+					position: absolute;
+					left: 1460px;
+					top: 630px;
+					height: 95px;
+					}
+				#alligator7-nap {
+					position: absolute;
+					left: 1597px;
+					top: 750px;
+					width: 15px;
+					height: 25px;
+					}
+			/*alligator5*/
+				#alligator5 {
+					position: absolute;
+					left: 850px;
+					top: 670px;
+					height: 95px;
+					}
+				#alligator5-nap {
+					position: absolute;
+					left: 953px;
+					top: 784px;
+					width: 20px;
+					height: 15px;
+					}
+			/*gazel*/
+				#gazel {
+					position: absolute;
+					left: 870px;
+					top: 1020px;
+					height: 75px;
+					}
+				#gazel-nap {
+					position: absolute;
+					left: 980px;
+					top: 1120px;
+					width: 55px;
+					height: 70px;
+					}
+			/*gazel2*/
+				#gazel2 {
+					position: absolute;
+					left: 1120px;
+					top: 1750px;
+					height: 75px;
+					}
+				#gazel2-nap {
+					position: absolute;
+					left: 1220px;
+					top: 1840px;
+					width: 35px;
+					height: 70px;
+					}
+			/*lion*/
+				#lion {
+					position: absolute;
+					left: 1410px;
+					top: 1660px;
+					height: 95px;
+					}
+				#lion-nap {
+					position: absolute;
+					left: 1500px;
+					top: 1780px;
+					width: 50px;
+					height: 70px;
+					}
+			/*lion2*/
+				#lion2 {
+					position: absolute;
+					left: 980px;
+					top: 1500px;
+					height: 95px;
+					}
+				#lion2-nap {
+					position: absolute;
+					left: 1030px;
+					top: 1610px;
+					width: 50px;
+					height: 40px;
+					}
+			/*elephant*/
+				#elephant {
+					position: absolute;
+					left: 530px;
+					top: 1575px;
+					height: 115px;
+					}
+				#elephant-nap {
+					position: absolute;
+					left: 650px;
+					top: 1720px;
+					width: 25px;
+					height: 30px;
+					}

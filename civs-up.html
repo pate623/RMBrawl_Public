@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=500, initial-scale=0.55">
+<link rel="stylesheet" href="style/style.css"/>
+<link rel="stylesheet" href="style/header.css"/>
+<link rel="stylesheet" href="style/footer.css"/>
+<link rel="stylesheet" href="style/civs.css"/>
+<link rel="stylesheet" href="style/civs-up.css"/>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="script/headerScripts.js"></script>
+<script type="text/javascript" src="script/civs.js"></script>
+<script src="script/mobileHeaderScroll.js"></script>
+<script type="text/javascript" src="script/tree-up.js"></script>
+<script src="script/AllAffectingMobileScaling.js"></script>
+<title>Tech trees</title>
+<link rel="shortcut icon" href="Pictures/favicon/r+m.png" />
+</head>
+<body>
+<main>
+<!-- popup images -->
+<div id="civPopUpImages">
+	<div id="popUpExitButton">
+		<div id="popUpExitButtonImage"></div>
+		</div>
+	<div id="popUpPreviousButton">
+		<div id="popUpPreviousButtonImage"></div>
+		</div>
+	<div id="popUpNextButton">
+		<div id="popUpNextButtonImage"></div>
+		</div>
+	<div id="techTreeImageBig">
+		<div id="techTreeImageBigImage"></div>
+		</div>
+	<div id="techTreeAdditionalInfo">
+		<div id="techTreeAdditionalInfoImage"></div>
+		</div>
+	<div id="popUpChangeComarison">
+		<div id="popUpNoComparison" class="non-dragable">No<br>comparison</div>
+		<div id="popUpComaperedToUP" class="non-dragable">Compared to<br>UPatch</div>
+		<div id="popUpComaperedToROR" class="non-dragable">Compared to<br>ROR 1.0a</div>
+		<div id="popUpComaperedToDE" class="non-dragable">Compared to<br>AOE DE</div>
+	</div>
+	<!--<div id="leftSideCurve"></div>
+	<div id="rightSideCurve"></div>--> 
+</div>
+
+<header>
+	<div id="desktopHeaderInfo">
+		<script src="script/headerText.js"></script>
+	</div>
+	<div id="mobileHeaderInfo">
+		<script src="script/headerMobileText.js"></script>
+	</div>
+</header>
+<!-- prelaod images --> 
+	<div id="preload-selection"></div>
+<article>
+<!-- content -->
+<div id="container">
+    <div id="content">
+        <div class="piece2">
+            <div id="pdfDownlaod"><a href="downloads/RM-Brawl-1.27-tech-trees.zip" download><img src="Pictures/buttons/pdfDownload.png" width="108" height="35" alt="Download PDF" title="Download technology trees as PDF" /></a></div>
+            <p class="otsikko">Technology Trees (RM&nbsp;Brawl&nbsp;1.27)</p>
+            <p class="explanation2">
+                AOE:DE version and UPatch version of the RM Brawl have slightly different technology trees.<br><br>
+                There is four new civilizations introduced in the UPatch version of the game which are not available for the AOE:DE.<br><br>
+                For easier readability, new civilizations have been removed from the list below when viewing in AOE:DE comparison mode.
+            </p>
+            <div id="settings">
+                <!--  <grey-line></grey-line> -->
+                <div id="importantNap" class="clickable"></div>
+                <div id="importantNapBlack"></div>
+                <div id="importantNap2" class="clickable"></div>
+                <div id="importantNap2Black"></div>
+                <div id="importantNap3" class="clickable"></div>
+                <div id="importantNap3Black"></div>
+                <div id="importantNap4" class="clickable"></div>
+                <div id="importantNap4Black"></div>
+                <!-- <show>Filter information</show> -->
+                <div id="noComparison" class="non-dragable">No<br>comparison</div>
+                <div id="upatchComparison" class="non-dragable">Compared to<br>UPatch</div>
+                <div id="rorComparison" class="non-dragable">Compared to<br>ROR 1.0a</div>
+                <div id="deComparison" class="non-dragable">Compared to<br>AOE DE</div>
+            </div>
+        </div>
+        <div class="piece tech-image">
+            <img src="Pictures/tech-trees/upatch/assyrian.png" alt="Assyrian techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image">
+            <img src="Pictures/tech-trees/upatch/babylonian.png" alt="Babylonian techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image newCivilization">
+            <img src="Pictures/tech-trees/newCivs/nubia.png" alt="Nubia techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image">
+            <img src="Pictures/tech-trees/upatch/carthaginian.png" alt="Carthaginian techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image">
+            <img src="Pictures/tech-trees/upatch/choson.png" alt="Choson techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image">
+            <img src="Pictures/tech-trees/upatch/egyptian.png" alt="Egyptian techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image">
+            <img src="Pictures/tech-trees/upatch/greek.png" alt="Greek techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image">
+            <img src="Pictures/tech-trees/upatch/hittite.png" alt="Hittite techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image ">
+            <img src="Pictures/tech-trees/upatch/macedonian.png" alt="Macedonian techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image">
+            <img src="Pictures/tech-trees/upatch/minoan.png" alt="Minoan techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image">
+            <img src="Pictures/tech-trees/upatch/palmyra.png" alt="Palmyra techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image newCivilization">
+            <img src="Pictures/tech-trees/newCivs/parthia.png" alt="Parthia techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image">
+            <img src="Pictures/tech-trees/upatch/persian.png" alt="Persian techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image">
+            <img src="Pictures/tech-trees/upatch/phoenician.png" alt="Phoenician techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image">
+            <img src="Pictures/tech-trees/upatch/roman.png" alt="Roman techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image newCivilization">
+            <img src="Pictures/tech-trees/newCivs/scythia.png" alt="Scythia techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image">
+            <img src="Pictures/tech-trees/upatch/shang.png" alt="Shang techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image">
+            <img src="Pictures/tech-trees/upatch/sumerian.png" alt="Sumerian techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image newCivilization">
+            <img src="Pictures/tech-trees/newCivs/thrace.png" alt="Thrace techtree" class="techTreeImage" />
+        </div>
+        <div class="piece tech-image">
+            <img src="Pictures/tech-trees/upatch/yamato.png" alt="Yamato techtree" class="techTreeImage" />
+        </div>
+    </div> <!-- end of content -->
+</div> <!-- end of container --> 
+</article>
+<footer>
+	<script src="script/footerText.js"></script><!-- footer scripted -->
+</footer>
+</main>
+</body>
+</html>

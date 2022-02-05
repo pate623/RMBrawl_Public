@@ -1,0 +1,22 @@
+civBigImageList = [
+	"Pictures/tech-treesBig/upatch/assyrian.png",
+	"Pictures/tech-treesBig/upatch/babylonian.png",
+	"Pictures/tech-treesBig/newCivs/nubia.png",
+	"Pictures/tech-treesBig/upatch/carthaginian.png",
+	"Pictures/tech-treesBig/upatch/choson.png",
+	"Pictures/tech-treesBig/upatch/egyptian.png",
+	"Pictures/tech-treesBig/upatch/greek.png",
+	"Pictures/tech-treesBig/upatch/hittite.png",
+	"Pictures/tech-treesBig/upatch/macedonian.png",
+	"Pictures/tech-treesBig/upatch/minoan.png",
+	"Pictures/tech-treesBig/upatch/palmyra.png",
+	"Pictures/tech-treesBig/newCivs/parthia.png",
+	"Pictures/tech-treesBig/upatch/persian.png",
+	"Pictures/tech-treesBig/upatch/phoenician.png",
+	"Pictures/tech-treesBig/upatch/roman.png",
+	"Pictures/tech-treesBig/newCivs/scythia.png",
+	"Pictures/tech-treesBig/upatch/shang.png",
+	"Pictures/tech-treesBig/upatch/sumerian.png",
+	"Pictures/tech-treesBig/newCivs/thrace.png",
+	"Pictures/tech-treesBig/upatch/yamato.png"
+];

@@ -1,0 +1,88 @@
+/* text rules */
+	p.otsikko, p.explanation, p.explanationCentered, center {
+		color:#000000;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		font-style:normal;
+		font-variant:normal;
+		font-weight:normal;
+	}
+		p.otsikko {
+			margin-left: auto;
+			margin-right: auto;
+			font-size:30px;
+			font-weight:bold;
+			text-align:center;
+		}
+		p.explanation {
+			font-size:16px;
+			line-height: 21px;
+			margin-bottom:24px;;
+			margin-left:30px;
+			margin-right:30px;
+			text-align:justify;
+		}
+		p.explanationCentered {
+			font-size:16px;
+			line-height: 21px;
+			margin-bottom:24px;
+			margin-left:30px;
+			margin-right:30px;
+			text-align: center;
+		}
+		center{
+			line-height: 12px;
+			font-size: 16px;
+			margin-top: 12px;
+			margin-bottom: 24px;
+			}
+
+/* box rules */
+	.otsikko {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 8px;
+		margin-bottom: 20px;
+		text-align:center;
+		user-drag: none; 
+		user-select: none;
+			-moz-user-select: none;
+			-webkit-user-drag: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+	.piece{
+		border-style:double;
+		border-top-style:none;
+		border-width:thick;
+		border-color:#5c441a;
+		background-color:#fc7;
+		padding: 10px 0px 10px 0px;
+		margin-bottom: 0px;
+		background:url(../Pictures/ui/style-00/info-box.gif);
+		background-repeat:repeat;
+		}
+	.download{
+		display: block;
+		margin: auto;
+		text-align:center;
+		width: 160px;
+		height: 50px;
+		background-image:url(../Pictures/ui/style-00/Download.png);
+		background-size: 140px 35px;
+		background-repeat:no-repeat;
+		background-position:center;
+			user-drag: none; 
+			user-select: none;
+			-moz-user-select: none;
+			-webkit-user-drag: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+		.download:hover{
+			background-image:url(../Pictures/ui/style-00/download-hoover.png);
+			}
+#notFoundImg{
+	max-width: 94%;
+	height: auto;
+}
