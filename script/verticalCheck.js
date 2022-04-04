@@ -30,7 +30,7 @@ $(window).on('load',function(){
   var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
 /* Add an event to the window.onscroll event */
   window.addEventListener("scroll", function(e) {
-/* A full compatability script from MDN for gathering the x and y values of scroll: */
+/* A full compatibility script from MDN for gathering the x and y values of scroll: */
 var x = supportPageOffset ? window.pageXOffset : isCSS1Compat ? document.documentElement.scrollLeft : document.body.scrollLeft;
 var y = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
 

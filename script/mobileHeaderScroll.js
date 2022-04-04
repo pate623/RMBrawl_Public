@@ -7,13 +7,13 @@ $(document).ready(function(){
 	$(window).scroll(function(event){
 		var st = $(this).scrollTop();
 		if (st > lastScrollTop){
-			// downscroll code
+			// down scroll code
 			if(onVisibleScroll+50 < $(window).scrollTop()){
 				window.setTimeout(hideNav, 50);
 			}
 			onHideScroll = $(window).scrollTop()
 		}else{
-			// upscroll code
+			// up scroll code
 			if(onHideScroll-70 > $(window).scrollTop()){
 				window.setTimeout(showNav, 50);
 			}

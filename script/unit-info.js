@@ -1,4 +1,4 @@
-// half invisibilty
+// half invisibility
 	/*
 $(document).ready(function(){
 	$(".invisible").mouseover(function(){
@@ -158,7 +158,7 @@ var cataphractLow = false;
 					$("#heavy-transport").toggle();
 				});
 			});
-	//Granary tecnologies
+	//Granary technologies
 		//granary
 			$(document).ready(function(){
     			$("#granary-nap").click(function(){
@@ -380,7 +380,7 @@ var cataphractLow = false;
 					$("#martyrdom").toggle();
 				});
 			})
-	//Market tecnologies
+	//Market technologies
 		//Farm
 			$(document).ready(function(){
     			$("#farm-nap").click(function(){

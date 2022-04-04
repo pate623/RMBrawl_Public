@@ -57,7 +57,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			z-index: -8;
 			}
 		/* tech tree */
-			.content { /*bakcground at top which all pop ups will appear */
+			.content { /*background at top which all pop ups will appear */
 				position:relative;
 				width: 1780px;
 				height: 2950px;
@@ -142,8 +142,8 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 							color:#3140d1;
 							}
 
-			/* Age names and seperations */
-				/* age seperation lines */
+			/* Age names and separations */
+				/* age separation lines */
 					#tool-line{ /* stone -> tool Age */
 						position: absolute;
 						left: 385px;
@@ -304,7 +304,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					padding-left: 50px;
 					cursor:pointer;
 					}
-							span.strong{ /* Unit and tecnology mames inside tips*/
+							span.strong{ /* Unit and technology names inside tips*/
 								font-weight:bold;
 								}
 							span.em{ /*usable units requirements text flavor */
@@ -507,7 +507,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					height: 50px;
 					letter-spacing: -1px;
 					}
-		/*Granary tecnologies*/
+		/*Granary technologies*/
 			/*Granary*/
 				#granary {
 					position: absolute;
@@ -790,7 +790,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					height: 50px;
 					
 					}
-		/*Market tecnologies*/
+		/*Market technologies*/
 			/*farm*/
 				#farm {
 					position: absolute;
@@ -1726,7 +1726,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					width: 150px;
 					height: 50px;
 					}
-		/*Arhery units*/
+		/*Archery units*/
 			/*archery*/
 				#archery {
 					position: absolute;

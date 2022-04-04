@@ -800,7 +800,7 @@ $(document).ready(function(){ $("#popUpNextButton")
 })
 
 
-//buttons disbled on mobile
+//buttons disabled on mobile
 $(document).ready(function(){
 	if(isMobile.any()){
 		$("#popUpNoComparison, #popUpComaperedToUP, #popUpComaperedToROR, #popUpComaperedToDE, #popUpPreviousButton, #popUpNextButton, #rightSideCurve, #leftSideCurve, #techTreeAdditionalInfo, #techTreeAdditionalInfoImage").hide()

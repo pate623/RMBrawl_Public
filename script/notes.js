@@ -122,7 +122,7 @@ $(document).ready(function(){
 	initComparisons();
 	
 	if(isMobile.any()){
-		//remove picture widith as well as porder sizes
+		//remove picture width as well as border sizes
 		var marginal = ($(window).width() - 563 - 20) / 2; 
 		console.log("marginal " + marginal)
 		$(".img-comp-container").css("margin-left", marginal );
