@@ -1,3 +1,26 @@
+// All pages preloading images
+preloadImage("Pictures/buttons/not-selected.gif")
+preloadImage("Pictures/buttons/selected.gif")
+preloadImage("Pictures/buttons/pressed.png")
+preloadImage("Pictures/buttons/blueGreen.png")
+preloadImage("Pictures/buttons/greenBlue.png")
+preloadImage("Pictures/buttons/puhekupla-enabled.gif")
+preloadImage("Pictures/buttons/puhekupla-disabled.gif")
+preloadImage("Pictures/buttons/style-00/comments-disabled.png")
+preloadImage("Pictures/buttons/style-00/comments-enabled.png")
+preloadImage("Pictures/buttons/style-00/comments-faded.png")
+preloadImage("Pictures/buttons/style-00/info-minus.png")
+preloadImage("Pictures/buttons/style-00/info-minus-faded.png")
+preloadImage("Pictures/buttons/style-00/info-plus.png")
+preloadImage("Pictures/buttons/style-00/info-plus-faded.png")
+preloadImage("Pictures/ui/style-00/download-hoover.png")
+
+function preloadImage(url)
+{
+    var img=new Image();
+    img.src=url;
+}
+
 var wholeHeight;
 var originalHeight;
 var heightWithNoScaling;
@@ -25,13 +48,13 @@ var isMobile = {
 
 // scaling in both mobile and desktop
 $(document).ready(function(){
-	$.fn.commmonScaling();
+	$.fn.commonScaling();
 });
 $(window).resize(function(){
-	$.fn.commmonScaling();
+	$.fn.commonScaling();
 });
 
-$.fn.commmonScaling = function() { 
+$.fn.commonScaling = function() { 
 	var leveys = $( window ).width()
 	
 	if( leveys > 874){
