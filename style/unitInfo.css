@@ -90,42 +90,58 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					alignment-adjust:central;
 					}
 				#civ-info{ /* Civilizations bonuses */
-					font-size: 15px;
+					font-size: 14px;
 					font-weight:400;
 					font-family:Arial, Helvetica, sans-serif;
 					font-style: italic;
 					color:#000;
 					position: absolute;
-					left: 985px;
-					top: 35px;
-					width: 712px;
-					height: 275px;
-					padding: 8px 4px 4px 10px ;
-					background-color: #a58138;
+					left: 25px;
+					top: 2900px;
+					width: 570px;
+					height: 24px;
+					padding: 5px 4px 4px 22px ;
+					/*background-color: #a58138;
 					border-radius: 12px;
 					border-style:solid;
 					border-width: 2px;
 					border-color:#a97c22;
-					background-image:url(../Pictures/backgrounds/wall.png);
+					background-image:url(../Pictures/backgrounds/wall.png);*/
 					}
 				.civInfoHeader{
 					font-size: 25px;
 					font-weight:bold;
 				}
 				.civInfoVersionNumber{
-					font-size: 12px;
+					font-size: 14px;
+					text-shadow: 1px 1px #fff;
+					font-weight:bold;
+					font-family:Arial, Helvetica, sans-serif;
+					font-style: italic;
 				}
-					
+						
+				#color-info2{ /* color info */
+					font-size: 28px;
+					font-weight:600;
+					font-family:Arial, Helvetica, sans-serif;
+					font-style: italic;
+					position: absolute;
+					left: 430px;
+					top: -15px;
+					width: 450px;
+					line-height: 120%;
+					text-shadow: 3px 2px #000;
+					}
 				#color-info{ /* color info */
 					font-size: 28px;
 					font-weight:600;
 					font-family:Arial, Helvetica, sans-serif;
 					font-style: italic;
 					position: absolute;
-					left: 200px;
-					top: 110px;
+					left: 930px;
+					top: -15px;
 					width: 450px;
-					line-height: 150%;
+					line-height: 120%;
 					text-shadow: 3px 2px #000;
 					}
 					/*colors*/
@@ -146,54 +162,54 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				/* age separation lines */
 					#tool-line{ /* stone -> tool Age */
 						position: absolute;
-						left: 385px;
-						top: 395px;
+						left: 531px;
+						top: 160px;
 						width: 4px;
-						height: 2495px;
+						height: 2765px;
 						background-color:#000;
 						}	
 					#bronze-line{ /* tool Age -> Bronze */
 						position: absolute;
-						left: 730px;
-						top: 395px;
+						left: 875px;
+						top: 160px;
 						width: 4px;
-						height: 2495px;
+						height: 2765px;
 						background-color:#000;
 						}
 					#iron-line{ /* Bronze -> Iron Age */
 						position: absolute;
-						left: 1240px;
-						top: 395px;
+						left: 1224px;
+						top: 160px;
 						width: 4px;
-						height: 2495px;
+						height: 2765px;
 						background-color:#000;
 						}
 				/* age names */
 					#stone-age{ /* stone Age */
 						position: absolute;
-						left: 125px;
-						top: 365px;
+						left: 215px;
+						top: 110px;
 						width: 200px;
 						height: 200px;
 						}
 					#tool-age{ /* tool Age */
 						position: absolute;
-						left: 385px;
-						top: 365px;
+						left: 520px;
+						top: 110px;
 						width: 345px;
 						height: 200px;
 						}	
 					#bronze-age{ /* Bronze Age*/
 						position: absolute;
-						left: 730px;
-						top: 365px;
+						left: 780px;
+						top: 110px;
 						width: 530px;
 						height: 200px;
 						}
 					#iron-age{ /* Iron Age */
 						position: absolute;
-						left: 1240px;
-						top: 365px;
+						left: 1200px;
+						top: 110px;
 						width: 500px;
 						height: 200px;
 						}
@@ -326,98 +342,98 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*Dock*/
 				#dock {
 					position: absolute;
-					left: 82px;
-					top: 394px;
+					left: 91px;
+					top: 299px;
 					height: 210px;
 					}
 				#dock-nap {
 					position: absolute;
 					left: 96px;
-					top: 627px;
+					top: 533px;
 					width: 150px;
 					height: 50px;
 					}
 			/*Scout Ship*/
 				#scout-ship {
 					position: absolute;
-					left: 417px;
-					top: 457px;
+					left: 245px;
+					top: 163px;
 					height: 85px;
 					}
 				#scout-ship-nap	{
 					position: absolute;
-					left: 433px;
-					top: 568px;
+					left: 260px;
+					top: 267px;
 					width: 150px;
 					height: 50px;
 					}
 			/*War Galley*/
 				#war-galley {
 					position:absolute;
-					left: 745px;
-					top: 420px;
+					left: 538px;
+					top: 123px;
 					height: 125px;
 					}
 				#war-galley-nap	{
 					position: absolute;
-					left: 758px;
-					top: 566px;
+					left: 545px;
+					top: 270px;
 					width: 150px;
 					height: 50px;
 					}
 			/*Trireme*/
 				#trieme {
 					position: absolute;
-					left: 1246px;
-					top: 412px;
+					left: 1228px;
+					top: 113px;
 					height: 135px;
 					}
 				#trieme-nap	{
 					position: absolute;
-					left: 1260px;
-					top: 566px;
+					left: 1240px;
+					top: 270px;
 					width: 150px;
 					height: 50px;
 					}
 			/*Juggernaught*/
 				#juggernaught {
 					position: absolute;
-					left: 1475px;
-					top: 311px;
+					left: 1455px;
+					top: 13px;
 					height: 180px;
 					}
 				#juggernaught-nap	{
 					position: absolute;
-					left: 1488px;
-					top: 510px;
+					left: 1469px;
+					top: 211px;
 					width: 150px;
 					height: 50px;
 					}
 			/*Fire Galley*/
 				#fire-galley {
 					position: absolute;
-					left: 1246px;
-					top: 341px;
+					left: 1228px;
+					top: 213px;
 					height: 90px;
 					}
 				#fire-galley-nap	{
 					position: absolute;
-					left: 1260px;
-					top: 453px;
+					left: 1242px;
+					top: 322px;
 					width: 150px;
 					height: 50px;
 					}
 			/*Catapult trieme*/
 				#catapult-trieme {
 					position: absolute;
-					left: 1246px;
-					top: 311px;
+					left: 1228px;
+					top: 13px;
 					height: 180px;
 					}
 				#catapult-trieme-nap	{
 					position: absolute;
-					left: 1260px;
-					top: 510px;
+					left: 1240px;
+					top: 212px;
 					width: 150px;
 					height: 50px;
 					letter-spacing: -1px;
@@ -425,84 +441,84 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*Fishing boat*/
 				#fishing-boat {
 					position: absolute;
-					left: 152px;
-					top: 568px;
+					left: 145px;
+					top: 308px;
 					height: 90px;
 					}
 				#fishing-boat-nap	{
 					position: absolute;
-					left: 164px;
-					top: 685px;
+					left: 165px;
+					top: 423px;
 					width: 150px;
 					height: 50px;
 					}
 			/*Fishing Ship*/
 				#fishing-ship {
 					position: absolute;
-					left: 745px;
-					top: 529px;
+					left: 887px;
+					top: 268px;
 					height: 130px;
 					}
 				#fishing-ship-nap	{
 					position: absolute;
-					left: 757px;
-					top: 685px;
+					left: 900px;
+					top: 423px;
 					width: 150px;
 					height: 50px;
 					}	
 			/*Trade boat*/
 				#trade-boat {
 					position: absolute;
-					left: 152px;
-					top: 630px;
+					left: 145px;
+					top: 366px;
 					height: 85px;
 					}
 				#trade-boat-nap	{
 					position: absolute;
-					left: 164px;
-					top: 739px;
+					left: 165px;
+					top: 477px;
 					width: 150px;
 					height: 50px;
 					}
 			/*merchant-ship*/
 				#merchant-ship {
 					position: absolute;
-					left: 745px;
-					top: 583px;
+					left: 887px;
+					top: 322px;
 					height: 130px;
 					}
 				#merchant-ship-nap	{
 					position: absolute;
-					left: 757px;
-					top: 739px;
+					left: 900px;
+					top: 477px;
 					width: 150px;
 					height: 50px;
 					}	
 			/*light-transport*/
 				#light-transport {
 					position: absolute;
-					left: 417px;
-					top: 516px;
+					left: 245px;
+					top: 256px;
 					height: 83px;
 					}
 				#light-transport-nap	{
 					position: absolute;
-					left: 433px;
-					top: 627px;
+					left: 260px;
+					top: 357px;
 					width: 150px;
 					height: 50px;
 					}
 			/*heavy-transport*/
 				#heavy-transport {
 					position: absolute;
-					left: 1246px;
-					top: 478px;
+					left: 887px;
+					top: 216px;
 					height: 125px;
 					}
 				#heavy-transport-nap	{
 					position: absolute;
-					left: 1260px;
-					top: 627px;
+					left: 900px;
+					top: 363px;
 					width: 150px;
 					height: 50px;
 					letter-spacing: -1px;
@@ -511,14 +527,14 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*Granary*/
 				#granary {
 					position: absolute;
-					left: 135px;
-					top: 727px;
+					left: 91px;
+					top: 580px;
 					height: 120px;
 					}
 				#granary-nap	{
 					position: absolute;
-					left: 150px;
-					top: 872px;
+					left: 96px;
+					top: 722px;
 					width: 150px;
 					height: 50px;
 					}
@@ -539,98 +555,98 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*Watch tower*/
 				#watch-tower {
 					position: absolute;
-					left: 417px;
-					top: 619px;
+					left: 145px;
+					top: 407px;
 					height: 175px;
 					}
 				#watch-tower-nap	{
 					position: absolute;
-					left: 430px;
-					top: 820px;
+					left: 165px;
+					top: 604px;
 					width: 150px;
 					height: 50px;
 					}
 			/*sentry-tower*/
 				#sentry-tower {
 					position: absolute;
-					left: 745px;
-					top: 619px;
+					left: 538px;
+					top: 407px;
 					height: 175px;
 					}
 				#sentry-tower-nap	{
 					position: absolute;
-					left: 757px;
-					top: 820px;
+					left: 545px;
+					top: 604px;
 					width: 150px;
 					height: 50px;
 					}
 			/*guard-tower*/
 				#guard-tower {
 					position: absolute;
-					left: 1246px;
-					top: 620px;
+					left: 887px;
+					top: 407px;
 					height: 175px;
 					}
 				#guard-tower-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 820px;
+					left: 900px;
+					top: 604px;
 					width: 150px;
 					height: 50px;
 					}
 			/*ballista-tower*/
 				#ballista-tower {
 					position: absolute;
-					left: 1475px;
-					top: 619px;
+					left: 1228px;
+					top: 407px;
 					height: 175px;
 					}
 				#ballista-tower-nap	{
 					position: absolute;
-					left: 1487px;
-					top: 814px;
+					left: 1240px;
+					top: 604px;
 					width: 150px;
 					height: 50px;
 					}
 			/*small-wall*/
 				#small-wall {
 					position: absolute;
-					left: 417px;
-					top: 723px;
+					left: 145px;
+					top: 510px;
 					height: 125px;
 					}
 				#small-wall-nap	{
 					position: absolute;
-					left: 429px;
-					top: 872px;
+					left: 165px;
+					top: 659px;
 					width: 150px;
 					height: 50px;
 					}
 			/*medium-wall*/
 				#medium-wall {
 					position: absolute;
-					left: 745px;
-					top: 723px;
+					left: 887px;
+					top: 510px;
 					height: 125px;
 					}
 				#medium-wall-nap	{
 					position: absolute;
-					left: 756px;
-					top: 872px;
+					left: 900px;
+					top: 659px;
 					width: 150px;
 					height: 50px;
 					}
 			/*big-wall*/
 				#big-wall {
 					position: absolute;
-					left: 1246px;
-					top: 723px;
+					left: 1228px;
+					top: 510px;
 					height: 125px;
 					}
 				#big-wall-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 872px;
+					left: 1240px;
+					top: 659px;
 					width: 150px;
 					height: 50px;
 					}
@@ -638,154 +654,154 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*temple*/
 				#temple {
 					position: absolute;
-					left: 745px;
-					top: 847px;
+					left: 538px;
+					top: 1149px;
 					height: 95px;
 					}
 				#temple-nap	{
 					position: absolute;
-					left: 756px;
-					top: 967px;
+					left: 545px;
+					top: 1267px;
 					width: 150px;
 					height: 50px;
 					}
 			/*priest*/
 				#priest {
 					position: absolute;
-					left: 745px;
-					top: 787px;
+					left: 588px;
+					top: 1096px;
 					height: 206px;
 					}
 				#priest-nap	{
 					position: absolute;
-					left: 756px;
-					top: 1018px;
+					left: 595px;
+					top: 1323px;
 					width: 150px;
 					height: 50px;
 					}
 			/*astrology*/
 				#astrology {
 					position: absolute;
-					left: 995px;
-					top: 774px;
+					left: 887px;
+					top: 1142px;
 					height: 135px;
 					}
 				#astrology-nap	{
 					position: absolute;
-					left: 1007px;
-					top: 933px;
+					left: 900px;
+					top: 1297px;
 					width: 150px;
 					height: 50px;
 					}
 			/*medicine*/
 				#medicine {
 					position: absolute;
-					left: 1246px;
-					top: 774px;
+					left: 1228px;
+					top: 1167px;
 					height: 135px;
 					}
 				#medicine-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 933px;
+					left: 1240px;
+					top: 1325px;
 					width: 150px;
 					height: 50px;
 					}	
 			/*fanaticism*/
 				#fanaticism {
 					position: absolute;
-					left: 1475px;
-					top: 808px;
+					left: 887px;
+					top: 1233px;
 					height: 100px;
 					}
 				#fanaticism-nap	{
 					position: absolute;
-					left: 1487px;
-					top: 933px;
+					left: 900px;
+					top: 1354px;
 					width: 150px;
 					height: 50px;
 					}	
 			/*mysticism*/
 				#mysticism {
 					position: absolute;
-					left: 995px;
-					top: 870px;
+					left: 588px;
+					top: 1258px;
 					height: 100px;
 					}
 				#mysticism-nap	{
 					position: absolute;
-					left: 1007px;
-					top: 993px;
+					left: 595px;
+					top: 1379px;
 					width: 150px;
 					height: 50px;
 					}
 			/*afterlife*/
 				#afterlife {
 					position: absolute;
-					left: 1246px;
-					top: 871px;
+					left: 1228px;
+					top: 1310px;
 					height: 100px;
 					}
 				#afterlife-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 993px;
+					left: 1240px;
+					top: 1434px;
 					width: 150px;
 					height: 50px;
 					}
 			/*jihad*/
 				#jihad {
 					position: absolute;
-					left: 1475px;
-					top: 796px;
-					height: 175px;
+					left: 1228px;
+					top: 1256px;
+					height: 100px;
 					}
 				#jihad-nap	{
 					position: absolute;
-					left: 1487px;
-					top: 993px;
+					left: 1240px;
+					top: 1379px;
 					width: 150px;
 					height: 50px;
 					}
 			/*polytheism*/
 				#polytheism {
 					position: absolute;
-					left: 995px;
-					top: 929px;
+					left: 588px;
+					top: 1308px;
 					height: 100px;
 					}
 				#polytheism-nap	{
 					position: absolute;
-					left: 1007px;
-					top: 1052px;
+					left: 595px;
+					top: 1435px;
 					width: 150px;
 					height: 50px;
 					}
 			/*monotheism*/
 				#monotheism {
 					position: absolute;
-					left: 1246px;
-					top: 929px;
+					left: 887px;
+					top: 1283px;
 					height: 100px;
 					}
 				#monotheism-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 1052px;
+					left: 900px;
+					top: 1405px;
 					width: 150px;
 					height: 50px;
 					}
 			/*martyrdom*/
 				#martyrdom {
 					position: absolute;
-					left: 1475px;
-					top: 930px;
+					left: 1228px;
+					top: 1145px;
 					height: 100px;
 					}
 				#martyrdom-nap	{
 					position: absolute;
-					left: 1487px;
-					top: 1052px;
+					left: 1240px;
+					top: 1268px;
 					width: 150px;
 					height: 50px;
 					
@@ -794,182 +810,182 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*farm*/
 				#farm {
 					position: absolute;
-					left: 470px;
-					top: 912px;
+					left: 195px;
+					top: 881px;
 					height: 108px;
 					}
 				#farm-nap	{
 					position: absolute;
-					left: 482px;
-					top: 1041px;
+					left: 210px;
+					top: 1010px;
 					width: 150px;
 					height: 50px;
 					}
 			/*market*/
 				#market {
 					position: absolute;
-					left: 417px;
-					top: 943px;
-					height: 130px;
+					left: 145px;
+					top: 629px;
+					height: 135px;
 					}
 				#market-nap	{
 					position: absolute;
-					left: 430px;
-					top: 1096px;
+					left: 165px;
+					top: 787px;
 					width: 150px;
 					height: 50px;
 					}
 			/*wheel*/
 				#wheel {
 					position: absolute;
-					left: 745px;
-					top: 989px;
+					left: 538px;
+					top: 816px;
 					height: 85px;
 					}
 				#wheel-nap	{
 					position: absolute;
-					left: 756px;
-					top: 1097px;
+					left: 545px;
+					top: 927px;
 					width: 150px;
 					height: 50px;
 					}
 			/*domestication*/
 				#domestication {
 					position: absolute;
-					left: 470px;
-					top: 1009px;
-					height: 120px;
+					left: 195px;
+					top: 748px;
+					height: 70px;
 					}
 				#domestication-nap	{
 					position: absolute;
-					left: 482px;
-					top: 1154px;
+					left: 210px;
+					top: 843px;
 					width: 150px;
 					height: 50px;
 					}	
 			/*plow*/
 				#plow {
 					position: absolute;
-					left: 745px;
-					top: 1009px;
-					height: 120px;
+					left: 538px;
+					top: 748px;
+					height: 70px;
 					}
 				#plow-nap	{
 					position: absolute;
-					left: 756px;
-					top: 1154px;
+					left: 545px;
+					top: 841px;
 					width: 150px;
 					height: 50px;
 					}	
 			/*irrigation*/
 				#irrigation {
 					position: absolute;
-					left: 1246px;
-					top: 1009px;
-					height: 120px;
+					left: 1228px;
+					top: 748px;
+					height: 70px;
 					}
 				#irrigation-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 1154px;
+					left: 1240px;
+					top: 841px;
 					width: 150px;
 					height: 50px;
 					}	
 			/*goldmining*/
 				#goldmining {
 					position: absolute;
-					left: 470px;
-					top: 1098px;
+					left: 538px;
+					top: 677px;
 					height: 85px;
 					}
 				#goldmining-nap	{
 					position: absolute;
-					left: 482px;
-					top: 1206px;
+					left: 545px;
+					top: 787px;
 					width: 150px;
 					height: 50px;
 					}	
 			/*coinage*/
 				#coinage {
 					position: absolute;
-					left: 1246px;
-					top: 1068px;
-					height: 114px;
+					left: 887px;
+					top: 626px;
+					height: 136px;
 					}
 				#coinage-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 1206px;
+					left: 900px;
+					top: 787px;
 					width: 150px;
 					height: 50px;
 					}	
 			/*stonemining*/
 				#stonemining {
 					position: absolute;
-					left: 470px;
-					top: 1132px;
+					left: 195px;
+					top: 826px;
 					height: 105px;
 					}
 				#stonemining-nap {
 					position: absolute;
-					left: 482px;
-					top: 1262px;
+					left: 210px;
+					top: 954px;
 					width: 150px;
 					height: 50px;
 					}	
 			/*siegecraft*/
 				#siegecraft {
 					position: absolute;
-					left: 1246px;
-					top: 1087px;
+					left: 887px;
+					top: 782px;
 					height: 150px;
 					}
 				#siegecraft-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 1262px;;
+					left: 900px;
+					top: 954px;;
 					width: 150px;
 					height: 50px;
 					}
 			/*woodworking*/
 				#woodworking {
 					position: absolute;
-					left: 470px;
-					top: 1190px;
+					left: 195px;
+					top: 772px;
 					height: 100px;
 					}
 				#woodworking-nap	{
 					position: absolute;
-					left: 482px;
-					top: 1314px;
+					left: 210px;
+					top: 895px;
 					width: 150px;
 					height: 50px;
 					}
 			/*artisanship*/
 				#artisanship {
 					position: absolute;
-					left: 745px;
-					top: 1192px;
+					left: 887px;
+					top: 772px;
 					height: 100px;
 					}
 				#artisanship-nap	{
 					position: absolute;
-					left: 757px;
-					top: 1314px;
+					left: 900px;
+					top: 895px;
 					width: 150px;
 					height: 50px;
 					}
 			/*craftsmanship*/
 				#craftsmanship {
 					position: absolute;
-					left: 1246px;
-					top: 1186px;
+					left: 1228px;
+					top: 772px;
 					height: 105px;
 					}
 				#craftsmanship-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 1314px;
+					left: 1240px;
+					top: 895px;
 					width: 150px;
 					height: 50px;
 					}
@@ -991,112 +1007,112 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*government center*/
 				#governmentcenter {
 					position: absolute;
-					left: 745px;
-					top: 1321px;
+					left: 538px;
+					top: 1720px;
 					height: 85px;
 					}
 				#governmentcenter-nap	{
 					position: absolute;
-					left: 757px;
-					top: 1425px;
+					left: 545px;
+					top: 1825px;
 					width: 150px;
 					height: 50px;
 					}
 			/*town center*/
 				#towncenter {
 					position: absolute;
-					left: 745px;
-					top: 1345px;
+					left: 887px;
+					top: 1047px;
 					height: 115px;
 					}
 				#towncenter-nap	{
 					position: absolute;
-					left: 757px;
-					top: 1482px;
+					left: 900px;
+					top: 1184px;
 					width: 150px;
 					height: 50px;
 					}
 			/*logistics*/
 				#logistics {
 					position: absolute;
-					left: 995px;
-					top: 1456px;
-					height: 90px;
+					left: 588px;
+					top: 1900px;
+					height: 68px;
 					}
 				#logistics-nap	{
 					position: absolute;
-					left: 1007px;
-					top: 1567px;
+					left: 595px;
+					top: 1992px;
 					width: 150px;
 					height: 50px;
 					}
 			/*architecture*/
 				#architecture {
 					position: absolute;
-					left: 995px;
-					top: 1346px;
-					height: 85px;
+					left: 588px;
+					top: 1772px;
+					height: 90px;
 					}
 				#architecture-nap	{
 					position: absolute;
-					left: 1007px;
-					top: 1457px;
+					left: 595px;
+					top: 1888px;
 					width: 150px;
 					height: 50px;
 					}
 			/*engineering*/
 				#engineering {
 					position: absolute;
-					left: 1246px;
-					top: 1283px;
+					left: 1228px;
+					top: 1858px;
 					height: 85px;
 					}
 				#engineering-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 1391px;
+					left: 1240px;
+					top: 1965px;
 					width: 150px;
 					height: 50px;
 					}
 			/*alchemy*/
 				#alchemy {
 					position: absolute;
-					left: 1246px;
-					top: 1302px;
+					left: 1228px;
+					top: 1740px;
 					height: 116px;
 					}
-				#alchemy-nap	{
+				#alchemy-nap {
 					position: absolute;
-					left: 1258px;
-					top: 1454px;
+					left: 1240px;
+					top: 1879px;
 					width: 150px;
 					height: 50px;
 					}
 			/*nobility*/
 				#nobility {
 					position: absolute;
-					left: 995px;
-					top: 1394px;
+					left: 588px;
+					top: 1820px;
 					height: 95px;
 					}
 				#nobility-nap	{
 					position: absolute;
-					left: 1007px;
-					top: 1512px;
+					left: 595px;
+					top: 1940px;
 					width: 150px;
 					height: 50px;
 					}
 			/*ballistics*/
 				#ballistics {
 					position: absolute;
-					left: 1246px;
-					top: 1389px;
+					left: 887px;
+					top: 1790px;
 					height: 100px;
 					}
 				#ballistics-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 1511px;
+					left: 900px;
+					top: 1915px;
 					width: 150px;
 					height: 50px;
 					}
@@ -1117,98 +1133,98 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*aristocracy*/
 				#aristocracy {
 					position: absolute;
-					left: 1246px;
-					top: 1460px;
+					left: 1228px;
+					top: 1719px;
 					height: 85px;
 					}
 				#aristocracy-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 1567px;
+					left: 1240px;
+					top: 1825px;
 					width: 150px;
 					height: 50px;
 					}
 			/*uniqueTechnology*/
 				#uniqueTechnology {
 					position: absolute;
-					left: 745px;
-					top: 336px;
+					left: 887px;
+					top: 656px;
 					height: 1180px;
 					}
 				#uniqueTechnology-nap	{
 					position: absolute;
-					left: 757px;
-					top: 1535px;
+					left: 900px;
+					top: 1854px;
 					width: 150px;
 					height: 50px;
 					}
 			/* Mathematics */
 				#mathematics {
 					position: absolute;
-					left: 995px;
-					top: 1283px;
+					left: 887px;
+					top: 1854px;
 					height: 88px;
 					}
 				#mathematics-nap	{
 					position: absolute;
-					left: 1007px;
-					top: 1391px;
+					left: 900px;
+					top: 1964px;
 					width: 150px;
 					height: 50px;
 					}
 			/*house*/
 				#house {
 					position: absolute;
-					left: 132px;
-					top: 1140px;
+					left: 91px;
+					top: 1271px;
 					height: 115px;
 					}
 				#house-nap	{
 					position: absolute;
-					left: 144px;
-					top: 1280px;
+					left: 96px;
+					top: 1407px;
 					width: 150px;
 					height: 50px;
 					}	
 			/*towncenter2*/
 				#towncenter2 {
 					position: absolute;
-					left: 82px;
-					top: 1358px;
+					left: 41px;
+					top: 1045px;
 					height: 115px;
 					}
 				#towncenter2-nap	{
 					position: absolute;
-					left: 96px;
-					top: 1495px;
+					left: 46px;
+					top: 1185px;
 					width: 150px;
 					height: 50px;
 					}	
 			/*villager*/
 				#villager {
 					position: absolute;
-					left: 82px;
-					top: 1266px;
+					left: 41px;
+					top: 953px;
 					height: 255px;
 					}
 				#villager-nap	{
 					position: absolute;
-					left: 96px;
-					top: 1548px;
+					left: 46px;
+					top: 1232px;
 					width: 150px;
 					height: 50px;
 					}
 			/*linencloth*/
 				#linencloth {
 					position: absolute;
-					left: 417px;
-					top: 1481px;
+					left: 195px;
+					top: 1197px;
 					height: 80px;
 					}
 				#linencloth-nap	{
 					position: absolute;
-					left: 429px;
-					top: 1582px;
+					left: 210px;
+					top: 1298px;
 					width: 150px;
 					height: 50px;
 					}
@@ -1230,14 +1246,14 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*toolage*/
 				#toolage {
 					position: absolute;
-					left: 132px;
-					top: 1535px;
+					left: 297px;
+					top: 1004px;
 					height: 85px;
 					}
 				#toolage-nap{
 					position: absolute;
-					left: 144px;
-					top: 1641px;
+					left: 312px;
+					top: 1107px;
 					width: 150px;
 					height: 50px;
 					letter-spacing: -1px;
@@ -1245,44 +1261,42 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*bronzeage*/
 				#bronzeage{
 					position: absolute;
-					left: 470px;
-					top: 1535px;
+					left: 638px;
+					top: 1004px;
 					height: 85px;
 					}
 				#bronzeage-nap{
 					position: absolute;
-					left: 482px;
-					top: 1641px;
+					left: 651px;
+					top: 1107px;
 					width: 150px;
 					height: 50px;
-					letter-spacing: -1px;
 					}	
 			/*ironage*/
 				#ironage {
 					position: absolute;
-					left: 995px;
-					top: 1535px;
+					left: 987px;
+					top: 1004px;
 					height: 85px;
 					}
 				#ironage-nap	{
 					position: absolute;
-					left: 1007px;
-					top: 1641px;
+					left: 1000px;
+					top: 1107px;
 					width: 150px;
 					height: 50px;
-					letter-spacing: -1px;
 					}	
 			/*wonder*/
 				#wonder {
 					position: absolute;
-					left: 1475px;
-					top: 1490px;
+					left: 1228px;
+					top: 906px;
 					height: 130px;
 					}
 				#wonder-nap	{
 					position: absolute;
-					left: 1487px;
-					top: 1644px;
+					left: 1240px;
+					top: 1059px;
 					width: 150px;
 					height: 50px;
 					}
@@ -1290,224 +1304,224 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*storagepit*/
 				#storagepit {
 					position: absolute;
-					left: 132px;
-					top: 1651px;
-					height: 145px;
+					left: 91px;
+					top: 1570px;
+					height: 150px;
 					}
 				#storagepit-nap	{
 					position: absolute;
-					left: 144px;
-					top: 1820px;
+					left: 96px;
+					top: 1742px;
 					width: 150px;
 					height: 50px;
 					}
 			/*leathercavalry*/
 				#leathercavalry {
 					position: absolute;
-					left: 417px;
-					top: 1608px;
+					left: 145px;
+					top: 1419px;
 					height: 80px;
 					}
 				#leathercavalry-nap	{
 					position: absolute;
-					left: 429px;
-					top: 1708px;
+					left: 165px;
+					top: 1518px;
 					width: 150px;
 					height: 50px;
 					}
 			/*scalecavalry*/
 				#scalecavalry {
 					position: absolute;
-					left: 745px;
-					top: 1608px;
+					left: 538px;
+					top: 1419px;
 					height: 80px;
 					}
 				#scalecavalry-nap	{
 					position: absolute;
-					left: 757px;
-					top: 1708px;
+					left: 545px;
+					top: 1518px;
 					width: 150px;
 					height: 50px;
 					}
 			/*chaincavalry*/
 				#chaincavalry {
 					position: absolute;
-					left: 1246px;
-					top: 1608px;
+					left: 887px;
+					top: 1419px;
 					height: 80px;
 					}
 				#chaincavalry-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 1708px;
+					left: 900px;
+					top: 1518px;
 					width: 150px;
 					height: 50px;
 					}
 			/*leatherarcher*/
 				#leatherarcher {
 					position: absolute;
-					left: 417px;
-					top: 1661px;
+					left: 145px;
+					top: 1473px;
 					height: 80px;
 					}
 				#leatherarcher-nap	{
 					position: absolute;
-					left: 429px;
-					top: 1761px;
+					left: 165px;
+					top: 1572px;
 					width: 150px;
 					height: 50px;
 					}
 			/*scalearcher*/
 				#scalearcher {
 					position: absolute;
-					left: 745px;
-					top: 1661px;
+					left: 538px;
+					top: 1473px;
 					height: 80px;
 					}
 				#scalearcher-nap	{
 					position: absolute;
-					left: 757px;
-					top: 1761px;
+					left: 545px;
+					top: 1572px;
 					width: 150px;
 					height: 50px;	
 					}
 			/*chainarcher*/
 				#chainarcher {
 					position: absolute;
-					left: 1246px;
-					top: 1661px;
+					left: 887px;
+					top: 1473px;
 					height: 80px;
 					}
 				#chainarcher-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 1761px;
+					left: 900px;
+					top: 1572px;
 					width: 150px;
 					height: 50px;				
 					}
 			/*leathermelee*/
 				#leathermelee {
 					position: absolute;
-					left: 417px;
-					top: 1713px;
+					left: 145px;
+					top: 1525px;
 					height: 85px;
 					}
 				#leathermelee-nap	{
 					position: absolute;
-					left: 429px;
-					top: 1820px;
+					left: 165px;
+					top: 1628px;
 					width: 150px;
 					height: 50px;			
 					}
 			/*scalemelee*/
 				#scalemelee {
 					position: absolute;
-					left: 745px;
-					top: 1713px;
+					left: 538px;
+					top: 1525px;
 					height: 85px;
 					}
 				#scalemelee-nap	{
 					position: absolute;
-					left: 757px;
-					top: 1818px;
+					left: 545px;
+					top: 1628px;
 					width: 150px;
 					height: 50px;
 					}
 			/*chainmelee*/
 				#chainmelee {
 					position: absolute;
-					left: 1246px;
-					top: 1713px;
+					left: 887px;
+					top: 1525px;
 					height: 85px;
 					}
 				#chainmelee-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 1820px;
+					left: 900px;
+					top: 1628px;
 					width: 150px;
 					height: 50px;	
 					}
 			/*toolworking*/
 				#toolworking {
 					position: absolute;
-					left: 417px;
-					top: 1767px;
+					left: 145px;
+					top: 1578px;
 					height: 85px;
 					}
 				#toolworking-nap	{
 					position: absolute;
-					left: 429px;
-					top: 1875px;
+					left: 165px;
+					top: 1683px;
 					width: 150px;
 					height: 50px;				
 					}
 			/*metalworking*/
 				#metalworking {
 					position: absolute;
-					left: 745px;
-					top: 1767px;
+					left: 538px;
+					top: 1578px;
 					height: 85px;
 					}
 				#metalworking-nap	{
 					position: absolute;
-					left: 757px;
-					top: 1875px;
+					left: 545px;
+					top: 1683px;
 					width: 150px;
 					height: 50px;
 					}
 			/*metallurgy*/
 				#metallurgy {
 					position: absolute;
-					left: 1246px;
-					top: 1767px;
+					left: 1228px;
+					top: 1578px;
 					height: 85px;
 					}
 				#metallurgy-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 1875px;
+					left: 1240px;
+					top: 1683px;
 					width: 150px;
 					height: 50px;
 					}
 			/*bronzeshield*/
 				#bronzeshield {
 					position: absolute;
-					left: 745px;
-					top: 1823px;
+					left: 538px;
+					top: 1633px;
 					height: 85px;
 					}
 				#bronzeshield-nap	{
 					position: absolute;
-					left: 757px;
-					top: 1935px;
+					left: 545px;
+					top: 1742px;
 					width: 150px;
 					height: 50px;
 					}
 			/*ironshield*/
 				#ironshield {
 					position: absolute;
-					left: 1246px;
-					top: 1823px;
+					left: 887px;
+					top: 1633px;
 					height: 85px;
 					}
 				#ironshield-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 1935px;
+					left: 900px;
+					top: 1742px;
 					width: 150px;
 					height: 50px;
 					}
 			/*towershield*/
 				#towershield {
 					position: absolute;
-					left: 1475px;
-					top: 1823px;
+					left: 1228px;
+					top: 1633px;
 					height: 85px;
 					}
 				#towershield-nap	{
 					position: absolute;
-					left: 1487px;
-					top: 1935px;
+					left: 1240px;
+					top: 1742px;
 					width: 150px;
 					height: 50px;
 					}
@@ -1515,56 +1529,56 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*Academy*/
 				#academy {
 					position: absolute;
-					left: 745px;
-					top: 1911px;
-					height: 80px;
+					left: 887px;
+					top: 2677px;
+					height: 85px;
 					}
 				#academy-nap	{
 					position: absolute;
-					left: 757px;
-					top: 2015px;
+					left: 900px;
+					top: 2784px;
 					width: 150px;
 					height: 50px;
 					}
 			/*hoplite*/
 				#hoplite {
 					position: absolute;
-					left: 745px;
-					top: 1941px;
-					height: 100px;
+					left: 937px;
+					top: 2716px;
+					height: 105px;
 					}
 				#hoplite-nap	{
 					position: absolute;
-					left: 757px;
-					top: 2067px;
+					left: 952px;
+					top: 2844px;
 					width: 150px;
 					height: 50px;
 					}
 			/*phalanx*/
 				#phalanx {
 					position: absolute;
-					left: 1246px;
-					top: 1900px;
-					height: 145px;
+					left: 1228px;
+					top: 2673px;
+					height: 150px;
 					}
 				#phalanx-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 2069px;
+					left: 1240px;
+					top: 2844px;
 					width: 150px;
 					height: 50px;
 					}
 			/*centurion*/
 				#centurion {
 					position: absolute;
-					left: 1475px;
-					top: 1900px;
-					height: 145px;
+					left: 1455px;
+					top: 2673px;
+					height: 150px;
 					}
 				#centurion-nap	{
 					position: absolute;
-					left: 1487px;
-					top: 2069px;
+					left: 1469px;
+					top: 2844px;
 					width: 150px;
 					height: 50px;
 					letter-spacing: -1px;
@@ -1573,142 +1587,140 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*stable*/
 				#stable {
 					position: absolute;
-					left: 417px;
-					top: 2041px;
+					left: 245px;
+					top: 2096px;
 					height: 85px;
 					}
 				#stable-nap	{
 					position: absolute;
-					left: 429px;
-					top: 2147px;
+					left: 260px;
+					top: 2200px;
 					width: 150px;
 					height: 50px;
 					}
 			/*scout*/
 				#scout {
 					position: absolute;
-					left: 470px;
-					top: 2080px;
-					height: 100px;
+					left: 297px;
+					top: 2133px;
+					height: 110px;
 					}
 				#scout-nap	{
 					position: absolute;
-					left: 482px;
-					top: 2200px;
+					left: 312px;
+					top: 2264px;
 					width: 150px;
 					height: 50px;
 					}
 			/*chariot*/
 				#chariot {
 					position: absolute;
-					left: 745px;
-					top: 2023px;
+					left: 588px;
+					top: 2078px;
 					height: 102px;
 					}
 				#chariot-nap	{
 					position: absolute;
-					left: 757px;
-					top: 2147px;
+					left: 595px;
+					top: 2199px;
 					width: 150px;
 					height: 50px;
 					}
 			/*scythe*/
 				#scythe {
 					position: absolute;
-					left: 1475px;
-					top: 1975px;
+					left: 1455px;
+					top: 2028px;
 					height: 151px;
 					}
 				#scythe-nap	{
 					position: absolute;
-					left: 1487px;
-					top: 2147px;
+					left: 1469px;
+					top: 2199px;
 					width: 150px;
 					height: 50px;
 					}
 			/*cavalry*/
 				#cavalry {
 					position: absolute;
-					left: 745px;
-					top: 2052px;
+					left: 887px;
+					top: 2109px;
 					height: 130px;
 					}
 				#cavalry-nap	{
 					position: absolute;
-					left: 757px;
-					top: 2200px;
+					left: 900px;
+					top: 2261px;
 					width: 150px;
 					height: 50px;
 					}
 			/*heavycav*/
 				#heavycav {
 					position: absolute;
-					left: 1246px;
-					top: 2010px;
+					left: 1228px;
+					top: 2061px;
 					height: 175px;
 					}
 				#heavycav-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 2205px;
+					left: 1240px;
+					top: 2258px;
 					width: 150px;
 					height: 50px;
 					}
 			/*cataphract*/
 				#cataphract {
 					position: absolute;
-					left: 1475px;
-					top: 2008px;
+					left: 1455px;
+					top: 2061px;
 					height: 175px;
 					}
 				#cataphract-nap	{
 					position: absolute;
-					left: 1487px;
-					top: 2202px;
+					left: 1469px;
+					top: 2255px;
 					width: 150px;
 					height: 50px;
 					}
 			/*warelephant*/
 				#warelephant {
 					position: absolute;
-					left: 1246px;
-					top: 2171px;
+					left: 1228px;
+					top: 2208px;
 					height: 125px;
 					}
 				#warelephant-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 2318px;
+					left: 1240px;
+					top: 2354px;
 					width: 150px;
 					height: 50px;
 					}
 			/*armorele*/
 				#armorele {
 					position: absolute;
-					left: 1475px;
-					top: 2104px;
+					left: 1455px;
+					top: 2144px;
 					height: 190px;
 					}
 				#armorele-nap	{
 					position: absolute;
-					left:  1487px;
-					top: 2315px;
+					left:  1469px;
+					top: 2353px;
 					width: 150px;
 					height: 50px;
-					letter-spacing: -1px;
-					font-size:19px;
 					}
 			/*camel*/
 				#camel {
 					position: absolute;
-					left: 745px;
-					top: 2138px;
+					left: 887px;
+					top: 2194px;
 					height: 102px;
 					}
 				#camel-nap	{
 					position: absolute;
-					left: 757px;
-					top: 2262px;
+					left: 900px;
+					top: 2318px;
 					width: 150px;
 					height: 50px;
 					}
@@ -1730,42 +1742,42 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*archery*/
 				#archery {
 					position: absolute;
-					left: 417px;
-					top: 2297px;
+					left: 245px;
+					top: 2324px;
 					height: 85px;
 					}
-				#archery-nap	{
+				#archery-nap {
 					position: absolute;
-					left: 434px;
-					top: 2403px;
-					width: 150px;
+					left: 260px;
+					top: 2432px;
+					width: 152px;
 					height: 50px;
 					}
 			/*improvedbow*/
 				#improvedbow {
 					position: absolute;
-					left: 745px;
-					top: 2281px;
+					left: 588px;
+					top: 2347px;
 					height: 145px;
 					}
 				#improvedbow-nap	{
 					position: absolute;
-					left: 757px;
-					top: 2446px;
+					left: 595px;
+					top: 2511px;
 					width: 150px;
 					height: 50px;
 					}
 			/*compie*/
 				#compie {
 					position: absolute;
-					left: 995px;
-					top: 2281px;
+					left: 887px;
+					top: 2347px;
 					height: 145px;
 					}
 				#compie-nap	{
 					position: absolute;
-					left: 1007px;
-					top: 2446px;
+					left: 900px;
+					top: 2511px;
 					width: 150px;
 					height: 50px;
 					}
@@ -1788,157 +1800,155 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*bowman*/
 				#bowman {
 					position: absolute;
-					left: 470px;
-					top: 2338px;
-					height: 100px;
+					left: 297px;
+					top: 2240px;
+					height: 108px;
 					}
 				#bowman-nap	{
 					position: absolute;
-					left: 482px;
-					top: 2458px;
+					left: 312px;
+					top: 2370px;
 					width: 150px;
 					height: 50px;
 					}
 			/*chararch*/
 				#chararch {
 					position: absolute;
-					left: 745px;
-					top: 2246px;
-					height: 105px;
+					left: 588px;
+					top: 2302px;
+					height: 107px;
 					}
 				#chararch-nap	{
 					position: absolute;
-					left: 757px;
-					top: 2370px;
+					left: 597px;
+					top: 2430px;
 					width: 150px;
 					height: 50px;
 					}
 			/*horsearcher*/
 				#horsearcher {
 					position: absolute;
-					left: 1246px;
-					top: 2349px;
-					height: 135px;
+					left: 1228px;
+					top: 2392px;
+					height: 136px;
 					}
 				#horsearcher-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 2505px;
+					left: 1240px;
+					top: 2549px;
 					width: 150px;
 					height: 50px;
 					}
 			/*elearcher*/
 				#elearcher {
 					position: absolute;
-					left: 1246px;
-					top: 2270px;
+					left: 1228px;
+					top: 2339px;
 					height: 110px;
 					}
 				#elearcher-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 2400px;
+					left: 1240px;
+					top: 2470px;
 					width: 150px;
 					height: 50px;
 					}
 			/*heavhorsearch*/
 				#heavhorsearch {
 					position: absolute;
-					left: 1475px;
-					top: 2310px;
-					height: 175px;
+					left: 1455px;
+					top: 2352px;
+					height: 177px;
 					}
 				#heavhorsearch-nap	{
 					position: absolute;
-					left: 1487px;
-					top: 2504px;
+					left: 1469px;
+					top: 2549px;
 					width: 150px;
 					height: 50px;
-					letter-spacing: -1px;
-					font-size:20px;
 					}
 		/*Siege workshop*/
 			/*siegeshop*/
 				#siegeshop {
 					position: absolute;
-					left: 745px;
-					top: 2500px;
+					left: 887px;
+					top: 2538px;
 					height: 85px;
 					}
 				#siegeshop-nap	{
 					position: absolute;
-					left: 757px;
-					top: 2605px;
+					left: 900px;
+					top: 2643px;
 					width: 150px;
 					height: 50px;
 					}
 			/*stonethrow*/
 				#stonethrow {
 					position: absolute;
-					left: 745px;
-					top: 2501px;
+					left: 937px;
+					top: 2540px;
 					height: 140px;
 					}
 				#stonethrow-nap	{
 					position: absolute;
-					left: 757px;
-					top: 2664px;
+					left: 952px;
+					top: 2702px;
 					width: 150px;
 					height: 50px;
 					}
 			/*ballista*/
 				#ballista {
 					position: absolute;
-					left: 1246px;
-					top: 2495px;
-					height: 90px;
+					left: 1228px;
+					top: 2532px;
+					height: 91px;
 					}
 				#ballista-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 2607px;
+					left: 1240px;
+					top: 2643px;
 					width: 150px;
 					height: 50px;
 					}
 			/*helepolis*/
 				#helepolis {
 					position: absolute;
-					left: 1475px;
-					top: 2450px;
+					left: 1455px;
+					top: 2488px;
 					height: 135px;
 					}
 				#helepolis-nap	{
 					position: absolute;
-					left: 1485px;
-					top: 2604px;
+					left: 1469px;
+					top: 2643px;
 					width: 150px;
 					height: 50px;
 					}
 			/*catapult*/
 				#cat {
 					position: absolute;
-					left: 1246px;
-					top: 2457px;
+					left: 1228px;
+					top: 2495px;
 					height: 185px;
 					}
 				#cat-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 2662px;
+					left: 1240px;
+					top: 2702px;
 					width: 150px;
 					height: 50px;
 					}
 			/*heavycatapult*/
 				#heavycat {
 					position: absolute;
-					left: 1475px;
-					top: 2456px;
+					left: 1455px;
+					top: 2495px;
 					height: 185px;
 					}
 				#heavycat-nap	{
 					position: absolute;
-					left: 1487px;
-					top: 2660px;
+					left: 1469px;
+					top: 2700px;
 					width: 150px;
 					height: 50px;
 					}
@@ -1946,91 +1956,92 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*barrack*/
 				#barrack {
 					position: absolute;
-					left: 82px;
-					top: 2552px;
+					left: 91px;
+					top: 1811px;
 					height: 85px;
 					}
 				#barrack-nap	{
 					position: absolute;
-					left: 94px;
-					top: 2661px;
+					left: 96px;
+					top: 1920px;
 					width: 150px;
 					height: 50px;
 					}
 			/*shortsword*/
 				#shortsword {
 					position: absolute;
-					left: 745px;
-					top: 2601px;
-					height: 130px;
+					left: 538px;
+					top: 1918px;
+					height: 131px;
 					}
 				#shortsword-nap	{
 					position: absolute;
-					left: 757px;
-					top: 2752px;
+					left: 545px;
+					top: 2068px;
 					width: 150px;
 					height: 50px;
 					}
 			/*broadsword*/
 				#broadsword {
 					position: absolute;
-					left: 995px;
-					top: 2558px;
+					left: 887px;
+					top: 1874px;
 					height: 175px;
 					}
 				#broadsword-nap	{
 					position: absolute;
-					left: 1007px;
-					top: 2752px;
+					left: 900px;
+					top: 2068px;
 					width: 150px;
 					height: 50px;
 					}
 			/*longsword*/
 				#longsword {
 					position: absolute;
-					left: 1246px;
-					top: 2558px;
+					left: 1228px;
+					top: 1874px;
 					height: 175px;
 					}
 				#longsword-nap	{
 					position: absolute;
-					left: 1258px;
-					top: 2752px;
+					left: 1240px;
+					top: 2068px;
 					width: 150px;
 					height: 50px;
 					}
 			/*legion*/
 				#legion {
 					position: absolute;
-					left: 1475px;
-					top: 2558px;
+					left: 1455px;
+					top: 1874px;
 					height: 175px;
 					}
 				#legion-nap	{
 					position: absolute;
-					left: 1487px;
-					top: 2752px;
+					left: 1469px;
+					top: 2068px;
 					width: 150px;
 					height: 50px;
 					}
 			/*slinger*/
 				#slinger {
 					position: absolute;
-					left: 417px;
-					top: 2635px;
+					left: 245px;
+					top: 1930px;
 					height: 155px;
 					}
 				#slinger-nap	{
 					position: absolute;
-					left: 429px;
-					top: 2812px;
+					left: 260px;
+					top: 2106px;
 					width: 150px;
 					height: 50px;
+					letter-spacing: -1px;
 					}
 			/*improved slinger */
 				#Hslinger {
 					position: absolute;
-					left: 995px;
+					left: 260px;
 					top: 2597px;
 					height: 195px;
 					}
@@ -2058,30 +2069,31 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*clubman*/
 				#clubman {
 					position: absolute;
-					left: 152px;
-					top: 2578px;
+					left: 145px;
+					top: 1838px;
 					height: 120px;
 					}
 				#clubman-nap	{
 					position: absolute;
-					left: 164px;
-					top: 2720px;
+					left: 165px;
+					top: 1979px;
 					width: 150px;
 					height: 50px;
 					}
 			/*axeman*/
 				#axeman {
 					position: absolute;
-					left: 417px;
-					top: 2538px;
+					left: 245px;
+					top: 1857px;
 					height: 160px;
 					}
 				#axeman-nap	{
 					position: absolute;
-					left: 429px;
-					top: 2720px;
+					left: 260px;
+					top: 2036px;
 					width: 150px;
 					height: 50px;
+					letter-spacing: -1px;
 					}
 		/*wild animals*/
 			/*alligator*/

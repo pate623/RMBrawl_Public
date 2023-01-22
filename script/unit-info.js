@@ -11,7 +11,8 @@ $(document).ready(function(){
 	});
 });
 	*/
-var cataphractLow = false;	
+var cataphractLow = false;
+var woodworkingLow = false;
 	
 // info boxes visible/invisible
 	//Water Units
@@ -295,6 +296,11 @@ var cataphractLow = false;
 		//medicine
 			$(document).ready(function(){
     			$("#medicine-nap").click(function(){
+					if ( !$("#martyrdom").is(":hidden") ){
+						$("#medicine").css("top", "1192px");
+					}else{
+						$("#medicine").css("top", "1167px");
+					}
 					$("#medicine").toggle();
 				});
 			});
@@ -395,11 +401,12 @@ var cataphractLow = false;
 		//Market
 			$(document).ready(function(){
     			$("#market-nap").click(function(){
+					/*
 					if ( !$("#farm").is(":hidden") ){
 						$("#market").css("top", "958px");
 					}else{
 						$("#market").css("top", "943px");
-					}
+					}*/
 					$("#market").toggle();
 				});
 			});
@@ -428,16 +435,20 @@ var cataphractLow = false;
 			$(document).ready(function(){
 				$("#domestication").click(function(){
 					$("#domestication").toggle();
+					if ($("#woodworking").is(":hidden")){
+						woodworkingLow = false;
+					}
 				});
 			})
 		//Plow
 			$(document).ready(function(){
     			$("#plow-nap").click(function(){
+					/*
 					if ( !$("#wheel").is(":hidden") ){
 						$("#plow").css("top", "1035px");
 					}else{
 						$("#plow").css("top", "1009px");
-					}
+					}*/
 					$("#plow").toggle();
 				});
 			});
@@ -487,10 +498,10 @@ var cataphractLow = false;
 		//stonemining
 			$(document).ready(function(){
     			$("#stonemining-nap").click(function(){
-					if ( !$("#goldmining").is(":hidden") ){
-						$("#stonemining").css("top", "1142px");
+					if ( woodworkingLow ){
+						$("#stonemining").css("top", "836px");
 					}else{
-						$("#stonemining").css("top", "1132px");
+						$("#stonemining").css("top", "826px");
 					}
 					$("#stonemining").toggle();
 				});
@@ -503,11 +514,13 @@ var cataphractLow = false;
 		//siegecraft
 			$(document).ready(function(){
     			$("#siegecraft-nap").click(function(){
-					if (!$("#coinage").is(":hidden")){
-						$("#siegecraft").css("top", "1110px");
+					
+					if (!$("#artisanship").is(":hidden")){
+						$("#siegecraft").css("top", "818px");
 					}else{
-						$("#siegecraft").css("top", "1086px");
+						$("#siegecraft").css("top", "782px");
 					}
+					
 					$("#siegecraft").toggle();
 				});
 			});
@@ -519,12 +532,25 @@ var cataphractLow = false;
 		//woodworking
 			$(document).ready(function(){
     			$("#woodworking-nap").click(function(){
+					if (!$("#domestication").is(":hidden")){
+						$("#woodworking").css("top", "790px");
+						woodworkingLow = true;
+					}else{
+						$("#woodworking").css("top", "772px");
+						woodworkingLow = false;
+					}
 					$("#woodworking").toggle();
+					if ($("#woodworking").is(":hidden")){
+						woodworkingLow = false;
+					}
 				});
 			});
 			$(document).ready(function(){
 				$("#woodworking").click(function(){
 					$("#woodworking").toggle();
+					if ($("#woodworking").is(":hidden")){
+						woodworkingLow = false;
+					}
 				});
 			})
 		//artisanship
@@ -541,6 +567,13 @@ var cataphractLow = false;
 		//craftsmanship
 			$(document).ready(function(){
     			$("#craftsmanship-nap").click(function(){
+					if (!$("#irrigation").is(":hidden")){
+						$("#craftsmanship").css("top", "792px");
+						woodworkingLow = true;
+					}else{
+						$("#craftsmanship").css("top", "772px");
+						woodworkingLow = false;
+					}
 					$("#craftsmanship").toggle();
 				});
 			});
@@ -575,11 +608,12 @@ var cataphractLow = false;
 		//towncenter
 			$(document).ready(function(){
     			$("#towncenter-nap").click(function(){
+					/*
 					if ( !$("#governmentcenter").is(":hidden") ){
 						$("#towncenter").css("top", "1366px");
 					}else{
 						$("#towncenter").css("top", "1345px");
-					}
+					}*/
 					$("#towncenter").toggle();
 				});
 			});
@@ -624,10 +658,10 @@ var cataphractLow = false;
 		//alchemy
 			$(document).ready(function(){
     			$("#alchemy-nap").click(function(){
-					if ( !$("#engineering").is(":hidden") ){
-						$("#alchemy").css("top", "1331px");
+					if ( !$("#aristocracy").is(":hidden") ){
+						$("#alchemy").css("top", "1765px");
 					}else{
-						$("#alchemy").css("top", "1316px");
+						$("#alchemy").css("top", "1740px");
 					}
 					$("#alchemy").toggle();
 				});
@@ -991,11 +1025,12 @@ var cataphractLow = false;
 		//hoplite
 			$(document).ready(function(){
     			$("#hoplite-nap").click(function(){
+					/*
 					if ( !$("#academy").is(":hidden") ){
 						$("#hoplite").css("top", "1955px");
 					}else{
 						$("#hoplite").css("top", "1945px");
-					}
+					}*/
 					$("#hoplite").toggle();
 				});
 			});
@@ -1074,12 +1109,13 @@ var cataphractLow = false;
 		//cavalry
 			$(document).ready(function(){
     			$("#cavalry-nap").click(function(){
+					/*
 					if ( !$("#chariot").is(":hidden") ){
 						$("#cavalry").css("top", "2065px");
 					}else{
 						$("#cavalry").css("top", "2051px");
 					}
-					
+					*/
 					$("#cavalry").toggle();
 				});
 			});
@@ -1102,19 +1138,14 @@ var cataphractLow = false;
 		//cataphract
 			$(document).ready(function(){
     			$("#cataphract-nap").click(function(){
+					
 					if ( !$("#scythe").is(":hidden") ){
-						$("#cataphract").css("top", "2018px");
-						cataphractLow = true;
+						$("#cataphract").css("top", "2073px");
 					}else{
-						$("#cataphract").css("top", "2008px");
-						cataphractLow = false;
+						$("#cataphract").css("top", "2061px");
 					}
-					if ( $("#cataphract").is(":hidden") ){
-						$("#cataphract").show();
-					}else {
-						$("#cataphract").hide();
-						cataphractLow = false;	
-					}
+					
+					$("#cataphract").toggle();
 				});
 			});
 			$(document).ready(function(){
@@ -1137,11 +1168,13 @@ var cataphractLow = false;
 		//armorele	
 			$(document).ready(function(){
     			$("#armorele-nap").click(function(){
+					/*
 					if (cataphractLow){
 						$("#armorele").css("top", "2107px");
 					}else{
 						$("#armorele").css("top", "2107px");
 					}
+					*/
 					$("#armorele").toggle();
 				});
 			});
@@ -1198,11 +1231,12 @@ var cataphractLow = false;
 		//improvedbow
 			$(document).ready(function(){
     			$("#improvedbow-nap").click(function(){
+					/*
 					if ( !$("#chararch").is(":hidden") ){
 						$("#improvedbow").css("top", "2291px");
 					}else{
 						$("#improvedbow").css("top", "2281px");
-					}
+					}*/
 					$("#improvedbow").toggle();
 				});
 			});
@@ -1280,11 +1314,13 @@ var cataphractLow = false;
 		//heavhorsearch
 			$(document).ready(function(){
     			$("#heavhorsearch-nap").click(function(){
+					/*
 					if ( !$("#recurvebow").is(":hidden") ){
 						$("#heavhorsearch").css("top", "2325px");
 					}else{
 						$("#heavhorsearch").css("top", "2310px");
 					}
+					*/
 					$("#heavhorsearch").toggle();
 				});
 			});
@@ -1352,11 +1388,13 @@ var cataphractLow = false;
 		//heavycat
 				$(document).ready(function(){
     			$("#heavycat-nap").click(function(){
+					
 					if ( !$("#helepolis").is(":hidden") ){
-						$("#heavycat").css("top", "2496px");
+						$("#heavycat").css("top", "2533px");
 					}else{
-						$("#heavycat").css("top", "2456px");
+						$("#heavycat").css("top", "2495px");
 					}
+					
 					$("#heavycat").toggle();
 				});
 			});
