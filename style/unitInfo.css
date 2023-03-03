@@ -317,7 +317,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					color:#000;
     				text-align:center;
 					line-height: 105%;
-					padding-left: 50px;
+					padding-left: 49px;
 					cursor:pointer;
 					}
 							span.strong{ /* Unit and technology names inside tips*/
@@ -348,65 +348,65 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					}
 				#dock-nap {
 					position: absolute;
-					left: 96px;
+					left: 103px;
 					top: 533px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*Scout Ship*/
 				#scout-ship {
 					position: absolute;
 					left: 245px;
-					top: 163px;
+					top: 178px;
 					height: 85px;
 					}
 				#scout-ship-nap	{
 					position: absolute;
 					left: 260px;
-					top: 267px;
-					width: 150px;
+					top: 282px;
+					width: 155px;
 					height: 50px;
 					}
 			/*War Galley*/
 				#war-galley {
 					position:absolute;
 					left: 538px;
-					top: 123px;
+					top: 138px;
 					height: 125px;
 					}
 				#war-galley-nap	{
 					position: absolute;
 					left: 545px;
-					top: 270px;
-					width: 150px;
+					top: 283px;
+					width: 155px;
 					height: 50px;
 					}
 			/*Trireme*/
 				#trieme {
 					position: absolute;
-					left: 1228px;
-					top: 113px;
+					left: 887px;
+					top: 128px;
 					height: 135px;
 					}
 				#trieme-nap	{
 					position: absolute;
-					left: 1240px;
-					top: 270px;
-					width: 150px;
+					left: 900px;
+					top: 283px;
+					width: 155px;
 					height: 50px;
 					}
 			/*Juggernaught*/
 				#juggernaught {
 					position: absolute;
 					left: 1455px;
-					top: 13px;
+					top: 46px;
 					height: 180px;
 					}
 				#juggernaught-nap	{
 					position: absolute;
 					left: 1469px;
-					top: 211px;
-					width: 150px;
+					top: 245px;
+					width: 155px;
 					height: 50px;
 					}
 			/*Fire Galley*/
@@ -420,21 +420,21 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1242px;
 					top: 322px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*Catapult trieme*/
 				#catapult-trieme {
 					position: absolute;
 					left: 1228px;
-					top: 13px;
+					top: 46px;
 					height: 180px;
 					}
 				#catapult-trieme-nap	{
 					position: absolute;
 					left: 1240px;
-					top: 212px;
-					width: 150px;
+					top: 244px;
+					width: 155px;
 					height: 50px;
 					letter-spacing: -1px;
 					}
@@ -449,7 +449,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 165px;
 					top: 423px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*Fishing Ship*/
@@ -463,7 +463,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 423px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}	
 			/*Trade boat*/
@@ -477,7 +477,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 165px;
 					top: 477px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*merchant-ship*/
@@ -491,7 +491,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 477px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}	
 			/*light-transport*/
@@ -505,7 +505,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 260px;
 					top: 357px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*heavy-transport*/
@@ -519,7 +519,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 363px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					letter-spacing: -1px;
 					}
@@ -533,9 +533,9 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					}
 				#granary-nap	{
 					position: absolute;
-					left: 96px;
+					left: 103px;
 					top: 722px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/* Creel */
@@ -549,7 +549,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 150px;
 					top: 930px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*Watch tower*/
@@ -563,7 +563,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 165px;
 					top: 604px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*sentry-tower*/
@@ -577,7 +577,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 545px;
 					top: 604px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*guard-tower*/
@@ -591,7 +591,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 604px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*ballista-tower*/
@@ -605,22 +605,23 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 604px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*small-wall*/
 				#small-wall {
 					position: absolute;
-					left: 145px;
+					left: 245px;
 					top: 510px;
 					height: 125px;
 					}
 				#small-wall-nap	{
 					position: absolute;
-					left: 165px;
-					top: 659px;
-					width: 150px;
+					left: 260px;
+					top: 655px;
+					width: 155px;
 					height: 50px;
+					letter-spacing: -1px;
 					}
 			/*medium-wall*/
 				#medium-wall {
@@ -633,7 +634,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 659px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*big-wall*/
@@ -647,7 +648,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 659px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 		/*Temple units*/
@@ -662,7 +663,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 545px;
 					top: 1267px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*priest*/
@@ -676,7 +677,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 595px;
 					top: 1323px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*astrology*/
@@ -690,7 +691,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 1297px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*medicine*/
@@ -704,7 +705,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 1325px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}	
 			/*fanaticism*/
@@ -718,7 +719,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 1354px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}	
 			/*mysticism*/
@@ -732,7 +733,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 595px;
 					top: 1379px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*afterlife*/
@@ -746,21 +747,21 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 1434px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*jihad*/
 				#jihad {
 					position: absolute;
 					left: 1228px;
-					top: 1256px;
-					height: 100px;
+					top: 1186px;
+					height: 170px;
 					}
 				#jihad-nap	{
 					position: absolute;
 					left: 1240px;
 					top: 1379px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*polytheism*/
@@ -774,7 +775,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 595px;
 					top: 1435px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*monotheism*/
@@ -788,7 +789,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 1405px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*martyrdom*/
@@ -802,7 +803,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 1268px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					
 					}
@@ -811,14 +812,14 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#farm {
 					position: absolute;
 					left: 195px;
-					top: 881px;
+					top: 880px;
 					height: 108px;
 					}
 				#farm-nap	{
 					position: absolute;
 					left: 210px;
 					top: 1010px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*market*/
@@ -832,21 +833,21 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 165px;
 					top: 787px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*wheel*/
 				#wheel {
 					position: absolute;
 					left: 538px;
-					top: 816px;
+					top: 817px;
 					height: 85px;
 					}
 				#wheel-nap	{
 					position: absolute;
 					left: 545px;
 					top: 927px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*domestication*/
@@ -860,7 +861,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 210px;
 					top: 843px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}	
 			/*plow*/
@@ -874,7 +875,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 545px;
 					top: 841px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}	
 			/*irrigation*/
@@ -888,7 +889,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 841px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}	
 			/*goldmining*/
@@ -902,7 +903,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 545px;
 					top: 787px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}	
 			/*coinage*/
@@ -916,7 +917,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 787px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}	
 			/*stonemining*/
@@ -930,7 +931,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 210px;
 					top: 954px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}	
 			/*siegecraft*/
@@ -944,7 +945,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 954px;;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*woodworking*/
@@ -958,7 +959,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 210px;
 					top: 895px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*artisanship*/
@@ -972,7 +973,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 895px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*craftsmanship*/
@@ -986,7 +987,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 895px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*pottery*/
@@ -1000,7 +1001,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 482px;
 					top: 1368px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 		/*government center*/
@@ -1008,14 +1009,14 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#governmentcenter {
 					position: absolute;
 					left: 538px;
-					top: 1720px;
+					top: 1721px;
 					height: 85px;
 					}
 				#governmentcenter-nap	{
 					position: absolute;
 					left: 545px;
 					top: 1825px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*town center*/
@@ -1029,7 +1030,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 1184px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*logistics*/
@@ -1043,7 +1044,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 595px;
 					top: 1992px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*architecture*/
@@ -1057,7 +1058,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 595px;
 					top: 1888px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*engineering*/
@@ -1071,7 +1072,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 1965px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*alchemy*/
@@ -1085,7 +1086,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 1879px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*nobility*/
@@ -1099,7 +1100,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 595px;
 					top: 1940px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*ballistics*/
@@ -1113,7 +1114,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 1915px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*crossBow // bracer*/
@@ -1127,7 +1128,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1007px;
 					top: 1572px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*aristocracy*/
@@ -1141,21 +1142,21 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 1825px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*uniqueTechnology*/
 				#uniqueTechnology {
 					position: absolute;
 					left: 887px;
-					top: 656px;
-					height: 1180px;
+					top: 881px;
+					height: 955px;
 					}
-				#uniqueTechnology-nap	{
+				#uniqueTechnology-nap {
 					position: absolute;
 					left: 900px;
 					top: 1854px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/* Mathematics */
@@ -1165,11 +1166,11 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					top: 1854px;
 					height: 88px;
 					}
-				#mathematics-nap	{
+				#mathematics-nap {
 					position: absolute;
 					left: 900px;
 					top: 1964px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*house*/
@@ -1181,9 +1182,9 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					}
 				#house-nap	{
 					position: absolute;
-					left: 96px;
+					left: 103px;
 					top: 1407px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}	
 			/*towncenter2*/
@@ -1197,7 +1198,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 46px;
 					top: 1185px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}	
 			/*villager*/
@@ -1211,21 +1212,21 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 46px;
 					top: 1232px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*linencloth*/
 				#linencloth {
 					position: absolute;
-					left: 195px;
+					left: 91px;
 					top: 1197px;
 					height: 80px;
 					}
 				#linencloth-nap	{
 					position: absolute;
-					left: 210px;
+					left: 103px;
 					top: 1298px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*akinaka*/
@@ -1239,7 +1240,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 757px;
 					top: 1606px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					letter-spacing: -1px;
 					}
@@ -1254,50 +1255,51 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 312px;
 					top: 1107px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					letter-spacing: -1px;
 					}	
 			/*bronzeage*/
 				#bronzeage{
 					position: absolute;
-					left: 638px;
+					left: 588px;
 					top: 1004px;
 					height: 85px;
 					}
 				#bronzeage-nap{
 					position: absolute;
-					left: 651px;
+					left: 601px;
 					top: 1107px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
+					letter-spacing: 0px;
 					}	
 			/*ironage*/
 				#ironage {
 					position: absolute;
-					left: 987px;
-					top: 1004px;
-					height: 85px;
+					left: 937px;
+					top: 984px;
+					height: 105px;
 					}
 				#ironage-nap	{
 					position: absolute;
-					left: 1000px;
+					left: 952px;
 					top: 1107px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}	
 			/*wonder*/
 				#wonder {
 					position: absolute;
 					left: 1228px;
-					top: 906px;
+					top: 907px;
 					height: 130px;
 					}
 				#wonder-nap	{
 					position: absolute;
 					left: 1240px;
 					top: 1059px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 		/*Storage pit*/
@@ -1310,9 +1312,9 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					}
 				#storagepit-nap	{
 					position: absolute;
-					left: 96px;
+					left: 103px;
 					top: 1742px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*leathercavalry*/
@@ -1326,7 +1328,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 165px;
 					top: 1518px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*scalecavalry*/
@@ -1340,7 +1342,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 545px;
 					top: 1518px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*chaincavalry*/
@@ -1354,7 +1356,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 1518px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*leatherarcher*/
@@ -1368,7 +1370,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 165px;
 					top: 1572px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*scalearcher*/
@@ -1382,7 +1384,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 545px;
 					top: 1572px;
-					width: 150px;
+					width: 155px;
 					height: 50px;	
 					}
 			/*chainarcher*/
@@ -1396,7 +1398,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 1572px;
-					width: 150px;
+					width: 155px;
 					height: 50px;				
 					}
 			/*leathermelee*/
@@ -1410,7 +1412,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 165px;
 					top: 1628px;
-					width: 150px;
+					width: 155px;
 					height: 50px;			
 					}
 			/*scalemelee*/
@@ -1424,7 +1426,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 545px;
 					top: 1628px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*chainmelee*/
@@ -1438,7 +1440,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 1628px;
-					width: 150px;
+					width: 155px;
 					height: 50px;	
 					}
 			/*toolworking*/
@@ -1452,7 +1454,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 165px;
 					top: 1683px;
-					width: 150px;
+					width: 155px;
 					height: 50px;				
 					}
 			/*metalworking*/
@@ -1466,7 +1468,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 545px;
 					top: 1683px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*metallurgy*/
@@ -1480,7 +1482,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 1683px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*bronzeshield*/
@@ -1494,7 +1496,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 545px;
 					top: 1742px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*ironshield*/
@@ -1508,7 +1510,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 1742px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*towershield*/
@@ -1522,7 +1524,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 1742px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 		/*Academy units*/	
@@ -1537,7 +1539,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 2784px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*hoplite*/
@@ -1551,7 +1553,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 952px;
 					top: 2844px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*phalanx*/
@@ -1565,7 +1567,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 2844px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*centurion*/
@@ -1579,7 +1581,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1469px;
 					top: 2844px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					letter-spacing: -1px;
 					}
@@ -1595,7 +1597,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 260px;
 					top: 2200px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*scout*/
@@ -1609,7 +1611,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 312px;
 					top: 2264px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*chariot*/
@@ -1623,7 +1625,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 595px;
 					top: 2199px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*scythe*/
@@ -1637,7 +1639,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1469px;
 					top: 2199px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*cavalry*/
@@ -1651,7 +1653,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 2261px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*heavycav*/
@@ -1665,7 +1667,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 2258px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*cataphract*/
@@ -1679,7 +1681,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1469px;
 					top: 2255px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*warelephant*/
@@ -1693,7 +1695,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 2354px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*armorele*/
@@ -1707,7 +1709,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left:  1469px;
 					top: 2353px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*camel*/
@@ -1721,7 +1723,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 2318px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*heavyCamel*/
@@ -1735,7 +1737,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1487px;
 					top: 2262px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 		/*Archery units*/
@@ -1749,22 +1751,22 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#archery-nap {
 					position: absolute;
 					left: 260px;
-					top: 2432px;
+					top: 2430px;
 					width: 152px;
 					height: 50px;
 					}
 			/*improvedbow*/
 				#improvedbow {
 					position: absolute;
-					left: 588px;
+					left: 538px;
 					top: 2347px;
 					height: 145px;
 					}
 				#improvedbow-nap	{
 					position: absolute;
-					left: 595px;
+					left: 548px;
 					top: 2511px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*compie*/
@@ -1778,7 +1780,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 2511px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*recurvebow*/
@@ -1808,21 +1810,21 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 312px;
 					top: 2370px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*chararch*/
 				#chararch {
 					position: absolute;
 					left: 588px;
-					top: 2302px;
+					top: 2303px;
 					height: 107px;
 					}
 				#chararch-nap	{
 					position: absolute;
 					left: 597px;
 					top: 2430px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*horsearcher*/
@@ -1836,7 +1838,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 2549px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*elearcher*/
@@ -1850,7 +1852,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 2470px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*heavhorsearch*/
@@ -1864,7 +1866,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1469px;
 					top: 2549px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 		/*Siege workshop*/
@@ -1879,7 +1881,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 2643px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*stonethrow*/
@@ -1893,7 +1895,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 952px;
 					top: 2702px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*ballista*/
@@ -1907,7 +1909,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 2643px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*helepolis*/
@@ -1921,7 +1923,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1469px;
 					top: 2643px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*catapult*/
@@ -1935,7 +1937,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 2702px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*heavycatapult*/
@@ -1949,7 +1951,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1469px;
 					top: 2700px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 		/*Barrack units*/
@@ -1962,9 +1964,9 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					}
 				#barrack-nap	{
 					position: absolute;
-					left: 96px;
+					left: 103px;
 					top: 1920px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*shortsword*/
@@ -1976,9 +1978,9 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					}
 				#shortsword-nap	{
 					position: absolute;
-					left: 545px;
+					left: 548px;
 					top: 2068px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*broadsword*/
@@ -1992,7 +1994,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 900px;
 					top: 2068px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*longsword*/
@@ -2006,7 +2008,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1240px;
 					top: 2068px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*legion*/
@@ -2020,7 +2022,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1469px;
 					top: 2068px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*slinger*/
@@ -2034,7 +2036,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 260px;
 					top: 2106px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					letter-spacing: -1px;
 					}
@@ -2049,7 +2051,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1007px;
 					top: 2811px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*heavy slinger */
@@ -2063,7 +2065,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 1487px;
 					top: 2811px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*clubman*/
@@ -2077,7 +2079,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 165px;
 					top: 1979px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					}
 			/*axeman*/
@@ -2091,7 +2093,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					position: absolute;
 					left: 260px;
 					top: 2036px;
-					width: 150px;
+					width: 155px;
 					height: 50px;
 					letter-spacing: -1px;
 					}

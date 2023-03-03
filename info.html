@@ -182,7 +182,8 @@
 				</div>
             <!-- small-wall -->
             	<div id="small-wall-nap" class="units">
-					Small Wall
+					Small Wall<br>
+                    <span class="em">Req. Stone Mining</span>
 				</div>
              <!-- medium-wall -->
             	<div id="medium-wall-nap" class="units">
@@ -348,7 +349,7 @@
             	<div id="villager-nap" class="units">
 					Villager
 				</div>
-             <!-- Linen Cloth  Req. Leath. arm. Inf.  Req. Leath.. ..fantry  -->
+             <!-- Linen Cloth -->
             	<div id="linencloth-nap" class="units">
 					Linen Cloth
 				</div>
@@ -360,10 +361,12 @@
             <!-- bronzeage -->
 				<div id="bronzeage-nap" class="units">
 					Iron Age<br>
+        			<span class="emn">Req. Temple+Gove..</span> 
         		</div>
             <!-- ironage -->
 				<div id="ironage-nap" class="units">
 					Classical Age
+        			<span class="emn">Req. Acade..+Siege..</span> 
         		</div>
             <!-- wonder -->
 				<div id="wonder-nap" class="units">
@@ -557,8 +560,7 @@
         		</div>
             <!-- helepolis -->
    				<div id="helepolis-nap" class="units">
-					Helepolis<br>
-                    <span class="emn">Req. Craftsmanship</span>
+					Helepolis
         		</div>
            	<!-- cat -->
    				<div id="cat-nap" class="units">
@@ -698,6 +700,38 @@
   							</tr>
   					</table>
 				</div>
+				<!-- Trireme pop-up -->
+					<div id="trieme" class="invisible">
+						<span class="strong">Trireme</span> (technology)
+						<table style="width:100%">
+							<tr>
+								  <th width="66%"></th>
+								  </tr>
+							  <tr height="25px" valign="top">
+								<th width="66%">250<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/> 100<img src="Pictures/vectors/wood.gif" width="20" height="14" alt="Wood" title="Wood cost" valign="-2px"/></th>
+								<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>180s</th>
+								  </tr>
+							  <tr height="25px" valign="bottom">
+								<th width="66%" valign="bottom"><span class="strong">Trireme</span> (unit)</th>
+								  </tr>
+							  <tr>
+								<th width="66%"><img src="Pictures/vectors/wood.gif" width="20" height="14" alt="Wood" title="Wood cost" valign="-2px"/>135</th>
+								<th width="34%"><img src="Pictures/vectors/training-time.png" width="13" height="18" alt="Training time" title="Training time" valign="-4px"/>70s</th> 
+								  </tr>
+						  </table>
+						<table style="width:100%">
+							<tr height="25px" valign="bottom">
+								<th width="33%"><img src="Pictures/vectors/hit-points.png" width="18" height="18" alt="Hit points" title="Hit Points" valign="-4px"/>200</th>
+								<th width="33%"><img src="Pictures/vectors/move-speed.png" width="15" height="20" alt="movement speed" title="Movement speed" valign="-4px"/>1.75</th>
+								<th width="34%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>10</th>
+								  </tr>
+							  <tr>
+								<th width="33%"><img src="Pictures/vectors/ranged-attack.png" width="13" height="20" alt="Ranged" title="Pierce damage" valign="-4px"/>12</th>
+								<th width="33%"><img src="Pictures/vectors/range.gif" width="17" height="20" alt="Range" title="Range" valign="-5px"/>7</th>
+								<th width="34%"><img src="Pictures/vectors/reload-time.png" width="21" height="20" alt="Reload time" title="Fire rate" valign="-7px"/>2.1s</th> 
+								  </tr>
+						  </table>
+					</div>
 				<!-- heavy-transport pop-up -->
 					<div id="heavy-transport" class="invisible">
 						<span class="strong">Heavy Transport</span> (technology)
@@ -752,7 +786,7 @@
 							<th width="34%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>12</th>
   							</tr>
   						<tr>
-    						<th width="33%"><img src="Pictures/vectors/sword.gif" width="25" height="10" alt="True damage" title="True damage" valign="-1px"/>35</th>
+    						<th width="33%"><img src="Pictures/vectors/sword.gif" width="25" height="10" alt="True damage" title="True damage" valign="-1px"/>50</th>
     						<th width="33%"><img src="Pictures/vectors/range.gif" width="17" height="20" alt="Range" title="Range" valign="-5px"/>9</th>
 							<th width="34%"><img src="Pictures/vectors/reload-time.png" width="21" height="20" alt="Reload time" title="Fire rate" valign="-7px"/>5.3s</th> 
   							</tr>
@@ -794,7 +828,7 @@
 							<th width="34%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>13</th>
   							</tr>
   						<tr>
-    						<th width="33%"><img src="Pictures/vectors/sword.gif" width="25" height="10" alt="True damage" title="True damage" valign="-1px"/>35</th>
+    						<th width="33%"><img src="Pictures/vectors/sword.gif" width="25" height="10" alt="True damage" title="True damage" valign="-1px"/>60</th>
     						<th width="33%"><img src="Pictures/vectors/range.gif" width="17" height="20" alt="Range" title="Range" valign="-5px"/>10</th>
 							<th width="34%"><img src="Pictures/vectors/reload-time.png" width="21" height="20" alt="Reload time" title="Fire rate" valign="-7px"/>5.3s</th> 
   							</tr>
@@ -812,38 +846,6 @@
     						<th width="50%"></th> 
   							</tr>
 					</table>
-				</div>
-            <!-- Trireme pop-up -->
-				<div id="trieme" class="invisible">
-					<span class="strong">Trireme</span> (technology)
-					<table style="width:100%">
-						<tr>
-  							<th width="66%"></th>
-  							</tr>
-  						<tr height="25px" valign="top">
-    						<th width="66%">250<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/> 100<img src="Pictures/vectors/wood.gif" width="20" height="14" alt="Wood" title="Wood cost" valign="-2px"/></th>
-    						<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>180s</th>
-  							</tr>
-  						<tr height="25px" valign="bottom">
-    						<th width="66%" valign="bottom"><span class="strong">Trireme</span> (unit)</th>
-  							</tr>
-  						<tr>
-    						<th width="66%"><img src="Pictures/vectors/wood.gif" width="20" height="14" alt="Wood" title="Wood cost" valign="-2px"/>135</th>
-    						<th width="34%"><img src="Pictures/vectors/training-time.png" width="13" height="18" alt="Training time" title="Training time" valign="-4px"/>70s</th> 
-  							</tr>
-  					</table>
-					<table style="width:100%">
-						<tr height="25px" valign="bottom">
-    						<th width="33%"><img src="Pictures/vectors/hit-points.png" width="18" height="18" alt="Hit points" title="Hit Points" valign="-4px"/>200</th>
-    						<th width="33%"><img src="Pictures/vectors/move-speed.png" width="15" height="20" alt="movement speed" title="Movement speed" valign="-4px"/>1.75</th>
-							<th width="34%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>10</th>
-  							</tr>
-  						<tr>
-							<th width="33%"><img src="Pictures/vectors/ranged-attack.png" width="13" height="20" alt="Ranged" title="Pierce damage" valign="-4px"/>12</th>
-    						<th width="33%"><img src="Pictures/vectors/range.gif" width="17" height="20" alt="Range" title="Range" valign="-5px"/>7</th>
-							<th width="34%"><img src="Pictures/vectors/reload-time.png" width="21" height="20" alt="Reload time" title="Fire rate" valign="-7px"/>1.89s</th> 
-  							</tr>
-  					</table>
 				</div>
 				<!-- light-transport pop-up -->
 				   <div id="light-transport" class="invisible">
@@ -1076,11 +1078,11 @@
 					<table style="width:100%">
 						<tr height="25px" valign="bottom">
 							<th width="33%"><img src="Pictures/vectors/building-hit-points.png" width="18" height="18" alt="Hit points" title="Hit Points" valign="-4px"/>125</th>
-							<th width="33%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>8</th> 
+							<th width="33%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>9</th> 
   							</tr>
                         <tr>
-							<th width="33%"><img src="Pictures/vectors/ranged-attack.png" width="13" height="20" alt="Ranged" title="Pierce damage" valign="-4px"/>3</th>
-							<th width="33%"><img src="Pictures/vectors/range.gif" width="17" height="20" alt="Range" title="Range" valign="-5px"/>5</th>
+							<th width="33%"><img src="Pictures/vectors/ranged-attack.png" width="13" height="20" alt="Ranged" title="Pierce damage" valign="-4px"/>4</th>
+							<th width="33%"><img src="Pictures/vectors/range.gif" width="17" height="20" alt="Range" title="Range" valign="-5px"/>6</th>
 							<th width="34%"><img src="Pictures/vectors/reload-time.png" width="21" height="20" alt="Reload time" title="Fire rate" valign="-7px"/>1.5s</th> 
 							</tr>
 						<tr height="25px" valign="bottom">
@@ -1115,7 +1117,7 @@
 							<th width="33%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>9</th> 
   							</tr>
                         <tr>
-							<th width="33%"><img src="Pictures/vectors/ranged-attack.png" width="13" height="20" alt="Ranged" title="Pierce damage" valign="-4px"/>4</th>
+							<th width="33%"><img src="Pictures/vectors/ranged-attack.png" width="13" height="20" alt="Ranged" title="Pierce damage" valign="-4px"/>5</th>
 							<th width="33%"><img src="Pictures/vectors/range.gif" width="17" height="20" alt="Range" title="Range" valign="-5px"/>6</th>
 							<th width="34%"><img src="Pictures/vectors/reload-time.png" width="21" height="20" alt="Reload time" title="Fire rate" valign="-7px"/>1.5s</th>
 							</tr>
@@ -1127,36 +1129,6 @@
 						<tr height="25px" valign="bottom">
     						<th width="50%"><img src="Pictures/vectors/armor-weakness.png" width="16" height="17" alt="Armor" title="Weakness" valign="-4px"/>Towers -65</th> 
   							</tr>
-					</table>
-				</div>
-        	<!-- Granary -->
-                <div id="granary" class="invisible">
-					<table style="width:100%">
-  						<tr>
-    						<th width="50%"><span class="strong">Granary</span> (building)</th> 
-  							</tr>
-  						<tr>
-    						<th width="66%">120<img src="Pictures/vectors/wood.gif" width="20" height="14" alt="Wood" title="Wood cost" valign="-2px"/></th>
-    						<th width="34%"><img src="Pictures/vectors/build-time.png" width="13" height="18" alt="build time" title="Build time" valign="-4px"/>30s</th> 
-  							</tr>
-  					</table>
-					<table style="width:100%">
-						<tr height="25px" valign="bottom">
-    						<th width="33%"><img src="Pictures/vectors/hit-points.png" width="18" height="18" alt="Hit points" title="Hit Points" valign="-4px"/>350</th>
-    						<th width="33%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>4</th>
-							<th width="34%"></th>  
-  							</tr>
-  					</table>
-					<table style="width:100%">
-						<tr height="25px" valign="bottom">
-    						<th width="50%"><img src="Pictures/vectors/armor-weakness.png" width="16" height="17" alt="Armor" title="Weakness" valign="-4px"/>Buildings -140</th>
-    						<th width="50%"></th>
-						</tr>
-					</table>
-					<table style="width:100%">
-						<tr height="36px" valign="bottom">	
-							<th width="100%">Used as deposit for Farmers and Foragers.</th>
-						</tr>
 					</table>
 				</div>
 			<!-- Creel
@@ -1300,10 +1272,8 @@
 				</table>
 				<table style="width:100%">
 					<tr>
-						<th width="33%">
+						<th width="66%">
 							4<img src="Pictures/vectors/stone.gif" width="20" height="14" alt="Stone" title="Stone cost" valign="-2px"/>
-						</th>
-						<th width="33%">
 							3<img src="Pictures/vectors/wood.gif" width="20" height="14" alt="Stone" title="Stone cost" valign="-2px"/>
 						</th>
 						<th width="34%">
@@ -1313,9 +1283,15 @@
 				</table>
 					<table style="width:100%">
 						<tr height="25px" valign="bottom">
-							<th width="33%"><img src="Pictures/vectors/building-hit-points.png" width="18" height="18" alt="Hit points" title="Hit Points" valign="-4px"/>300</th>
-							<th width="33%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>2</th> 
-							<th width="33%"><img src="Pictures/vectors/pierce-armor.gif" width="17" height="18" alt="Pierce armor" title="Pierce armor" valign="-4px"/>4</th> 
+							<th width="33%">
+								<img src="Pictures/vectors/building-hit-points.png" width="18" height="18" alt="Hit points" title="Hit Points" valign="-4px"/>300
+							</th>
+							<th width="33%">
+								<img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>2
+							</th> 
+							<th width="33%">
+								<img src="Pictures/vectors/pierce-armor.gif" width="17" height="18" alt="Pierce armor" title="Pierce armor" valign="-4px"/>4
+							</th> 
 						</tr>
                     </table>
   					<table style="width:100%">
@@ -1359,6 +1335,36 @@
   							</tr>
 					</table>
 				</div>
+				<!-- Granary -->
+					<div id="granary" class="invisible">
+						<table style="width:100%">
+							  <tr>
+								<th width="50%"><span class="strong">Granary</span> (building)</th> 
+								  </tr>
+							  <tr>
+								<th width="66%">120<img src="Pictures/vectors/wood.gif" width="20" height="14" alt="Wood" title="Wood cost" valign="-2px"/></th>
+								<th width="34%"><img src="Pictures/vectors/build-time.png" width="13" height="18" alt="build time" title="Build time" valign="-4px"/>30s</th> 
+								  </tr>
+						  </table>
+						<table style="width:100%">
+							<tr height="25px" valign="bottom">
+								<th width="33%"><img src="Pictures/vectors/hit-points.png" width="18" height="18" alt="Hit points" title="Hit Points" valign="-4px"/>350</th>
+								<th width="33%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>4</th>
+								<th width="34%"></th>  
+								  </tr>
+						  </table>
+						<table style="width:100%">
+							<tr height="25px" valign="bottom">
+								<th width="50%"><img src="Pictures/vectors/armor-weakness.png" width="16" height="17" alt="Armor" title="Weakness" valign="-4px"/>Buildings -140</th>
+								<th width="50%"></th>
+							</tr>
+						</table>
+						<table style="width:100%">
+							<tr height="36px" valign="bottom">	
+								<th width="100%">Used as deposit for Farmers and Foragers.</th>
+							</tr>
+						</table>
+					</div>
         <!-- market technologies -->
             <!-- market -->
                 <div id="market" class="invisible">
@@ -1605,7 +1611,7 @@
 					<table style="width:100%">
 						  <tr>
 							<th width="66%"> 
-								900<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/>
+								800<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/>
 								400<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/>
 							</th>
 							<th width="34%">
@@ -1613,7 +1619,7 @@
 							</th> 
 						  </tr>
 					</table>
-					<br> Requires..
+					<br>Requires Temple and Government Center to advance into Iron Age.
 				</div>
 			<!-- ironage -->
 				<div id="ironage" class="invisible">
@@ -1626,40 +1632,14 @@
 						  <tr>
 							<th width="66%">
 								1200<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/>
-								800<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/>
+								600<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/>
 							</th>
 							<th width="34%">
 								<img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>160s
 							</th> 
 						  </tr>
 					</table>
-					<br> Requires..
-				</div>
-            <!-- House -->
-            	<div id="house" class="invisible">
-					<table style="width:100%">
-  						<tr>
-    						<th width="50%"><span class="strong">House</span> (building)</th> 
-  							</tr>
-  						<tr>
-    						<th width="66%">30<img src="Pictures/vectors/wood.gif" width="20" height="14" alt="Wood" title="Wood cost" valign="-2px"/></th>
-    						<th width="34%"><img src="Pictures/vectors/build-time.png" width="13" height="18" alt="build time" title="Build time" valign="-4px"/>20s</th> 
-  							</tr>
-  					</table>
-					<table style="width:100%">
-						<tr height="25px" valign="bottom">
-    						<th width="33%"><img src="Pictures/vectors/hit-points.png" width="18" height="18" alt="Hit points" title="Hit Points" valign="-4px"/>75</th>
-    						<th width="33%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>3</th>
-							<th width="34%"></th>  
-  							</tr>
-  					</table>
-					<table style="width:100%">
-						<tr height="25px" valign="bottom">
-    						<th width="50%"><img src="Pictures/vectors/armor-weakness.png" width="16" height="17" alt="Armor" title="Weakness" valign="-4px"/>Buildings -140</th>
-    						<th width="50%"></th>
-  							</tr>
-					</table>
-					<br>Supports 4 population.
+					<br><span>Requires Siege Workshop and Academy to advance into Classical Age.</span> 
 				</div>
 				<!-- towncenter -->
 					<div id="towncenter" class="invisible">
@@ -1794,6 +1774,32 @@
   							</tr>
 					</table>
                 </div>
+				<!-- House -->
+					<div id="house" class="invisible">
+						<table style="width:100%">
+							  <tr>
+								<th width="50%"><span class="strong">House</span> (building)</th> 
+								  </tr>
+							  <tr>
+								<th width="66%">30<img src="Pictures/vectors/wood.gif" width="20" height="14" alt="Wood" title="Wood cost" valign="-2px"/></th>
+								<th width="34%"><img src="Pictures/vectors/build-time.png" width="13" height="18" alt="build time" title="Build time" valign="-4px"/>20s</th> 
+								  </tr>
+						  </table>
+						<table style="width:100%">
+							<tr height="25px" valign="bottom">
+								<th width="33%"><img src="Pictures/vectors/hit-points.png" width="18" height="18" alt="Hit points" title="Hit Points" valign="-4px"/>75</th>
+								<th width="33%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>3</th>
+								<th width="34%"></th>  
+								  </tr>
+						  </table>
+						<table style="width:100%">
+							<tr height="25px" valign="bottom">
+								<th width="50%"><img src="Pictures/vectors/armor-weakness.png" width="16" height="17" alt="Armor" title="Weakness" valign="-4px"/>Buildings -140</th>
+								<th width="50%"></th>
+								  </tr>
+						</table>
+						<br>Supports 4 population.
+					</div>
             <!-- Akinaka 
             	<div id="akinaka" class="invisible">
 					<span class="strong">Aegean Dagger</span> (technology)
@@ -1983,16 +1989,50 @@
 							<br> Double priest hit points.
 						</div>
 						<!-- jihad -->
-							<div id="jihad" class="invisible">
-								<span class="strong">Zealotry</span> (technology)
-								<table style="width:100%">
-									  <tr>
-										<th width="66%">600<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/></th>
-										<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>60s</th> 
-										  </tr>
-								</table>
-								<br>+100% hit points for all Stone Age units.
-							</div>
+                <div id="jihad" class="invisible">
+                    <span class="strong">Zealotry</span> (technology)
+					<table style="width:100%">
+  						<tr>
+    						<th width="66%">120<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/></th>
+    						<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>60s</th> 
+  							</tr>
+                    </table>
+					<table style="width:100%">
+                        <tr valign="bottom" height="21px">
+							<th width="50%"><span class="strong">Villager</span></th>
+   							<th width="50%"></th> 
+					  		</tr>
+					</table>
+					<table style="width:100%">
+                        <tr>
+    						<th width="33%"><img src="Pictures/vectors/hit-points.png" width="18" height="18" alt="Hit points" title="Hit Points" valign="-4px"/>+30</th>
+    						<th width="33%"><img src="Pictures/vectors/sword.gif" width="25" height="10" alt="Melee attack" title="Slash damage" valign="-1px"/>+7</th> 
+    						<th width="34%"><img src="Pictures/vectors/move-speed.png" width="15" height="20" alt="movement speed" title="Movement speed" valign="-4px"/>+0.11</th>
+  							</tr>
+					</table>
+					<table style="width:100%">
+                        <tr valign="bottom" height="21px">
+    						<th width="50%"><span class="strong">Carry capacity</span></th>
+   							<th width="50%"></th> 
+					  		</tr>
+                        <tr>
+    						<th width="50%">Hunters: -6</th>
+    						<th width="50%">Foragers: -6</th> 
+  							</tr>
+                        <tr>
+    						<th width="50%">Farmers: -6</th>
+    						<th width="50%">Fishers: -6</th> 
+  							</tr>
+                        <tr>
+    						<th width="50%">Gold Miners: -8</th>
+    						<th width="50%">Stone Miners: -8</th> 
+  							</tr>
+                        <tr>
+    						<th width="50%">Woodcutters: -8</th>
+    						<th width="50%"></th> 
+  							</tr>
+                    </table>
+				</div>
 					<!-- afterlife -->
 						<div id="afterlife" class="invisible">
 							<span class="strong">Afterlife</span> (technology)
@@ -2032,7 +2072,10 @@
 					<span class="strong">Leather Arm. Cav.</span> (technology)
 					<table style="width:100%">
   						<tr>
-    						<th width="66%"> 125<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/></th>
+    						<th width="66%">
+								125<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/>
+								25<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/>
+							</th>
     						<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>30s</th>
 							</tr>
 					</table>
@@ -2065,7 +2108,10 @@
 					<span class="strong">Leather Arm. Arch.</span> (technology)
 					<table style="width:100%">
   						<tr>
-    						<th width="66%"> 100<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/></th>
+    						<th width="66%">
+								100<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/>
+								25<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/>
+							</th>
     						<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>30s</th>
 							</tr>
 					</table>
@@ -2076,7 +2122,10 @@
 					<span class="strong">Scale Arm. Arch.</span> (technology)
 					<table style="width:100%">
   						<tr>
-    						<th width="66%"> 125<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/> 50<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/></th>
+    						<th width="66%">
+								125<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/>
+								50<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/>
+							</th>
     						<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>60s</th>
 							</tr>
 					</table>
@@ -2087,7 +2136,10 @@
 					<span class="strong">Chain Mail Arch.</span> (technology)
 					<table style="width:100%">
   						<tr>
-    						<th width="66%"> 150<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/> 100<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/></th>
+    						<th width="66%">
+								150<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/>
+								100<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/>
+							</th>
     						<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>75s</th>
 							</tr>
 					</table>
@@ -2098,7 +2150,10 @@
 					<span class="strong">Leather Arm. Inf.</span> (technology)
 					<table style="width:100%">
   						<tr>
-    						<th width="66%"> 75<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/></th>
+    						<th width="66%">
+								75<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/>
+								25<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/>
+							</th>
     						<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>30s</th>
 							</tr>
 					</table>
@@ -2131,7 +2186,10 @@
 					<span class="strong">Toolworking</span> (technology)
 					<table style="width:100%">
   						<tr>
-    						<th width="66%"> 100<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/></th>
+    						<th width="66%">
+								100<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/>
+								25<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/>
+							</th>
     						<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>40s</th>
 							</tr>
 					</table>
@@ -2307,7 +2365,7 @@
 										<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>60s</th> 
 										  </tr>
 								</table>
-								<br>Barracks work 30% faster.
+								<br>Barracks work 50% faster.
 							</div>
 					<!-- engineering -->
 						<div id="engineering" class="invisible">
@@ -2333,7 +2391,7 @@
 									<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px" />60s</th>
 								</tr>
 							</table>
-							Melee units deal +3 damage to buildings.
+							Melee units deal +5 damage to buildings.
 		
 							<table style="width:100%">
 								<tr height="22px" valign="bottom">
@@ -2347,20 +2405,7 @@
 								</tr>
 							</table>
 							All chariot units move 15% faster.
-		
-							<table style="width:100%">
-								<tr height="22px" valign="bottom">
-									<th width="100%"><span class="strong">Berbers  - Smelting</span></th>
-								</tr>
-							</table>
-							<table style="width:100%">
-								<tr>
-									<th width="66%">150<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px" /> 75<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px" /></th>
-									<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px" />60s</th>
-								</tr>
-							</table>
-							Swordsmen and Legions +1 attack.
-		
+
 							<table style="width:100%">
 								<tr height="22px" valign="bottom">
 									<th width="100%"><span class="strong">Carthaginian - Panoply</span></th>
@@ -2402,7 +2447,7 @@
 		
 							<table style="width:100%">
 								<tr height="22px" valign="bottom">
-									<th width="100%"><span class="strong">Greek - Levies</span></th>
+									<th width="100%"><span class="strong">Greek - Lead Bolts</span></th>
 								</tr>
 							</table>
 							<table style="width:100%">
@@ -2411,7 +2456,7 @@
 									<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px" />60s</th>
 								</tr>
 							</table>
-							Swordsmen and bowmen cost wood instead of gold.
+							Slingers +2 range.
 		
 							<table style="width:100%">
 								<tr height="22px" valign="bottom">
@@ -2437,7 +2482,7 @@
 									<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px" />60s</th>
 								</tr>
 							</table>
-							War ships +1 attack.
+							War ships +2 attack.
 		
 							<table style="width:100%">
 								<tr height="22px" valign="bottom">
@@ -2450,7 +2495,7 @@
 									<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px" />60s</th>
 								</tr>
 							</table>
-							Towers +2 attack.
+							Towers +1 attack.
 		
 							<table style="width:100%">
 								<tr height="22px" valign="bottom">
@@ -2467,29 +2512,16 @@
 		
 							<table style="width:100%">
 								<tr height="22px" valign="bottom">
-									<th width="100%"><span class="strong">Parthia - Linothorax</span></th>
+									<th width="100%"><span class="strong">Persian - Linothoracs</span></th>
 								</tr>
 							</table>
 							<table style="width:100%">
 								<tr>
-									<th width="66%">150<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px" /> 75<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px" /></th>
+									<th width="66%">200<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px" /> 125<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px" /></th>
 									<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px" />60s</th>
 								</tr>
 							</table>
-							All Barrack units +1 slash armor.
-		
-							<table style="width:100%">
-								<tr height="22px" valign="bottom">
-									<th width="100%"><span class="strong">Persian - Lead Bolts</span></th>
-								</tr>
-							</table>
-							<table style="width:100%">
-								<tr>
-									<th width="66%">75<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px" /> 50<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px" /></th>
-									<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px" />60s</th>
-								</tr>
-							</table>
-							Slingers +1 damage.
+							All barrack units +1 slash armor.
 		
 							<table style="width:100%">
 								<tr height="22px" valign="bottom">
@@ -2519,19 +2551,6 @@
 		
 							<table style="width:100%">
 								<tr height="22px" valign="bottom">
-									<th width="100%"><span class="strong">Scythia - Tusk Swords</span></th>
-								</tr>
-							</table>
-							<table style="width:100%">
-								<tr>
-									<th width="66%">200<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px" /> 125<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px" /></th>
-									<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px" />60s</th>
-								</tr>
-							</table>
-							All elephants +25% HP.
-		
-							<table style="width:100%">
-								<tr height="22px" valign="bottom">
 									<th width="100%"><span class="strong">Shang - Husbandry</span></th>
 								</tr>
 							</table>
@@ -2555,19 +2574,6 @@
 								</tr>
 							</table>
 							Stable units +1 attack.
-		
-							<table style="width:100%">
-								<tr height="22px" valign="bottom">
-									<th width="100%"><span class="strong">Thrace - Lamellar</span></th>
-								</tr>
-							</table>
-							<table style="width:100%">
-								<tr>
-									<th width="66%">150<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px" /> 75<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px" /></th>
-									<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px" />60s</th>
-								</tr>
-							</table>
-							Archery Ranges work 20% faster.
 		
 							<table style="width:100%">
 								<tr height="22px" valign="bottom">
@@ -3459,7 +3465,7 @@
     						<th width="66%">
 								40<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/>
 								70<img src="Pictures/vectors/wood.gif" width="20" height="14" alt="Wood" title="Wood cost" valign="-2px"/>
-								50<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/>
+								35<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/>
 							</th>
     						<th width="34%">
 								<img src="Pictures/vectors/training-time.png" width="13" height="18" alt="Training time" title="Training time" valign="-4px"/>40s
@@ -3468,7 +3474,7 @@
 					</table>
 					<table style="width:100%">
   						<tr height="25px" valign="bottom">
-    						<th width="33%"><img src="Pictures/vectors/hit-points.png" width="18" height="18" alt="Hit points" title="Hit Points" valign="-4px"/>80</th>
+    						<th width="33%"><img src="Pictures/vectors/hit-points.png" width="18" height="18" alt="Hit points" title="Hit Points" valign="-4px"/>70</th>
     						<th width="33%"><img src="Pictures/vectors/move-speed.png" width="15" height="20" alt="movement speed" title="Movement speed" valign="-4px"/>1.8</th>
 							<th width="34%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>9</th>
   							</tr>

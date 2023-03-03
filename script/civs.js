@@ -34,7 +34,7 @@ function preload(arrayOfImages) {
 var civBigImageList = [
 	"Pictures/tech-treesBig/brawl/assyrian.png",
 	"Pictures/tech-treesBig/brawl/babylonian.png",
-	"Pictures/tech-treesBig/newCivs/nubia.png",
+	//"Pictures/tech-treesBig/newCivs/nubia.png",
 	"Pictures/tech-treesBig/brawl/carthaginian.png",
 	"Pictures/tech-treesBig/brawl/choson.png",
 	"Pictures/tech-treesBig/brawl/egyptian.png",
@@ -43,14 +43,14 @@ var civBigImageList = [
 	"Pictures/tech-treesBig/brawl/macedonian.png",
 	"Pictures/tech-treesBig/brawl/minoan.png",
 	"Pictures/tech-treesBig/brawl/palmyra.png",
-	"Pictures/tech-treesBig/newCivs/parthia.png",
+	//"Pictures/tech-treesBig/newCivs/parthia.png",
 	"Pictures/tech-treesBig/brawl/persian.png",
 	"Pictures/tech-treesBig/brawl/phoenician.png",
 	"Pictures/tech-treesBig/brawl/roman.png",
-	"Pictures/tech-treesBig/newCivs/scythia.png",
+	//"Pictures/tech-treesBig/newCivs/scythia.png",
 	"Pictures/tech-treesBig/brawl/shang.png",
 	"Pictures/tech-treesBig/brawl/sumerian.png",
-	"Pictures/tech-treesBig/newCivs/thrace.png",
+	//"Pictures/tech-treesBig/newCivs/thrace.png",
 	"Pictures/tech-treesBig/brawl/yamato.png"
 ];
 
@@ -107,10 +107,10 @@ $(document).ready(function(){ $("#importantNap4")
 // margins on desktop
 $(document).ready(function(){
 	if(!isMobile.any()){
-		$("#importantNap, #importantNap2, #importantNap3, #importantNap4, #importantNapBlack, #importantNap2Black, #importantNap3Black, #importantNap4Black").css("margin-left", "calc(13% - 28px)")
-		$("#importantNap, #importantNap2, #importantNap3, #importantNap4, #importantNapBlack, #importantNap2Black, #importantNap3Black, #importantNap4Black").css("margin-right", "calc(12% - 28px)")
-		$("#noComparison, #upatchComparison, #rorComparison, #deComparison").css("margin-left", "calc(12.8% - 55px)")
-		$("#noComparison, #upatchComparison, #rorComparison, #deComparison").css("margin-right", "calc(12% - 55px)")
+		$("#importantNap, #importantNap2, #importantNap3, #importantNap4, #importantNapBlack, #importantNap2Black, #importantNap3Black, #importantNap4Black").css("margin-left", "calc(25% - 28px)")
+		$("#importantNap, #importantNap2, #importantNap3, #importantNap4, #importantNapBlack, #importantNap2Black, #importantNap3Black, #importantNap4Black").css("margin-right", "calc(20% - 28px)")
+		$("#noComparison, #upatchComparison, #rorComparison, #deComparison").css("margin-left", "calc(25% - 55px)")
+		$("#noComparison, #upatchComparison, #rorComparison, #deComparison").css("margin-right", "calc(20% - 55px)")
 	}
 });
 
@@ -375,7 +375,7 @@ function definitiveEditionButtonEffect(){
 	$("#popUpComaperedToDE").css("background-image", "url(Pictures/ui/style-03/info-box-dark.gif)");
 	
 	$(".newCivilization").hide();
-	inIDEComparisonMode = true;
+	inIDEComparisonMode = false;
 }
 $(function(){
 	$('#importantNap4').click(function(){
@@ -609,7 +609,7 @@ $(document).ready(function(){
 	});
 });
 function rightSideButton(){
-	if(popUpImageOnDisplay < 19){
+	if(popUpImageOnDisplay < 15){
 		popUpImageOnDisplay++
 		if (inIDEComparisonMode) {
 			if (popUpImageOnDisplay == 2 || popUpImageOnDisplay == 11 || popUpImageOnDisplay == 15 || popUpImageOnDisplay == 18) {
