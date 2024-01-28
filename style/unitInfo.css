@@ -343,13 +343,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#dock {
 					position: absolute;
 					left: 91px;
-					top: 299px;
+					top: 243px;
 					height: 210px;
 					}
 				#dock-nap {
 					position: absolute;
 					left: 103px;
-					top: 533px;
+					top: 477px;
 					width: 155px;
 					height: 50px;
 					}
@@ -448,7 +448,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#fishing-boat-nap	{
 					position: absolute;
 					left: 165px;
-					top: 423px;
+					top: 420px;
 					width: 155px;
 					height: 50px;
 					}
@@ -469,14 +469,14 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 			/*Trade boat*/
 				#trade-boat {
 					position: absolute;
-					left: 145px;
+					left: 538px;
 					top: 366px;
 					height: 85px;
 					}
 				#trade-boat-nap	{
 					position: absolute;
-					left: 165px;
-					top: 477px;
+					left: 545px;
+					top: 474px;
 					width: 155px;
 					height: 50px;
 					}
@@ -556,13 +556,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#watch-tower {
 					position: absolute;
 					left: 145px;
-					top: 407px;
+					top: 361px;
 					height: 175px;
 					}
 				#watch-tower-nap	{
 					position: absolute;
 					left: 165px;
-					top: 604px;
+					top: 558px;
 					width: 155px;
 					height: 50px;
 					}
@@ -570,13 +570,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#sentry-tower {
 					position: absolute;
 					left: 538px;
-					top: 407px;
+					top: 361px;
 					height: 175px;
 					}
 				#sentry-tower-nap	{
 					position: absolute;
 					left: 545px;
-					top: 604px;
+					top: 558px;
 					width: 155px;
 					height: 50px;
 					}
@@ -584,13 +584,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#guard-tower {
 					position: absolute;
 					left: 887px;
-					top: 407px;
+					top: 360px;
 					height: 175px;
 					}
 				#guard-tower-nap	{
 					position: absolute;
 					left: 900px;
-					top: 604px;
+					top: 558px;
 					width: 155px;
 					height: 50px;
 					}
@@ -598,13 +598,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#ballista-tower {
 					position: absolute;
 					left: 1228px;
-					top: 407px;
+					top: 360px;
 					height: 175px;
 					}
 				#ballista-tower-nap	{
 					position: absolute;
 					left: 1240px;
-					top: 604px;
+					top: 558px;
 					width: 155px;
 					height: 50px;
 					}
@@ -612,13 +612,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#small-wall {
 					position: absolute;
 					left: 245px;
-					top: 510px;
+					top: 466px;
 					height: 125px;
 					}
 				#small-wall-nap	{
 					position: absolute;
 					left: 260px;
-					top: 655px;
+					top: 610px;
 					width: 155px;
 					height: 50px;
 					letter-spacing: -1px;
@@ -627,13 +627,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#medium-wall {
 					position: absolute;
 					left: 887px;
-					top: 510px;
+					top: 466px;
 					height: 125px;
 					}
 				#medium-wall-nap	{
 					position: absolute;
 					left: 900px;
-					top: 659px;
+					top: 610px;
 					width: 155px;
 					height: 50px;
 					}
@@ -641,13 +641,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#big-wall {
 					position: absolute;
 					left: 1228px;
-					top: 510px;
+					top: 466px;
 					height: 125px;
 					}
 				#big-wall-nap	{
 					position: absolute;
 					left: 1240px;
-					top: 659px;
+					top: 610px;
 					width: 155px;
 					height: 50px;
 					}
@@ -846,7 +846,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#wheel-nap	{
 					position: absolute;
 					left: 545px;
-					top: 927px;
+					top: 924px;
 					width: 155px;
 					height: 50px;
 					}
@@ -1065,13 +1065,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#engineering {
 					position: absolute;
 					left: 1228px;
-					top: 1858px;
+					top: 1878px;
 					height: 85px;
 					}
 				#engineering-nap	{
 					position: absolute;
 					left: 1240px;
-					top: 1965px;
+					top: 1987px;
 					width: 155px;
 					height: 50px;
 					}
@@ -1149,8 +1149,8 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#uniqueTechnology {
 					position: absolute;
 					left: 887px;
-					top: 881px;
-					height: 955px;
+					top: 831px;
+					height: 1005px;
 					}
 				#uniqueTechnology-nap {
 					position: absolute;
@@ -1163,13 +1163,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#mathematics {
 					position: absolute;
 					left: 887px;
-					top: 1854px;
+					top: 1877px;
 					height: 88px;
 					}
 				#mathematics-nap {
 					position: absolute;
 					left: 900px;
-					top: 1964px;
+					top: 1987px;
 					width: 155px;
 					height: 50px;
 					}
@@ -1177,13 +1177,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#house {
 					position: absolute;
 					left: 91px;
-					top: 1271px;
+					top: 1284px;
 					height: 115px;
 					}
 				#house-nap	{
 					position: absolute;
 					left: 103px;
-					top: 1407px;
+					top: 1420px;
 					width: 155px;
 					height: 50px;
 					}	
@@ -1959,13 +1959,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#barrack {
 					position: absolute;
 					left: 91px;
-					top: 1811px;
+					top: 1762px;
 					height: 85px;
 					}
 				#barrack-nap	{
 					position: absolute;
 					left: 103px;
-					top: 1920px;
+					top: 1870px;
 					width: 155px;
 					height: 50px;
 					}
@@ -1973,13 +1973,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#shortsword {
 					position: absolute;
 					left: 538px;
-					top: 1918px;
+					top: 1971px;
 					height: 131px;
 					}
 				#shortsword-nap	{
 					position: absolute;
 					left: 548px;
-					top: 2068px;
+					top: 2121px;
 					width: 155px;
 					height: 50px;
 					}
@@ -1987,13 +1987,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#broadsword {
 					position: absolute;
 					left: 887px;
-					top: 1874px;
+					top: 1928px;
 					height: 175px;
 					}
 				#broadsword-nap	{
 					position: absolute;
 					left: 900px;
-					top: 2068px;
+					top: 2121px;
 					width: 155px;
 					height: 50px;
 					}
@@ -2001,13 +2001,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#longsword {
 					position: absolute;
 					left: 1228px;
-					top: 1874px;
+					top: 1928px;
 					height: 175px;
 					}
 				#longsword-nap	{
 					position: absolute;
 					left: 1240px;
-					top: 2068px;
+					top: 2121px;
 					width: 155px;
 					height: 50px;
 					}
@@ -2015,13 +2015,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#legion {
 					position: absolute;
 					left: 1455px;
-					top: 1874px;
+					top: 1928px;
 					height: 175px;
 					}
 				#legion-nap	{
 					position: absolute;
 					left: 1469px;
-					top: 2068px;
+					top: 2121px;
 					width: 155px;
 					height: 50px;
 					}
@@ -2029,13 +2029,28 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#slinger {
 					position: absolute;
 					left: 245px;
-					top: 1930px;
+					top: 1913px;
 					height: 155px;
 					}
 				#slinger-nap	{
 					position: absolute;
 					left: 260px;
-					top: 2106px;
+					top: 2088px;
+					width: 155px;
+					height: 50px;
+					letter-spacing: -1px;
+					}
+			/*clayBolt*/
+				#clayBolt {
+					position: absolute;
+					left: 245px;
+					top: 1895px;
+					height: 120px;
+					}
+				#clayBolt-nap	{
+					position: absolute;
+					left: 260px;
+					top: 2038px;
 					width: 155px;
 					height: 50px;
 					letter-spacing: -1px;
@@ -2072,13 +2087,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#clubman {
 					position: absolute;
 					left: 145px;
-					top: 1838px;
+					top: 1785px;
 					height: 120px;
 					}
 				#clubman-nap	{
 					position: absolute;
 					left: 165px;
-					top: 1979px;
+					top: 1924px;
 					width: 155px;
 					height: 50px;
 					}
@@ -2086,13 +2101,13 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#axeman {
 					position: absolute;
 					left: 245px;
-					top: 1857px;
+					top: 1797px;
 					height: 160px;
 					}
 				#axeman-nap	{
 					position: absolute;
 					left: 260px;
-					top: 2036px;
+					top: 1976px;
 					width: 155px;
 					height: 50px;
 					letter-spacing: -1px;

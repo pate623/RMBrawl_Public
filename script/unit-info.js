@@ -1462,12 +1462,30 @@ var woodworkingLow = false;
 		//slinger
 			$(document).ready(function(){
     			$("#slinger-nap").click(function(){
+					
+					if ($("#clayBolt").is(":hidden")){
+						$("#slinger").css("top", "1913px");
+					}else{
+						$("#slinger").css("top", "1939px");
+					}
+
 					$("#slinger").toggle();
 				});
 			});
 			$(document).ready(function(){
 				$("#slinger").click(function(){
 					$("#slinger").toggle();
+				});
+			});
+		//clayBolt
+			$(document).ready(function(){
+    			$("#clayBolt-nap").click(function(){
+					$("#clayBolt").toggle();
+				});
+			});
+			$(document).ready(function(){
+				$("#clayBolt").click(function(){
+					$("#clayBolt").toggle();
 				});
 			});
 		//improved slinger
