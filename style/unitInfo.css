@@ -470,8 +470,8 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#trade-boat {
 					position: absolute;
 					left: 538px;
-					top: 366px;
-					height: 85px;
+					top: 336px;
+					height: 115px;
 					}
 				#trade-boat-nap	{
 					position: absolute;
@@ -484,8 +484,8 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#merchant-ship {
 					position: absolute;
 					left: 887px;
-					top: 322px;
-					height: 130px;
+					top: 292px;
+					height: 160px;
 					}
 				#merchant-ship-nap	{
 					position: absolute;
