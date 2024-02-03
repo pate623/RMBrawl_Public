@@ -426,6 +426,17 @@ var woodworkingLow = false;
 					$("#wheel").toggle();
 				});
 			})
+		//Trader
+			$(document).ready(function(){
+    			$("#trader-nap").click(function(){
+					$("#trader").toggle();
+				});
+			});
+			$(document).ready(function(){
+				$("#trader").click(function(){
+					$("#trader").toggle();
+				});
+			})
 		//domestication
 			$(document).ready(function(){
     			$("#domestication-nap").click(function(){
@@ -568,10 +579,10 @@ var woodworkingLow = false;
 			$(document).ready(function(){
     			$("#craftsmanship-nap").click(function(){
 					if (!$("#irrigation").is(":hidden")){
-						$("#craftsmanship").css("top", "792px");
+						$("#craftsmanship").css("top", "793px");
 						woodworkingLow = true;
 					}else{
-						$("#craftsmanship").css("top", "772px");
+						$("#craftsmanship").css("top", "768px");
 						woodworkingLow = false;
 					}
 					$("#craftsmanship").toggle();
@@ -632,7 +643,18 @@ var woodworkingLow = false;
 				$("#logistics").click(function(){
 					$("#logistics").toggle();
 				});
-			})
+			});
+		//Urbanization
+			$(document).ready(function(){
+				$("#urbanization-nap").click(function(){
+					$("#urbanization").toggle();
+				});
+			});
+			$(document).ready(function(){
+				$("#urbanization").click(function(){
+					$("#urbanization").toggle();
+				});
+			});
 		//architecture
 			$(document).ready(function(){
     			$("#architecture-nap").click(function(){
@@ -669,6 +691,17 @@ var woodworkingLow = false;
 			$(document).ready(function(){
 				$("#alchemy").click(function(){
 					$("#alchemy").toggle();
+				});
+			})
+		//Conscription
+			$(document).ready(function(){
+				$("#conscription-nap").click(function(){
+					$("#conscription").toggle();
+				});
+			});
+			$(document).ready(function(){
+				$("#conscription").click(function(){
+					$("#conscription").toggle();
 				});
 			})
 		//ballistics
@@ -769,7 +802,18 @@ var woodworkingLow = false;
 				$("#linencloth").click(function(){
 					$("#linencloth").toggle();
 				});
-			})
+			});
+		//City Watch
+			$(document).ready(function(){
+				$("#cityWatch-nap").click(function(){
+					$("#cityWatch").toggle();
+				});
+			});
+			$(document).ready(function(){
+				$("#cityWatch").click(function(){
+					$("#cityWatch").toggle();
+				});
+			});
 		/*Akinaka
 			$(document).ready(function(){
     			$("#akinaka-nap").click(function(){

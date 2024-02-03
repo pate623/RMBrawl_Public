@@ -251,6 +251,11 @@
             	<div id="wheel-nap" class="units">
 					Wheel
 				</div>
+			<!-- Trader -->
+				<div id="trader-nap" class="units">
+					Trader<br>
+                    <span class="em">Req. Wheel</span>
+				</div>
             <!-- domestication -->
             	<div id="domestication-nap" class="units">
 					Domestication
@@ -291,8 +296,8 @@
             	<div id="craftsmanship-nap" class="units">
 					Craftsmanship
 				</div>
-        <!-- Govenment Center -->
-            <!-- governmentcenter -->
+        <!-- Government Center -->
+            <!-- government center -->
             	<div id="governmentcenter-nap" class="units">
 					Government Center
 				</div>
@@ -303,6 +308,10 @@
             <!-- logistics -->
             	<div id="logistics-nap" class="units">
 					Logistics
+				</div>
+			<!-- Urbanization -->
+				<div id="urbanization-nap" class="units">
+					Urbanization
 				</div>
             <!-- architecture -->
             	<div id="architecture-nap" class="units">
@@ -315,6 +324,10 @@
             <!-- alchemy -->
             	<div id="alchemy-nap" class="units">
 					Alchemy
+				</div>
+			<!-- Conscription -->
+				<div id="conscription-nap" class="units">
+					Conscription
 				</div>
             <!-- ballistics -->
             	<div id="ballistics-nap" class="units">
@@ -352,6 +365,10 @@
              <!-- Linen Cloth -->
             	<div id="linencloth-nap" class="units">
 					Linen Cloth
+				</div>
+			<!-- City Watch -->
+				<div id="cityWatch-nap" class="units">
+					City Watch
 				</div>
             <!-- toolage -->
 				<div id="toolage-nap" class="units">
@@ -948,7 +965,7 @@
 							<th width="34%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>4</th> 
 							</tr>
 					</table>
-					<br>Generates gold by traveling between Docks
+					<br>Generates gold by traveling between Docks.
            		</div>
             <!-- merchant-ship pop-up -->
 				<div id="merchant-ship" class="invisible">
@@ -980,7 +997,7 @@
 							<th width="34%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>4</th> 
 							</tr>
 					</table>
-					<br>Generates gold by traveling between Docks
+					<br>Generates gold by traveling between Docks.
 				</div>
 				<!--fire-galley pop-up -->
 					<div id="fire-galley" class="invisible">
@@ -1459,6 +1476,26 @@
 						</table>
 						<br>Villagers move 45% faster <br>(0,495 flat)
 					</div>
+				<!-- Trader pop-up -->
+					<div id="trader" class="invisible">
+						<table style="width:100%">
+							<tr>
+								<th width="50%"><span class="strong">Trader</span> (unit)</th> 
+									</tr>
+								<tr>
+									<th width="66%">70<img src="Pictures/vectors/wood.gif" width="20" height="14" alt="Wood" title="Wood cost" valign="-2px"/> 40<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/></th>
+								<th width="34%"><img src="Pictures/vectors/training-time.png" width="13" height="18" alt="Training time" title="Training time" valign="-4px"/>50s</th> 
+									</tr>
+						</table>
+						<table style="width:100%">
+								<tr height="25px" valign="bottom">
+								<th width="33%"><img src="Pictures/vectors/hit-points.png" width="18" height="18" alt="Hit points" title="Hit Points" valign="-4px"/>70</th>
+								<th width="33%"><img src="Pictures/vectors/move-speed.png" width="15" height="20" alt="movement speed" title="Movement speed" valign="-4px"/>1.75</th>
+								<th width="34%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>7</th> 
+								</tr>
+						</table>
+						<br>Generates gold by traveling between Markets.
+						</div>
             <!-- woodworking -->
                 <div id="woodworking" class="invisible">
 					<span class="strong">Woodworking</span> (technology)
@@ -1744,7 +1781,7 @@
   						</tr>
 					</table>
 				</div>
-              <!-- Linen Cloth -->
+            <!-- Linen Cloth -->
             	<div id="linencloth" class="invisible">
 					<span class="strong">Linen Cloth</span> (technology)
 					<table style="width:100%">
@@ -1765,32 +1802,43 @@
   							</tr>
 					</table>
                 </div>
-				<!-- House -->
-					<div id="house" class="invisible">
-						<table style="width:100%">
-							  <tr>
-								<th width="50%"><span class="strong">House</span> (building)</th> 
-								  </tr>
-							  <tr>
-								<th width="66%">30<img src="Pictures/vectors/wood.gif" width="20" height="14" alt="Wood" title="Wood cost" valign="-2px"/></th>
-								<th width="34%"><img src="Pictures/vectors/build-time.png" width="13" height="18" alt="build time" title="Build time" valign="-4px"/>20s</th> 
-								  </tr>
-						  </table>
-						<table style="width:100%">
-							<tr height="25px" valign="bottom">
-								<th width="33%"><img src="Pictures/vectors/hit-points.png" width="18" height="18" alt="Hit points" title="Hit Points" valign="-4px"/>75</th>
-								<th width="33%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>3</th>
-								<th width="34%"></th>  
-								  </tr>
-						  </table>
-						<table style="width:100%">
-							<tr height="25px" valign="bottom">
-								<th width="50%"><img src="Pictures/vectors/armor-weakness.png" width="16" height="17" alt="Armor" title="Weakness" valign="-4px"/>Buildings -140</th>
-								<th width="50%"></th>
-								  </tr>
+			<!-- City Watch -->
+				<div id="cityWatch" class="invisible">
+					<span class="strong">City Watch</span> (technology)
+					<table style="width:100%">
+						<tr>
+							<th width="66%">75<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/></th>
+							<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>15s</th>
+							</tr>
+					</table>
+					<br>All buildings +3 line of sight.
+				</div>
+			<!-- House -->
+				<div id="house" class="invisible">
+					<table style="width:100%">
+							<tr>
+							<th width="50%"><span class="strong">House</span> (building)</th> 
+								</tr>
+							<tr>
+							<th width="66%">30<img src="Pictures/vectors/wood.gif" width="20" height="14" alt="Wood" title="Wood cost" valign="-2px"/></th>
+							<th width="34%"><img src="Pictures/vectors/build-time.png" width="13" height="18" alt="build time" title="Build time" valign="-4px"/>20s</th> 
+								</tr>
 						</table>
-						<br>Supports 4 population.
-					</div>
+					<table style="width:100%">
+						<tr height="25px" valign="bottom">
+							<th width="33%"><img src="Pictures/vectors/hit-points.png" width="18" height="18" alt="Hit points" title="Hit Points" valign="-4px"/>75</th>
+							<th width="33%"><img src="Pictures/vectors/line-of-sight.gif" width="18" height="17" alt="Line of sight" title="Line of Sight" valign="-4px"/>3</th>
+							<th width="34%"></th>  
+								</tr>
+						</table>
+					<table style="width:100%">
+						<tr height="25px" valign="bottom">
+							<th width="50%"><img src="Pictures/vectors/armor-weakness.png" width="16" height="17" alt="Armor" title="Weakness" valign="-4px"/>Buildings -140</th>
+							<th width="50%"></th>
+								</tr>
+					</table>
+					<br>Supports 4 population.
+				</div>
             <!-- Akinaka 
             	<div id="akinaka" class="invisible">
 					<span class="strong">Aegean Dagger</span> (technology)
@@ -2303,23 +2351,46 @@
 					<!-- Alchemy -->
 					<div id="alchemy" class="invisible">
 						<table style="width:100%">
-							  <tr>
+							<tr>
 								<th width="66%"><span class="strong">Alchemy</span> (technology)</th> 
-								  </tr>
-							  <tr>
-								<th width="66%">250<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/> 200<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/></th>
-								<th width="34%"><img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>100s</th> 
-								  </tr>
+							</tr>
+							<tr>
+								<th width="66%">
+									250<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/> 200<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/>
+								</th>
+								<th width="34%">
+									<img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>100s
+								</th> 
+							</tr>
 						</table>
-						Increased missle and siege unit as well as fire galleys attack.
+						Increased missile and siege unit as well as fire galleys attack.
 						<table>
 							<tr height="28px">
 								<th width="100%">All ranged units +1 damage.</th>
 								</tr>
 								<tr height="20px">
 								<th width="100%">Fire Galley +6 damage.</th>
-								</tr>
-						  </table>
+							</tr>
+						</table>
+					</div>
+					<!-- Conscription -->
+					<div id="conscription" class="invisible">
+						<table style="width:100%">
+							<tr>
+								<th width="85%"><span class="strong">Conscription</span> (technology)</th>
+							</tr>
+						</table>
+						<table style="width:100%">
+							<tr>
+								<th width="66%">
+									450<img src="Pictures/vectors/food.gif" width="20" height="14" alt="Food" title="Food cost" valign="-2px"/> 300<img src="Pictures/vectors/gold.gif" width="20" height="14" alt="Gold" title="Gold cost" valign="-2px"/>
+								</th>
+								<th width="34%">
+									<img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>100s
+								</th> 
+							</tr>
+						</table>
+						<br>Stone Age military units +1 attack and +40% HP.
 					</div>
 					<!-- architecture -->
 						<div id="architecture" class="invisible">
@@ -2357,6 +2428,26 @@
 										  </tr>
 								</table>
 								<br>Barracks work 50% faster.
+							</div>
+						<!-- Urbanization -->
+							<div id="urbanization" class="invisible">
+								<table style="width:100%">
+									<tr>
+										<th width="66%">
+											<span class="strong">Urbanization</span> (technology)</th> 
+										</tr>
+									<tr>
+								</table>
+								<table style="width:100%">
+									<th width="66%">
+										250<img src="Pictures/vectors/wood.gif" width="20" height="14" alt="Wood" title="Wood cost" valign="-2px"/> 75<img src="Pictures/vectors/stone.gif" width="20" height="14" alt="Stone" title="Stone cost" valign="-2px"/>
+									</th>
+										<th width="34%">
+											<img src="Pictures/vectors/research-time.png" width="13" height="18" alt="Research time" title="Research time" valign="-4px"/>45s
+										</th> 
+									</tr>
+								</table>
+								<br>Houses provide double headroom.
 							</div>
 					<!-- engineering -->
 						<div id="engineering" class="invisible">
