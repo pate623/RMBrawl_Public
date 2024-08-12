@@ -1314,7 +1314,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					width: 155px;
 					height: 48px;
 					letter-spacing: -1px;
-					}	
+					}
 			/*bronzeage*/
 				#bronzeage{
 					position: absolute;
@@ -1329,21 +1329,21 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 					width: 155px;
 					height: 48px;
 					letter-spacing: 0px;
-					}	
+					}
 			/*ironage*/
 				#ironage {
 					position: absolute;
 					left: 937px;
-					top: 984px;
-					height: 105px;
+					top: 1004px;
+					height: 85px;
 					}
-				#ironage-nap	{
+				#ironage-nap{
 					position: absolute;
-					left: 952px;
+					left: 948px;
 					top: 1107px;
 					width: 155px;
 					height: 48px;
-					}	
+					}
 			/*wonder*/
 				#wonder {
 					position: absolute;
@@ -1858,7 +1858,7 @@ p.starter, p.explanation, p.explanation2, p.explanationCentered, p.header, p.hea
 				#bowman {
 					position: absolute;
 					left: 297px;
-					top: 2240px;
+					top: 2241px;
 					height: 108px;
 					}
 				#bowman-nap	{
