@@ -1,917 +1,262 @@
-var cataphractLow = false;
 var woodworkingLow = false;
 
-//Water
-$(document).ready(function(){
-	$("#dock-nap").click(function(){
-		$("#dock").toggle();
-	});
-	$("#dock").click(function(){
-		$("#dock").toggle();
-	});
-	$("#scout-ship-nap").click(function(){
-		$("#scout-ship").toggle();
-	});
-	$("#scout-ship").click(function(){
-		$("#scout-ship").toggle();
-	});
-	$("#war-galley-nap").click(function(){
-		$("#war-galley").toggle();
-	});
-	$("#war-galley").click(function(){
-		$("#war-galley").toggle();
-	});
-	$("#trieme-nap").click(function(){
-		$("#trieme").toggle();
-	});
-	$("#trieme").click(function(){
-		$("#trieme").toggle();
-	});
-	$("#juggernaught-nap").click(function(){
-		$("#juggernaught").toggle();
-	});
-	$("#juggernaught").click(function(){
-		$("#juggernaught").toggle();
-	});
-	$("#fire-galley-nap").click(function(){
-		$("#fire-galley").toggle();
-	});
-	$("#fire-galley").click(function(){
-		$("#fire-galley").toggle();
-	});
-	$("#catapult-trieme-nap").click(function(){
-		$("#catapult-trieme").toggle();
-	});
-	$("#catapult-trieme").click(function(){
-		$("#catapult-trieme").toggle();
-	});
-	$("#fishing-boat-nap").click(function(){
-		$("#fishing-boat").toggle();
-	});
-	$("#fishing-boat").click(function(){
-		$("#fishing-boat").toggle();
-	});
-	$("#fishing-ship-nap").click(function(){
-		$("#fishing-ship").toggle();
-	});
-	$("#fishing-ship").click(function(){
-		$("#fishing-ship").toggle();
-	});
-	$("#trade-boat-nap").click(function(){
-		$("#trade-boat").toggle();
-	});
-	$("#trade-boat").click(function(){
-		$("#trade-boat").toggle();
-	});
-	$("#merchant-ship-nap").click(function(){
-		$("#merchant-ship").toggle();
-	});
-	$("#merchant-ship").click(function(){
-		$("#merchant-ship").toggle();
-	});
-	$("#light-transport-nap").click(function(){
-		$("#light-transport").toggle();
-	});
-	$("#light-transport").click(function(){
-		$("#light-transport").toggle();
-	});
-	$("#heavy-transport-nap").click(function(){
-		$("#heavy-transport").toggle();
-	});
-	$("#heavy-transport").click(function(){
-		$("#heavy-transport").toggle();
+$(document).ready(function () {
+	var elements = document.querySelectorAll("div");
+	for (var i = 0; i < elements.length; i++) {
+		var element = elements[i];
+		if (!element.id.includes("-nap")) {
+			continue;
+		}
+
+		//console.log(element.id);
+		if (element.id == "merchant-ship-nap") {
+			MerchantShipToggle(element);
+		}
+		else if (element.id == "sentry-tower-nap") {
+			SentryTowerToggle(element);
+		}
+		else if (element.id == "domestication-nap") {
+			DomesticationToggle();
+		}
+		else if (element.id == "stonemining-nap") {
+			StoneMiningToggle(element);
+		}
+		else if (element.id == "siegecraft-nap") {
+			SiegeCraftToggle(element);
+		}
+		else if (element.id == "woodworking-nap") {
+			WoodworkingToggle();
+		}
+		else if (element.id == "craftsmanship-nap") {
+			CraftsmanshipToggle(element);
+		}
+		else if (element.id == "medicine-nap") {
+			MedicineToggle(element);
+		}
+		else if (element.id == "alchemy-nap") {
+			AlchemyToggle(element);
+		}
+		else if (element.id == "cataphract-nap") {
+			CataphractToggle(element);
+		}
+		else if (element.id == "heavycat-nap") {
+			HeavycatToggle(element);
+		}
+		else if (element.id == "slinger-nap") {
+			SlingerToggle(element);
+		}
+		else {
+			DefaultToggling(element);
+		}
+	}
+});
+
+function DefaultToggling(element) {
+	let detailsObjectName = element.id.replace("-nap", "");
+	//console.log(detailsObjectName);
+	$("#" + element.id).click(function () {
+		$("#" + detailsObjectName).toggle();
 	});
 
-//Granary
-	$("#granary-nap").click(function(){
-		$("#granary").toggle();
+	$("#" + detailsObjectName).click(function () {
+		$("#" + detailsObjectName).toggle();
 	});
-	$("#granary").click(function(){
-		$("#granary").toggle();
-	});
-	$("#creel-nap").click(function(){
-		$("#creel").toggle();
-	});
-	$("#creel").click(function(){
-		$("#creel").toggle();
-	});
-	$("#watch-tower-nap").click(function(){
-		$("#watch-tower").toggle();
-	});
-	$("#watch-tower").click(function(){
-		$("#watch-tower").toggle();
-	});
-	$("#sentry-tower-nap").click(function(){
-		$("#sentry-tower").toggle();
-	});
-	$("#sentry-tower").click(function(){
-		$("#sentry-tower").toggle();
-	});
-	$("#guard-tower-nap").click(function(){
-		$("#guard-tower").toggle();
-	});
-	$("#guard-tower").click(function(){
-		$("#guard-tower").toggle();
-	});
-	$("#ballista-tower-nap").click(function(){
-		$("#ballista-tower").toggle();
-	});
-	$("#ballista-tower").click(function(){
-		$("#ballista-tower").toggle();
-	});
-	$("#small-wall-nap").click(function(){
-		$("#small-wall").toggle();
-	});
-	$("#small-wall").click(function(){
-		$("#small-wall").toggle();
-	});
-	$("#medium-wall-nap").click(function(){
-		$("#medium-wall").toggle();
-	});
-	$("#medium-wall").click(function(){
-		$("#medium-wall").toggle();
-	});
-	$("#big-wall-nap").click(function(){
-		$("#big-wall").toggle();
-	});
-	$("#big-wall").click(function(){
-		$("#big-wall").toggle();
+}
+
+function MerchantShipToggle(element) {
+	$("#merchant-ship-nap").click(function () {
+		if (!$("#fishing-ship").is(":hidden")) {
+			$("#merchant-ship").css("top", "313px");
+		} else {
+			$("#merchant-ship").css("top", "292px");
+		}
+		$("#merchant-ship").toggle();
 	});
 	
-//temple
-	$("#temple-nap").click(function(){
-		$("#temple").toggle();
+	let detailsObjectName = element.id.replace("-nap", "");
+	$("#" + detailsObjectName).click(function () {
+		$("#" + detailsObjectName).toggle();
 	});
-	$("#temple").click(function(){
-		$("#temple").toggle();
-	});
-	$("#priest-nap").click(function(){
-		$("#priest").toggle();
-	});
-	$("#priest").click(function(){
-		$("#priest").toggle();
-	});
-	$("#astrology-nap").click(function(){
-		$("#astrology").toggle();
-	});
-	$("#astrology").click(function(){
-		$("#astrology").toggle();
-	});
-	$("#medicine-nap").click(function(){
-		if ( !$("#martyrdom").is(":hidden") ){
-			$("#medicine").css("top", "1192px");
-		}else{
-			$("#medicine").css("top", "1167px");
+}
+
+function SentryTowerToggle(element) {
+	$("#sentry-tower-nap").click(function () {
+		if (!$("#trade-boat").is(":hidden")) {
+			$("#sentry-tower").css("top", "382px");
+		} else {
+			$("#sentry-tower").css("top", "361px");
 		}
-		$("#medicine").toggle();
+		$("#sentry-tower").toggle();
 	});
-	$("#medicine").click(function(){
-		$("#medicine").toggle();
+	
+	let detailsObjectName = element.id.replace("-nap", "");
+	$("#" + detailsObjectName).click(function () {
+		$("#" + detailsObjectName).toggle();
 	});
-	$("#fanaticism-nap").click(function(){
-		$("#fanaticism").toggle();
-	});
-	$("#fanaticism").click(function(){
-		$("#fanaticism").toggle();
-	});
-	$("#mysticism-nap").click(function(){
-		$("#mysticism").toggle();
-	});
-	$("#mysticism").click(function(){
-		$("#mysticism").toggle();
-	});
-	$("#afterlife-nap").click(function(){
-		$("#afterlife").toggle();
-	});
-	$("#afterlife").click(function(){
-		$("#afterlife").toggle();
-	});
-	$("#jihad-nap").click(function(){
-		$("#jihad").toggle();
-	});
-	$("#jihad").click(function(){
-		$("#jihad").toggle();
-	});
-	$("#polytheism-nap").click(function(){
-		$("#polytheism").toggle();
-	});
-	$("#polytheism").click(function(){
-		$("#polytheism").toggle();
-	});
-	$("#monotheism-nap").click(function(){
-		$("#monotheism").toggle();
-	});
-	$("#monotheism").click(function(){
-		$("#monotheism").toggle();
-	});
-	$("#martyrdom-nap").click(function(){
-		$("#martyrdom").toggle();
-	});
-	$("#martyrdom").click(function(){
-		$("#martyrdom").toggle();
+}
+
+function DomesticationToggle() {
+	$("#domestication-nap").click(function () {
+		$("#domestication").toggle();
 	});
 
-//Market
-	$("#farm-nap").click(function(){
-		$("#farm").toggle();
-	});
-	$("#farm").click(function(){
-		$("#farm").toggle();
-	});
-	$("#market-nap").click(function(){
-		$("#market").toggle();
-	});
-	$("#market").click(function(){
-		$("#market").toggle();
-	});
-	$("#wheel-nap").click(function(){
-		$("#wheel").toggle();
-	});
-	$("#wheel").click(function(){
-		$("#wheel").toggle();
-	});
-	$("#trader-nap").click(function(){
-		$("#trader").toggle();
-	});
-	$("#trader").click(function(){
-		$("#trader").toggle();
-	});
-	$("#domestication-nap").click(function(){
+	$("#domestication").click(function () {
 		$("#domestication").toggle();
-	});
-	$("#domestication").click(function(){
-		$("#domestication").toggle();
-		if ($("#woodworking").is(":hidden")){
+		if ($("#woodworking").is(":hidden")) {
 			woodworkingLow = false;
 		}
 	});
-	$("#plow-nap").click(function(){
-		$("#plow").toggle();
-	});
-	$("#plow").click(function(){
-		$("#plow").toggle();
-	});
-	$("#irrigation-nap").click(function(){
-		$("#irrigation").toggle();
-	});
-	$("#irrigation").click(function(){
-		$("#irrigation").toggle();
-	});
-	$("#goldmining-nap").click(function(){
-		$("#goldmining").toggle();
-	});
-	$("#goldmining").click(function(){
-		$("#goldmining").toggle();
-	});
-	$("#coinage-nap").click(function(){
-		$("#coinage").toggle();
-	});
-	$("#coinage").click(function(){
-		$("#coinage").toggle();
-	});
-	$("#stonemining-nap").click(function(){
-		if ( woodworkingLow ){
+}
+
+function StoneMiningToggle(element) {
+	$("#stonemining-nap").click(function () {
+		if (woodworkingLow) {
 			$("#stonemining").css("top", "836px");
-		}else{
+		} else {
 			$("#stonemining").css("top", "826px");
 		}
 		$("#stonemining").toggle();
 	});
-	$("#stonemining").click(function(){
-		$("#stonemining").toggle();
+
+	let detailsObjectName = element.id.replace("-nap", "");
+	$("#" + detailsObjectName).click(function () {
+		$("#" + detailsObjectName).toggle();
 	});
-	$("#siegecraft-nap").click(function(){
-		if (!$("#artisanship").is(":hidden")){
+}
+
+function SiegeCraftToggle(element) {
+	$("#siegecraft-nap").click(function () {
+		if (!$("#artisanship").is(":hidden")) {
 			$("#siegecraft").css("top", "818px");
-		}else{
+		} else {
 			$("#siegecraft").css("top", "782px");
 		}
 		$("#siegecraft").toggle();
 	});
-	$("#siegecraft").click(function(){
-		$("#siegecraft").toggle();
+
+	let detailsObjectName = element.id.replace("-nap", "");
+	$("#" + detailsObjectName).click(function () {
+		$("#" + detailsObjectName).toggle();
 	});
-	$("#woodworking-nap").click(function(){
-		if (!$("#domestication").is(":hidden")){
+}
+
+function WoodworkingToggle() {
+	$("#woodworking-nap").click(function () {
+		if (!$("#domestication").is(":hidden")) {
 			$("#woodworking").css("top", "790px");
 			woodworkingLow = true;
-		}else{
+		} else {
 			$("#woodworking").css("top", "772px");
 			woodworkingLow = false;
 		}
 		$("#woodworking").toggle();
-		if ($("#woodworking").is(":hidden")){
+		if ($("#woodworking").is(":hidden")) {
 			woodworkingLow = false;
 		}
 	});
-	$("#woodworking").click(function(){
+
+	$("#woodworking").click(function () {
 		$("#woodworking").toggle();
-		if ($("#woodworking").is(":hidden")){
+		if ($("#woodworking").is(":hidden")) {
 			woodworkingLow = false;
 		}
 	});
-	$("#artisanship-nap").click(function(){
-		$("#artisanship").toggle();
-	});
-	$("#artisanship").click(function(){
-		$("#artisanship").toggle();
-	});
-	$("#craftsmanship-nap").click(function(){
-		if (!$("#irrigation").is(":hidden")){
+}
+
+function CraftsmanshipToggle(element) {
+	$("#craftsmanship-nap").click(function () {
+		if (!$("#irrigation").is(":hidden")) {
 			$("#craftsmanship").css("top", "793px");
 			woodworkingLow = true;
-		}else{
+		} else {
 			$("#craftsmanship").css("top", "768px");
 			woodworkingLow = false;
 		}
 		$("#craftsmanship").toggle();
 	});
-	$("#craftsmanship").click(function(){
-		$("#craftsmanship").toggle();
+
+	let detailsObjectName = element.id.replace("-nap", "");
+	$("#" + detailsObjectName).click(function () {
+		$("#" + detailsObjectName).toggle();
 	});
-	$("#pottery-nap").click(function(){
-		$("#pottery").toggle();
-	});
-	$("#pottery").click(function(){
-		$("#pottery").toggle();
+}
+
+function MedicineToggle(element) {
+	$("#medicine-nap").click(function () {
+		if (!$("#martyrdom").is(":hidden")) {
+			$("#medicine").css("top", "1192px");
+		} else {
+			$("#medicine").css("top", "1167px");
+		}
+		$("#medicine").toggle();
 	});
 
-//Government Center
-	$("#governmentcenter-nap").click(function(){
-		$("#governmentcenter").toggle();
+	let detailsObjectName = element.id.replace("-nap", "");
+	$("#" + detailsObjectName).click(function () {
+		$("#" + detailsObjectName).toggle();
 	});
-	$("#governmentcenter").click(function(){
-		$("#governmentcenter").toggle();
-	});
-	$("#towncenter-nap").click(function(){
-		$("#towncenter").toggle();
-	});
-	$("#towncenter").click(function(){
-		$("#towncenter").toggle();
-	});
-	$("#logistics-nap").click(function(){
-		$("#logistics").toggle();
-	});
-	$("#logistics").click(function(){
-		$("#logistics").toggle();
-	});
-	$("#urbanization-nap").click(function(){
-		$("#urbanization").toggle();
-	});
-	$("#urbanization").click(function(){
-		$("#urbanization").toggle();
-	});
-	$("#architecture-nap").click(function(){
-		$("#architecture").toggle();
-	});
-	$("#architecture").click(function(){
-		$("#architecture").toggle();
-	});
-	$("#engineering-nap").click(function(){
-		$("#engineering").toggle();
-	});
-	$("#engineering").click(function(){
-		$("#engineering").toggle();
-	});
-	$("#alchemy-nap").click(function(){
-		if ( !$("#aristocracy").is(":hidden") ){
+}
+
+function AlchemyToggle(element) {
+	$("#alchemy-nap").click(function () {
+		if (!$("#aristocracy").is(":hidden")) {
 			$("#alchemy").css("top", "1765px");
-		}else{
+		} else {
 			$("#alchemy").css("top", "1740px");
 		}
 		$("#alchemy").toggle();
 	});
-	$("#alchemy").click(function(){
-		$("#alchemy").toggle();
-	});
-	$("#conscription-nap").click(function(){
-		$("#conscription").toggle();
-	});
-	$("#conscription").click(function(){
-		$("#conscription").toggle();
-	});
-	$("#ballistics-nap").click(function(){
-		$("#ballistics").toggle();
-	});
-	$("#ballistics").click(function(){
-		$("#ballistics").toggle();
-	});
-	$("#nobility-nap").click(function(){
-		$("#nobility").toggle();
-	});
-	$("#nobility").click(function(){
-		$("#nobility").toggle();
-	});
-	$("#aristocracy-nap").click(function(){
-		$("#aristocracy").toggle();
-	});
-	$("#aristocracy").click(function(){
-		$("#aristocracy").toggle();
-	});
-	$("#uniqueTechnology-nap").click(function(){
-		$("#uniqueTechnology").toggle();
-	});
-	$("#uniqueTechnology").click(function(){
-		$("#uniqueTechnology").toggle();
-	});
-	$("#mathematics-nap").click(function(){
-		$("#mathematics").toggle();
-	});
-	$("#mathematics").click(function(){
-		$("#mathematics").toggle();
-	});
 
-//Town Center
-	$("#house-nap").click(function(){
-		$("#house").toggle();
+	let detailsObjectName = element.id.replace("-nap", "");
+	$("#" + detailsObjectName).click(function () {
+		$("#" + detailsObjectName).toggle();
 	});
-	$("#house").click(function(){
-		$("#house").toggle();
-	});
-	$("#towncenter2-nap").click(function(){
-		$("#towncenter2").toggle();
-	});
-	$("#towncenter2").click(function(){
-		$("#towncenter2").toggle();
-	});
-	$("#villager-nap").click(function(){
-		$("#villager").toggle();
-	});
-	$("#villager").click(function(){
-		$("#villager").toggle();
-	});
-	$("#linencloth-nap").click(function(){
-		$("#linencloth").toggle();
-	});
-	$("#linencloth").click(function(){
-		$("#linencloth").toggle();
-	});
-	$("#cityWatch-nap").click(function(){
-		$("#cityWatch").toggle();
-	});
-	$("#cityWatch").click(function(){
-		$("#cityWatch").toggle();
-	});
-	$("#toolage-nap").click(function(){
-		$("#toolage").toggle();
-	});
-	$("#toolage").click(function(){
-		$("#toolage").toggle();
-	});
-	$("#bronzeage-nap").click(function(){
-		$("#bronzeage").toggle();
-	});
-	$("#bronzeage").click(function(){
-		$("#bronzeage").toggle();
-	});
-	$("#ironage-nap").click(function(){
-		$("#ironage").toggle();
-	});
-	$("#ironage").click(function(){
-		$("#ironage").toggle();
-	});
-	$("#wonder-nap").click(function(){
-		$("#wonder").toggle();
-	});
-	$("#wonder").click(function(){
-		$("#wonder").toggle();
-	});
+}
 
-//Storage Pit
-	$("#storagepit-nap").click(function(){
-		$("#storagepit").toggle();
-	});
-	$("#storagepit").click(function(){
-		$("#storagepit").toggle();
-	});
-	$("#leathercavalry-nap").click(function(){
-		$("#leathercavalry").toggle();
-	});
-	$("#leathercavalry").click(function(){
-		$("#leathercavalry").toggle();
-	});
-	$("#scalecavalry-nap").click(function(){
-		$("#scalecavalry").toggle();
-	});
-	$("#scalecavalry").click(function(){
-		$("#scalecavalry").toggle();
-	});
-	$("#chaincavalry-nap").click(function(){
-		$("#chaincavalry").toggle();
-	});
-	$("#chaincavalry").click(function(){
-		$("#chaincavalry").toggle();
-	});
-	$("#leatherarcher-nap").click(function(){
-		$("#leatherarcher").toggle();
-	});
-	$("#leatherarcher").click(function(){
-		$("#leatherarcher").toggle();
-	});
-	$("#scalearcher-nap").click(function(){
-		$("#scalearcher").toggle();
-	});
-	$("#scalearcher").click(function(){
-		$("#scalearcher").toggle();
-	});
-	$("#chainarcher-nap").click(function(){
-		$("#chainarcher").toggle();
-	});
-	$("#chainarcher").click(function(){
-		$("#chainarcher").toggle();
-	});
-	$("#leathermelee-nap").click(function(){
-		$("#leathermelee").toggle();
-	});
-	$("#leathermelee").click(function(){
-		$("#leathermelee").toggle();
-	});
-	$("#scalemelee-nap").click(function(){
-		$("#scalemelee").toggle();
-	});
-	$("#scalemelee").click(function(){
-		$("#scalemelee").toggle();
-	});
-	$("#chainmelee-nap").click(function(){
-		$("#chainmelee").toggle();
-	});
-	$("#chainmelee").click(function(){
-		$("#chainmelee").toggle();
-	});
-	$("#toolworking-nap").click(function(){
-		$("#toolworking").toggle();
-	});
-	$("#toolworking").click(function(){
-		$("#toolworking").toggle();
-	});
-	$("#metalworking-nap").click(function(){
-		$("#metalworking").toggle();
-	});
-	$("#metalworking").click(function(){
-		$("#metalworking").toggle();
-	});
-	$("#metallurgy-nap").click(function(){
-		$("#metallurgy").toggle();
-	});
-	$("#metallurgy").click(function(){
-		$("#metallurgy").toggle();
-	});
-	$("#bronzeshield-nap").click(function(){
-		$("#bronzeshield").toggle();
-	});
-	$("#bronzeshield").click(function(){
-		$("#bronzeshield").toggle();
-	});
-	$("#ironshield-nap").click(function(){
-		$("#ironshield").toggle();
-	});
-	$("#ironshield").click(function(){
-		$("#ironshield").toggle();
-	});
-	$("#towershield-nap").click(function(){
-		$("#towershield").toggle();
-	});
-	$("#towershield").click(function(){
-		$("#towershield").toggle();
-	});
-
-//Academy
-	$("#academy-nap").click(function(){
-		$("#academy").toggle();
-	});
-	$("#academy").click(function(){
-		$("#academy").toggle();
-	});
-	$("#hoplite-nap").click(function(){
-		$("#hoplite").toggle();
-	});
-	$("#hoplite").click(function(){
-		$("#hoplite").toggle();
-	});
-	$("#phalanx-nap").click(function(){
-		$("#phalanx").toggle();
-	});
-	$("#phalanx").click(function(){
-		$("#phalanx").toggle();
-	});
-	$("#centurion-nap").click(function(){
-		$("#centurion").toggle();
-	});
-	$("#centurion").click(function(){
-		$("#centurion").toggle();
-	});
-
-//stable
-	$("#stable-nap").click(function(){
-		$("#stable").toggle();
-	});
-	$("#stable").click(function(){
-		$("#stable").toggle();
-	});
-	$("#scout-nap").click(function(){
-		$("#scout").toggle();
-	});
-	$("#scout").click(function(){
-		$("#scout").toggle();
-	});
-	$("#chariot-nap").click(function(){
-		$("#chariot").toggle();
-	});
-	$("#chariot").click(function(){
-		$("#chariot").toggle();
-	});
-	$("#scythe-nap").click(function(){
-		$("#scythe").toggle();
-	});
-	$("#scythe").click(function(){
-		$("#scythe").toggle();
-	});
-	$("#cavalry-nap").click(function(){
-		$("#cavalry").toggle();
-	});
-	$("#cavalry").click(function(){
-		$("#cavalry").toggle();
-	});
-	$("#heavycav-nap").click(function(){
-		$("#heavycav").toggle();
-	});
-	$("#heavycav").click(function(){
-		$("#heavycav").toggle();
-	});
-	$("#cataphract-nap").click(function(){
-		if ( !$("#scythe").is(":hidden") ){
+function CataphractToggle(element) {
+	$("#cataphract-nap").click(function () {
+		if (!$("#scythe").is(":hidden")) {
 			$("#cataphract").css("top", "2073px");
-		}else{
+		} else {
 			$("#cataphract").css("top", "2061px");
 		}
 		$("#cataphract").toggle();
 	});
-	$("#cataphract").click(function(){
-		$("#cataphract").toggle();
-		cataphractLow = false;
-	});
-	$("#warelephant-nap").click(function(){
-		$("#warelephant").toggle();
-	});
-	$("#warelephant").click(function(){
-		$("#warelephant").toggle();
-	});
-	$("#armorele-nap").click(function(){
-		$("#armorele").toggle();
-	});
-	$("#armorele").click(function(){
-		$("#armorele").toggle();
-	});
-	$("#camel-nap").click(function(){
-		$("#camel").toggle();
-	});
-	$("#camel").click(function(){
-		$("#camel").toggle();
-	});
-	$("#heavyCamel-nap").click(function(){
-		$("#heavyCamel").toggle();
-	});
-	$("#heavyCamel").click(function(){
-		$("#heavyCamel").toggle();
-	});
-	
-//archery
-	$("#archery-nap").click(function(){
-		$("#archery").toggle();
-	});
-	$("#archery").click(function(){
-		$("#archery").toggle();
-	});
-	$("#crossBow-nap").click(function(){
-		$("#crossBow").toggle();
-	});
-	$("#crossBow").click(function(){
-		$("#crossBow").toggle();
-	});
-	$("#improvedbow-nap").click(function(){
-		$("#improvedbow").toggle();
-	});
-	$("#improvedbow").click(function(){
-		$("#improvedbow").toggle();
-	});
-	$("#compie-nap").click(function(){
-		$("#compie").toggle();
-	});
-	$("#compie").click(function(){
-		$("#compie").toggle();
-	});
-	$("#recurvebow-nap").click(function(){
-		$("#recurvebow").toggle();
-	});
-	$("#recurvebow").click(function(){
-		$("#recurvebow").toggle();
-	});
-	$("#bowman-nap").click(function(){
-		$("#bowman").toggle();
-	});
-	$("#bowman").click(function(){
-		$("#bowman").toggle();
-	});
-	$("#chararch-nap").click(function(){
-		$("#chararch").toggle();
-	});
-	$("#chararch").click(function(){
-		$("#chararch").toggle();
-	});
-	$("#horsearcher-nap").click(function(){
-		$("#horsearcher").toggle();
-	});
-	$("#horsearcher").click(function(){
-		$("#horsearcher").toggle();
-	});
-	$("#elearcher-nap").click(function(){
-		$("#elearcher").toggle();
-	});
-	$("#elearcher").click(function(){
-		$("#elearcher").toggle();
-	});
-	$("#heavhorsearch-nap").click(function(){
-		$("#heavhorsearch").toggle();
-	});
-	$("#heavhorsearch").click(function(){
-		$("#heavhorsearch").toggle();
-	});
 
-//siegeshop
-	$("#siegeshop-nap").click(function(){
-		$("#siegeshop").toggle();
+	let detailsObjectName = element.id.replace("-nap", "");
+	$("#" + detailsObjectName).click(function () {
+		$("#" + detailsObjectName).toggle();
 	});
-	$("#siegeshop").click(function(){
-		$("#siegeshop").toggle();
-	});
-	$("#stonethrow-nap").click(function(){
-		$("#stonethrow").toggle();
-	});
-	$("#stonethrow").click(function(){
-		$("#stonethrow").toggle();
-	});
-	$("#ballista-nap").click(function(){
-		$("#ballista").toggle();
-	});
-	$("#ballista").click(function(){
-		$("#ballista").toggle();
-	});
-	$("#helepolis-nap").click(function(){
-		$("#helepolis").toggle();
-	});
-	$("#helepolis").click(function(){
-		$("#helepolis").toggle();
-	});
-	$("#cat-nap").click(function(){
-		$("#cat").toggle();
-	});
-	$("#cat").click(function(){
-		$("#cat").toggle();
-	});
-	$("#heavycat-nap").click(function(){
-		if ( !$("#helepolis").is(":hidden") ){
+}
+
+function HeavycatToggle(element) {
+	$("#heavycat-nap").click(function () {
+		if (!$("#helepolis").is(":hidden")) {
 			$("#heavycat").css("top", "2533px");
-		}else{
+		} else {
 			$("#heavycat").css("top", "2495px");
 		}
 		$("#heavycat").toggle();
 	});
-	$("#heavycat").click(function(){
-		$("#heavycat").toggle();
-	});
 
-//barrack
-	$("#barrack-nap").click(function(){
-		$("#barrack").toggle();
+	let detailsObjectName = element.id.replace("-nap", "");
+	$("#" + detailsObjectName).click(function () {
+		$("#" + detailsObjectName).toggle();
 	});
-	$("#barrack").click(function(){
-		$("#barrack").toggle();
-	});
-	$("#shortsword-nap").click(function(){
-		$("#shortsword").toggle();
-	});
-	$("#shortsword").click(function(){
-		$("#shortsword").toggle();
-	});
-	$("#broadsword-nap").click(function(){
-		$("#broadsword").toggle();
-	});
-	$("#broadsword").click(function(){
-		$("#broadsword").toggle();
-	});
-	$("#longsword-nap").click(function(){
-		$("#longsword").toggle();
-	});
-	$("#longsword").click(function(){
-		$("#longsword").toggle();
-	});
-	$("#legion-nap").click(function(){
-		$("#legion").toggle();
-	});
-	$("#legion").click(function(){
-		$("#legion").toggle();
-	});
-	$("#slinger-nap").click(function(){
-		if ($("#clayBolt").is(":hidden")){
+}
+
+function SlingerToggle(element) {
+	$("#slinger-nap").click(function () {
+		if ($("#clayBolt").is(":hidden")) {
 			$("#slinger").css("top", "1913px");
-		}else{
+		} else {
 			$("#slinger").css("top", "1939px");
 		}
 		$("#slinger").toggle();
 	});
-	$("#slinger").click(function(){
-		$("#slinger").toggle();
-	});
-	$("#clayBolt-nap").click(function(){
-		$("#clayBolt").toggle();
-	});
-	$("#clayBolt").click(function(){
-		$("#clayBolt").toggle();
-	});
-	$("#Hslinger-nap").click(function(){
-		$("#Hslinger").toggle();
-	});
-	$("#Hslinger").click(function(){
-		$("#Hslinger").toggle();
-	});
-	$("#ironSlinger-nap").click(function(){
-		$("#ironSlinger").toggle();
-	});
-	$("#ironSlinger").click(function(){
-		$("#ironSlinger").toggle();
-	});
-	$("#clubman-nap").click(function(){
-		$("#clubman").toggle();
-	});
-	$("#clubman").click(function(){
-		$("#clubman").toggle();
-	});
-	$("#axeman-nap").click(function(){
-		$("#axeman").toggle();
-	});
-	$("#axeman").click(function(){
-		$("#axeman").toggle();
-	});
 
-//Wild animals
-	$("#alligator-nap").click(function(){
-		$("#alligator").toggle();
+	let detailsObjectName = element.id.replace("-nap", "");
+	$("#" + detailsObjectName).click(function () {
+		$("#" + detailsObjectName).toggle();
 	});
-	$("#alligator").click(function(){
-		$("#alligator").toggle();
-	});
-	$("#alligator6-nap").click(function(){
-		$("#alligator6").toggle();
-	});
-	$("#alligator6").click(function(){
-		$("#alligator6").toggle();
-	});
-	$("#alligator3-nap").click(function(){
-		$("#alligator3").toggle();
-	});
-	$("#alligator3").click(function(){
-		$("#alligator3").toggle();
-	});
-	$("#alligator7-nap").click(function(){
-		$("#alligator7").toggle();
-	});
-	$("#alligator7").click(function(){
-		$("#alligator7").toggle();
-	});
-	$("#alligator5-nap").click(function(){
-		$("#alligator5").toggle();
-	});
-	$("#alligator5").click(function(){
-		$("#alligator5").toggle();
-	});
-	$("#gazel-nap").click(function(){
-		$("#gazel").toggle();
-	});
-	$("#gazel").click(function(){
-		$("#gazel").toggle();
-	});
-	$("#gazel2-nap").click(function(){
-		$("#gazel2").toggle();
-	});
-	$("#gazel2").click(function(){
-		$("#gazel2").toggle();
-	});
-	$("#lion-nap").click(function(){
-		$("#lion").toggle();
-	});
-	$("#lion").click(function(){
-		$("#lion").toggle();
-	});
-	$("#lion2-nap").click(function(){
-		$("#lion2").toggle();
-	});
-	$("#lion2").click(function(){
-		$("#lion2").toggle();
-	});
-	$("#elephant-nap").click(function(){
-		$("#elephant").toggle();
-	});
-	$("#elephant").click(function(){
-		$("#elephant").toggle();
-	});
-});
+}
