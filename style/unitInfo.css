@@ -342,8 +342,9 @@ title {
 }
 
 /*Unit and technology names beside the pictures*/
-.units {
 	/* Usable units */
+.units {
+	position: absolute;
 	font: 100%/1.4 Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	font-weight: bold;
@@ -762,7 +763,7 @@ span.emn {
 #medium-gate-nap {
 	position: absolute;
 	left: 897px;
-	top: 660px;
+	top: 661px;
 	width: 155px;
 	height: 48px;
 	letter-spacing: -1px;
@@ -780,7 +781,7 @@ span.emn {
 #fortified-gate-nap {
 	position: absolute;
 	left: 1240px;
-	top: 660px;
+	top: 661px;
 	width: 155px;
 	height: 48px;
 	letter-spacing: -1px;
@@ -1759,14 +1760,14 @@ span.emn {
 /*toolworking*/
 #toolworking {
 	position: absolute;
-	left: 145px;
+	left: 195px;
 	top: 1578px;
 	height: 85px;
 }
 
 #toolworking-nap {
 	position: absolute;
-	left: 165px;
+	left: 214px;
 	top: 1683px;
 	width: 155px;
 	height: 48px;
