@@ -9,44 +9,46 @@ $(document).ready(function () {
 		}
 
 		//console.log(element.id);
-		if (element.id == "merchant-ship-nap") {
-			MerchantShipToggle(element);
-		}
-		else if (element.id == "sentry-tower-nap") {
-			SentryTowerToggle(element);
-		}
-		else if (element.id == "domestication-nap") {
-			DomesticationToggle();
-		}
-		else if (element.id == "stonemining-nap") {
-			StoneMiningToggle(element);
-		}
-		else if (element.id == "siegecraft-nap") {
-			SiegeCraftToggle(element);
-		}
-		else if (element.id == "woodworking-nap") {
-			WoodworkingToggle();
-		}
-		else if (element.id == "craftsmanship-nap") {
-			CraftsmanshipToggle(element);
-		}
-		else if (element.id == "medicine-nap") {
-			MedicineToggle(element);
-		}
-		else if (element.id == "alchemy-nap") {
-			AlchemyToggle(element);
-		}
-		else if (element.id == "cataphract-nap") {
-			CataphractToggle(element);
-		}
-		else if (element.id == "heavycat-nap") {
-			HeavycatToggle(element);
-		}
-		else if (element.id == "slinger-nap") {
-			SlingerToggle(element);
-		}
-		else {
-			DefaultToggling(element);
+		switch (element.id) {
+			case "merchant-ship-nap":
+				MerchantShipToggle(element);
+				break;
+			case "sentry-tower-nap":
+				SentryTowerToggle(element);
+				break;
+			case "domestication-nap":
+				DomesticationToggle(element);
+				break;
+			case "stonemining-nap":
+				StoneMiningToggle(element);
+				break;
+			case "siegecraft-nap":
+				SiegeCraftToggle(element);
+				break;
+			case "woodworking-nap":
+				WoodworkingToggle(element);
+				break;
+			case "craftsmanship-nap":
+				CraftsmanshipToggle(element);
+				break;
+			case "medicine-nap":
+				MedicineToggle(element);
+				break;
+			case "alchemy-nap":
+				AlchemyToggle(element);
+				break;
+			case "cataphract-nap":
+				CataphractToggle(element);
+				break;
+			case "heavycat-nap":
+				HeavycatToggle(element);
+				break;
+			case "slinger-nap":
+				SlingerToggle(element);
+				break;
+			default:
+				DefaultToggling(element);
+				break;
 		}
 	}
 });
@@ -248,7 +250,7 @@ function HeavycatToggle(element) {
 function SlingerToggle(element) {
 	$("#slinger-nap").click(function () {
 		if ($("#clayBolt").is(":hidden")) {
-			$("#slinger").css("top", "1913px");
+			$("#slinger").css("top", "1933px");
 		} else {
 			$("#slinger").css("top", "1939px");
 		}

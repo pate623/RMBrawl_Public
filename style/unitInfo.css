@@ -398,14 +398,14 @@ span.emn {
 /*Scout Ship*/
 #scout-ship {
 	position: absolute;
-	left: 245px;
+	left: 195px;
 	top: 178px;
 	height: 85px;
 }
 
 #scout-ship-nap {
 	position: absolute;
-	left: 260px;
+	left: 210px;
 	top: 282px;
 	width: 155px;
 	height: 48px;
@@ -447,8 +447,8 @@ span.emn {
 #juggernaught {
 	position: absolute;
 	left: 1455px;
-	top: 46px;
-	height: 180px;
+	top: 16px;
+	height: 210px;
 }
 
 #juggernaught-nap {
@@ -479,8 +479,8 @@ span.emn {
 #catapult-trieme {
 	position: absolute;
 	left: 1228px;
-	top: 46px;
-	height: 180px;
+	top: 16px;
+	height: 210px;
 }
 
 #catapult-trieme-nap {
@@ -524,6 +524,22 @@ span.emn {
 	height: 48px;
 }
 
+/*Dhow*/
+#dhow {
+	position: absolute;
+	left: 538px;
+	top: 264px;
+	height: 105px;
+}
+
+#dhow-nap {
+	position: absolute;
+	left: 545px;
+	top: 390px;
+	width: 155px;
+	height: 48px;
+}
+
 /*Trade boat*/
 #trade-boat {
 	position: absolute;
@@ -559,14 +575,14 @@ span.emn {
 /*light-transport*/
 #light-transport {
 	position: absolute;
-	left: 245px;
+	left: 195px;
 	top: 256px;
 	height: 83px;
 }
 
 #light-transport-nap {
 	position: absolute;
-	left: 260px;
+	left: 210px;
 	top: 357px;
 	width: 155px;
 	height: 48px;
@@ -1293,14 +1309,46 @@ span.emn {
 #engineering {
 	position: absolute;
 	left: 1228px;
-	top: 1878px;
+	top: 1933px;
 	height: 85px;
 }
 
 #engineering-nap {
 	position: absolute;
 	left: 1240px;
-	top: 1987px;
+	top: 2038px;
+	width: 155px;
+	height: 48px;
+}
+
+/*Carvel hull*/
+#carvel-hull {
+	position: absolute;
+	left: 887px;
+	top: 1856px;
+	height: 85px;
+}
+
+#carvel-hull-nap {
+	position: absolute;
+	left: 900px;
+	top: 1962px;
+	width: 155px;
+	height: 48px;
+}
+
+/*Careering*/
+#careering {
+	position: absolute;
+	left: 1228px;
+	top: 1881px;
+	height: 85px;
+}
+
+#careering-nap {
+	position: absolute;
+	left: 1240px;
+	top: 1988px;
 	width: 155px;
 	height: 48px;
 }
@@ -1421,14 +1469,14 @@ span.emn {
 #mathematics {
 	position: absolute;
 	left: 887px;
-	top: 1877px;
+	top: 1930px;
 	height: 88px;
 }
 
 #mathematics-nap {
 	position: absolute;
 	left: 900px;
-	top: 1987px;
+	top: 2038px;
 	width: 155px;
 	height: 48px;
 }
@@ -1568,8 +1616,8 @@ span.emn {
 #ironage {
 	position: absolute;
 	left: 937px;
-	top: 1004px;
-	height: 85px;
+	top: 987px;
+	height: 100px;
 }
 
 #ironage-nap {
@@ -2424,8 +2472,8 @@ span.emn {
 #slinger {
 	position: absolute;
 	left: 245px;
-	top: 1913px;
-	height: 155px;
+	top: 1933px;
+	height: 135px;
 }
 
 #slinger-nap {
