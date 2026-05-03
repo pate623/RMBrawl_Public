@@ -1229,8 +1229,8 @@ span.emn {
 #governmentcenter {
 	position: absolute;
 	left: 538px;
-	top: 1721px;
-	height: 85px;
+	top: 1685px;
+	height: 120px;
 }
 
 #governmentcenter-nap {
@@ -1913,7 +1913,7 @@ span.emn {
 #academy-nap {
 	position: absolute;
 	left: 900px;
-	top: 2784px;
+	top: 2781px;
 	width: 155px;
 	height: 48px;
 }
@@ -1922,14 +1922,14 @@ span.emn {
 #hoplite {
 	position: absolute;
 	left: 937px;
-	top: 2716px;
+	top: 2711px;
 	height: 105px;
 }
 
 #hoplite-nap {
 	position: absolute;
 	left: 952px;
-	top: 2844px;
+	top: 2837px;
 	width: 155px;
 	height: 48px;
 }
@@ -1938,14 +1938,14 @@ span.emn {
 #phalanx {
 	position: absolute;
 	left: 1228px;
-	top: 2673px;
+	top: 2668px;
 	height: 150px;
 }
 
 #phalanx-nap {
 	position: absolute;
 	left: 1240px;
-	top: 2844px;
+	top: 2838px;
 	width: 155px;
 	height: 48px;
 }
@@ -1954,14 +1954,14 @@ span.emn {
 #centurion {
 	position: absolute;
 	left: 1455px;
-	top: 2673px;
+	top: 2668px;
 	height: 150px;
 }
 
 #centurion-nap {
 	position: absolute;
 	left: 1469px;
-	top: 2844px;
+	top: 2838px;
 	width: 155px;
 	height: 48px;
 }
@@ -2003,8 +2003,8 @@ span.emn {
 #chariot {
 	position: absolute;
 	left: 588px;
-	top: 2078px;
-	height: 102px;
+	top: 2049px;
+	height: 130px;
 }
 
 #chariot-nap {
@@ -2019,8 +2019,8 @@ span.emn {
 #scythe {
 	position: absolute;
 	left: 1455px;
-	top: 2028px;
-	height: 151px;
+	top: 2005px;
+	height: 174px;
 }
 
 #scythe-nap {
@@ -2230,8 +2230,8 @@ span.emn {
 #chararch {
 	position: absolute;
 	left: 588px;
-	top: 2303px;
-	height: 107px;
+	top: 2280px;
+	height: 130px;
 }
 
 #chararch-nap {
@@ -2305,6 +2305,7 @@ span.emn {
 	top: 2643px;
 	width: 155px;
 	height: 48px;
+	letter-spacing: -1px;
 }
 
 /*stonethrow*/
